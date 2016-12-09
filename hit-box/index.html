@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>开宝箱</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <!-- 背景层颜色 -->
+    <div id="content_Bg" style="height: 1024px; background-color: rgb(237, 171, 46);"></div>
+    <!-- 活动首页 -->
+    <div id="introduce" class="introduce" style="display:none;">
+        <div id="remark" class="test_box"></div>
+        <div id="boxImg" class="test_box"></div>
+        <button id="joinBtn" class="joinBtn">我要参与</button>
+    </div>
+    <div id="error" class="error">
+        <div id="error_Btn" class="error_Btn">重试</div>
+        <div id="back_App" class="error_Btn back_App">不玩了</div>
+    </div>
+    <!-- 开宝箱页面 -->
+    <!-- 动漫人物 -->
+    <div class="cartoon"></div>
+    <!-- 九个盒子 -->
+    <div id="activity_Page" class="activity_Page">
+        <div class="boxes">
+            <div class="box_border"></div>
+            <div class="box_border"></div>
+            <div class="box_border"></div>
+            <div class="box_border"></div>
+            <div class="box_border"></div>
+            <div class="box_border"></div>
+            <div class="box_border"></div>
+            <div class="box_border"></div>
+            <div class="box_border"></div>
+        </div>
+        <div id="result" class="result">
+            <div id="box_big" class="box_big"></div>
+        </div>
+    </div>
+    <!-- 开宝箱之后的页面 -->
+    <div id="draw_after_page" class="draw_after_page">
+        <span id="goodLv"></span>
+        <div id="goodPic" class="goodPic"></div>
+        <!-- 是否中奖的显示区 -->
+        <div class="draw_result"></div>
+        <div class="draw_result_btn"></div>
+        <!-- 中奖后领取奖品的联系方式 -->
+        <div id="address" class="address">
+            <h2>收货信息</h2>
+            <div class="contact" id="contact">
+                <!-- 存放动态生成的表单 -->
+            </div>
+            <div style="text-align: center;">
+                <button id="contact_Btn" class="contact_Btn">提交</button>
+            </div>
+        </div>
+    </div>
+    <!-- 最后的页面 -->
+    <div id="last_Page" class="last_Page">
+        <span class="last_msg"></span>
+        <div id="last_Btn" class="draw_result_btn">确定</div>
+    </div>
+    <!--BEGIN toast-->
+    <div id="toast" style="display: none;">
+        <div class="weui_mask_transparent"></div>
+        <div class="weui_toast">
+            <i id="toastIcon" class="weui_icon_toast"></i>
+            <p id="toastContent" class="weui_toast_content">已完成</p>
+        </div>
+    </div>
+    <div id="loadingToast" class="weui_loading_toast" style="display: none;">
+        <div class="weui_mask_transparent"></div>
+        <div class="weui_toast">
+            <div class="weui_loading">
+                <div class="weui_loading_leaf weui_loading_leaf_0"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_1"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_2"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_3"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_4"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_5"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_6"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_7"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_8"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_9"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_10"></div>
+                <div class="weui_loading_leaf weui_loading_leaf_11"></div>
+            </div>
+            <p id="loadingToastContent" class="weui_toast_content">视频搜索中</p>
+        </div>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>
