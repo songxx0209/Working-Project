@@ -20,6 +20,6 @@ from cloudweb import settings
 urlpatterns = [
     url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_PATH}),
     url(r'^$', RedirectView.as_view(url='/web/index')),
-    url(r'^web/', include('web.urls', app_name='web')),
+    url(r'^web/', include('web.urls')),
 
 ]
