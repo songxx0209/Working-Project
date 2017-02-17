@@ -13,7 +13,9 @@ class ProductLbPageView(TemplateView):
 class ProductServerPageView(TemplateView):
     template_name = 'web_product_server.html'
 
-
-
 class SolutionPageView(TemplateView):
     template_name = 'web_solution.html'
+
+
+class PricePageView(TemplateView):
+    template_name = 'web_price.html'

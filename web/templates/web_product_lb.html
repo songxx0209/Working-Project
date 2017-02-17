@@ -1,5 +1,14 @@
 {% extends '_layout.html' %}
 
+{% block js %}
+    <script>
+        $(document).ready(function () {
+            $("#web_product").addClass("active")
+        })
+    </script>
+{% endblock %}
+
+
 {% block web_content %}
     <aside id="fh5co-hero" class="js-fullheight">
         <div class="flexslider js-fullheight">

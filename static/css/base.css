@@ -18,10 +18,10 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #c00;
-    text-decoration: underline;
-}
+/*a:hover {*/
+    /*color: #c00;*/
+    /*text-decoration: underline;*/
+/*}*/
 
 img {
     border: none;
