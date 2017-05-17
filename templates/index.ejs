@@ -13,121 +13,8 @@
         <div class="back-top"><a onClick="pageScrollTop()"></a></div>
     </div>
 	<!-- header -->
-	<header class="header">
-	    <div class="hd">
-            <div class="content-bg">
-                <div class="hd-container container">
-                    <div class="logo">
-                        <img src="./images/gome-cloud.png" />
-                    </div>
-                    <div class="nav">
-                        <div class="nav-left">
-                            <div class="left-item">
-                                <span style="line-height: 66px;">产品</span>
-                                <div class="nav-menu">
-                                    <div class="menu">
-                                            <div class="menu-one">
-                                                <ul>
-                                                    <li class="menu-one-active">云计算基础服务 <span class="icon"></span></li>
-                                                    <!-- <li>产品2 <span class="icon"></span></li>
-                                                    <li>产品3 <span class="icon"></span></li>
-                                                    <li>产品4 <span class="icon"></span></li>
-                                                    <li>产品5 <span class="icon"></span></li>
-                                                    <li>产品6 <span class="icon"></span></li> -->
-                                                </ul>
-                                            </div>
-                                            <div class="menu-tow">
-                                                <div style="display:block;">
-                                                    <div class="menu-three">
-                                                        <ul>
-                                                            <li class="menu-three-active">弹性计算</li>
-                                                            <li>内容分发</li>
-                                                            <li>网络</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="menu-four">
-                                                        <div style="display:block;">
-                                                            <div class="m-f-item">
-                                                                <p class="m-f-item1">云服务器（EC2）</p>
-                                                                <p class="m-f-item2">一种低开销，简单且高效的弹性计算服务</p>
-                                                            </div>
-                                                            <div class="m-f-item">
-                                                                <p class="m-f-item1">块存储（EBS）</p>
-                                                                <p class="m-f-item2">为云服务器提供高可用、持久性、低延迟的数据块级随机存储</p>
-                                                            </div>
-                                                        </div>
-                                                        <div style="display:none;">
-                                                            <div class="m-f-item">
-                                                                <p class="m-f-item1">负载均衡（GLB）</p>
-                                                                <p class="m-f-item2">对多台云服务器的传入流量进行分发的负载均衡服务</p>
-                                                            </div>
-                                                            <div class="m-f-item">
-                                                                <p class="m-f-item1">CDN</p>
-                                                                <p class="m-f-item2">一种高质量的内容分发服务</p>
-                                                            </div>
-                                                            <div class="m-f-item">
-                                                                <p class="m-f-item1">GDNS</p>
-                                                                <p class="m-f-item2">一站式域名解析服务</p>
-                                                            </div>
-                                                        </div>
-                                                        <div style="display:none;">
-                                                            <div class="m-f-item">
-                                                                <p class="m-f-item1">虚拟专有网络(VPC)</p>
-                                                                <p class="m-f-item2">完全属于您的逻辑隔离网络环境,保障资源安全</p>
-                                                            </div>
-                                                        </div>
+	<%- include('header', {}) %>
 
-                                                    </div>
-                                                </div>
-                                                <!-- <div style="display:none;"></div>
-                                                <div style="display:none;"></div>
-                                                <div style="display:none;"></div>
-                                                <div style="display:none;"></div>
-                                                <div style="display:none;"></div> -->
-                                            </div>
-                                            <div class="upIcon"></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="left-item"><span style="line-height: 66px;">价格</span></div>
-                            <div class="left-item"><span style="line-height: 66px;">解决方案</span></div>
-                            <div class="left-item"><span style="line-height: 66px;">帮助与文档</span></div>
-                        </div>
-                        <div class="nav-right">
-                            <div class="right-item"><span>注册有礼</span></div>
-                            <div class="right-item1">登录</div>
-                            <div class="right-item1">控制台</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-	    </div>
-
-        <!-- Banner -->
-        <div class="banner">
-            <div class="b-img">
-                <div class="b-outer">
-                    <div class="b-container">
-                        <div class="b-left">
-                            <h3>云服务器 (EC2) </h3>
-                            <p>一种低开消，简单且高效且弹性的计算服务</p>
-                            <a class="b-btn"></a>   
-                        </div>
-                        <div class="b-right"></div>
-                    </div>
-                </div>
-                <!-- <div class="b-outer">
-                    <a href="#" style="background:url(./images/banner1.jpg) center no-repeat; background-size: 100%;"></a>
-                </div>
-                <div class="b-outer">
-                    <a href="#" style="background:url(./images/banner2.jpg) center no-repeat; background-size: cover;"></a>
-                </div> -->
-            </div>
-            <div class="b-list"></div>
-            <!-- <a class="bar-left" href="#"><em></em></a><a class="bar-right" href="#"><em></em></a> -->
-        </div>
-	</header>
 
     <!-- 活动信息 -->
     <div class="activeInfo">
@@ -289,49 +176,8 @@
     </div>
 
     <!-- footer -->
-    <footer>
-    	<div class="footer">
-    		<div class="footer-container container">
-    			<div class="f-content">
-    				<div class="f-item">
-    					<span>关于我们</span>
-    					<hr color="#939393">
-    					<p>国美云团队无所不能，天下无敌</p>
-    				</div>
-    				<div class="f-item">
-    					<span>新手入门</span>
-    					<hr color="#939393">
-    					<p>了解国美云</p>
-    					<p>如何成为开发者</p>
-    					<p>如何入住国美云，查看流程</p>
-    				</div>
-    				<div class="f-item">
-    					<span>联系我们</span>
-    					<hr color="#939393">
-    					<p>业务咨询</p>
-    					<p><a href="mailto:yanzhenkai-kg@gome.com.cn">yanzhenkai-kg@gome.com.cn</a></p>
-    					<p style="margin-top: 32px;">技术咨询：</p>
-    					<p><a href="mailto:yanzhenkai-kg@gome.com.cn">yanzhenkai-kg@gome.com.cn</a></p>
-    				</div>
-                    <div class="f-item">
-                        <div class="contact-icon">
-                            <img class="f-c-icon" src="./images/xl-icon.png">
-                            <span>新浪微博</span>
-                        </div>
-                        <div class="qrcode">
-                            <img src="./images/qr-code.png">
-                        </div>
-                        <span class="f-q-notice">扫一扫</span>
-                    </div>
-    			</div>
-                <div class="f-down">
-                    <div class="f-d-content">
-                        <p class="f-d-item">Copyright@2016-2017 &nbsp&nbsp&nbsp gomecloud.com 国美云版权所有</p>
-                    </div>
-                </div>
-    		</div>
-    	</div>
-    </footer>
+    <%- include('footer', {}) %>
+
     
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script src="./js/banner.js"></script>
@@ -341,12 +187,12 @@
             var scrollTop = document.body.scrollTop;
             var contentHeight = document.body.scrollHeight;
             if (scrollTop !== 0){
-                window.scrollBy(0,-100);
-                scrolldelay = setTimeout('pageScrollTop()',20);
+                window.scrollBy(0, -100);
+                scrolldelay = setTimeout('pageScrollTop()', 20);
             } 
         }
         function pageScrollBottom() {
-            document.body.scrollTop=document.body.scrollHeight;
+            document.body.scrollTop = document.body.scrollHeight;
         }
     </script>
 </body>
