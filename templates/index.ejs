@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<title>国美云 - 解决一切不可能</title>
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="icon" href="./images/favicon.png">
+    <link rel="icon" href="./images/home/favicon.png">
 </head>
 <body>
     <div class="flow-msg">
@@ -13,15 +13,14 @@
         <div class="back-top"><a onClick="pageScrollTop()"></a></div>
     </div>
 	<!-- header -->
-	<%- include('header', {}) %>
-
-
+    <%- include('header', {}) %>
+	
     <!-- 活动信息 -->
     <div class="activeInfo">
     	<div class="container">
     		<div class="activeItem">
     			<div class="inner-box">
-    				<div class="activePic" style="background: url('./images/login-gift-01.png') no-repeat;background-size: contain;"></div>
+    				<div class="activePic" style="background: url('./images/home/login-gift-01.png') no-repeat;background-size: contain;"></div>
 	    			<div class="activeIntroduce">
 	    				<div class="activeFont">
 	    					<span>注册</span>
@@ -32,7 +31,7 @@
     		</div>
 	    	<div class="activeItem2">
 	    		<div class="inner-box">
-		    		<div class="activePic" style="background: url('./images/discount-term-01.png') no-repeat;background-size: contain;"></div>
+		    		<div class="activePic" style="background: url('./images/home/discount-term-01.png') no-repeat;background-size: contain;"></div>
 	    			<div class="activeIntroduce">
 	    				<div class="activeFont">
 	    					<span>国美云价格预算</span>
@@ -43,7 +42,7 @@
 	    	</div>
 	    	<div class="activeItem">
 	    		<div class="inner-box">
-		    		<div class="activePic" style="background: url('./images/quickStart-01.png') no-repeat;background-size: contain;"></div>
+		    		<div class="activePic" style="background: url('./images/home/quickStart-01.png') no-repeat;background-size: contain;"></div>
 	    			<div class="activeIntroduce">
 	    				<div class="activeFont">
 	    					<span>国美云功能更新</span>
@@ -68,7 +67,7 @@
     			<div class="s-item">
     				<div class="s-item-box">
     					<div style="height: 80px; text-align: center; margin-bottom: 54px;">
-    						<img src="./images/technology.png">
+    						<img src="./images/home/technology.png">
     					</div>
     					<h4>EC2</h4>
     					<p>仅需几秒创建属于您的云服务器。</p>
@@ -77,7 +76,7 @@
     			<div class="s-item">
     				<div class="s-item-box">
     					<div style="height: 80px; text-align: center; margin-bottom: 54px;">
-    						<img src="./images/mix.png">
+    						<img src="./images/home/mix.png">
     					</div>
     					<h4>VPC</h4>
     					<p>了解如何创建虚拟专有网络。</p>
@@ -86,7 +85,7 @@
     			<div class="s-item">
     				<div class="s-item-box">
     					<div style="height: 80px; text-align: center; margin-bottom: 54px;">
-    						<img src="./images/open.png">
+    						<img src="./images/home/open.png">
     					</div>
     					<h4>GLB</h4>
     					<p>如何使用负载均衡构建高可用的服务架构。</p>
@@ -95,7 +94,7 @@
                 <div class="s-item">
                     <div class="s-item-box">
                         <div style="height: 80px; text-align: center; margin-bottom: 54px;">
-                            <img src="./images/GDNS.png">
+                            <img src="./images/home/GDNS.png">
                         </div>
                         <h4>GDNS</h4>
                         <p>为您构建一站式的域名解析服务。</p>
@@ -157,27 +156,16 @@
             <hr style="width: 65px; float: right;margin-top: 7px;" color="#1dc3ed">
     	</div>
     	<div class="container partner-container">
-    		<div><img src="./images/mango-tv.png"></div>
-    		<div><img src="./images/gome.png"></div>
-    		<div><img src="./images/mango-tv.png"></div>
-    		<div><img src="./images/gome-unline.png"></div>
-    		<div><img src="./images/gome.png"></div>
-    	</div>
-    </div>
-
-    <!-- sign in -->
-    <div class="register">
-    	<div class="r-title">
-    		<p>国美云，解决一切不可能</p>
-            <a class="r-btn">
-                <div></div>
-            </a>   
+    		<div><img src="./images/home/mango-tv.png"></div>
+    		<div><img src="./images/home/gome.png"></div>
+    		<div><img src="./images/home/mango-tv.png"></div>
+    		<div><img src="./images/home/gome-unline.png"></div>
+    		<div><img src="./images/home/gome.png"></div>
     	</div>
     </div>
 
     <!-- footer -->
     <%- include('footer', {}) %>
-
     
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script src="./js/banner.js"></script>
@@ -185,14 +173,15 @@
     <script type="text/javascript">
         function pageScrollTop() {
             var scrollTop = document.body.scrollTop;
-            var contentHeight = document.body.scrollHeight;
+            // var contentHeight = document.body.scrollHeight;
+            console.log('23232323');
             if (scrollTop !== 0){
-                window.scrollBy(0, -100);
-                scrolldelay = setTimeout('pageScrollTop()', 20);
+                window.scrollBy(0,-100);
+                scrolldelay = setTimeout('pageScrollTop()',20);
             } 
         }
         function pageScrollBottom() {
-            document.body.scrollTop = document.body.scrollHeight;
+            document.body.scrollTop=document.body.scrollHeight;
         }
     </script>
 </body>

@@ -20,7 +20,7 @@
     position: relative;
     width: 40px;
     height: 40px;
-    background: url('../images/up.png') no-repeat 0 -87px;
+    background: url('../images/home/up.png') no-repeat 0 -87px;
 }
 .back-top a {
     position: absolute;
@@ -30,7 +30,7 @@
 .header {
     width: 100%;
     height: 574px;
-    background: url('../images/banner-bg.png') no-repeat;
+    background: url('../images/home/banner-bg.png') no-repeat;
     background-size: 100% 100%;
 }
 /*  header  */
@@ -158,7 +158,7 @@
     position: absolute;
     width: 19px;
     height: 8px;
-    background: url(../images/upIcon.png) no-repeat;
+    background: url(../images/home/upIcon.png) no-repeat;
     top: -8px;
     left: 193px;
 }
@@ -191,10 +191,10 @@
     right:5px;
     top:17px;
     display:inline-block;
-    background:url("../images/nav-left.png") no-repeat;
+    background:url("../images/home/nav-left.png") no-repeat;
 }
 .menu-one-active .icon {
-    background:url("../images/nav-left2.png") no-repeat;
+    background:url("../images/home/nav-left2.png") no-repeat;
 }
 .menu-three {
     width: 148px;
@@ -293,17 +293,17 @@
     position: absolute;
     right: 0%;
     top: 110px;
-    background: url(../images/banner-pc-01.png) no-repeat;
+    background: url(../images/home/banner-pc-01.png) no-repeat;
 }
 .b-btn {
     display: block;
     width: 160px;
     height: 44px;
     margin: 60px 0;
-    background: url('../images/immediate-use.png') no-repeat;
+    background: url('../images/home/immediate-use.png') no-repeat;
 }
 .b-btn:hover {
-    background: url('../images/immediate-use-white.png') no-repeat;
+    background: url('../images/home/immediate-use-white.png') no-repeat;
     
 }
 .b-list {
@@ -353,7 +353,7 @@
     display: block;
     width: 50px;
     height: 100px;
-    background: url(../images/arrow.png) 0px 0px no-repeat;
+    background: url(../images/home/arrow.png) 0px 0px no-repeat;
     margin: 0 auto;
     margin-top: 100px;
 }
@@ -362,7 +362,7 @@
     display: block;
     width: 50px;
     height: 100px;
-    background: url(../images/arrow.png) -50px 0px no-repeat;
+    background: url(../images/home/arrow.png) -50px 0px no-repeat;
     margin: 0 auto;
     margin-top: 100px;
 }
@@ -436,7 +436,7 @@
 /* 云计算 */
 .computing {
     width: 100%;
-    background: url('../images/safety-background-01.png') no-repeat;
+    background: url('../images/home/safety-background-01.png') no-repeat;
     background-color: rgba(250, 250, 250, 0.7);
     background-size: 100% 100%;
 }
@@ -490,10 +490,10 @@
     position: absolute;
     top: 115px;
     left: 0px;
-    background: url('../images/left-gray.png') no-repeat;
+    background: url('../images/home/left-gray.png') no-repeat;
 }
 .service-left:hover {
-    background: url('../images/left-orange.png') no-repeat;
+    background: url('../images/home/left-orange.png') no-repeat;
 }
 .service-right {
     width: 30px;
@@ -501,10 +501,10 @@
     position: absolute;
     top: 115px;
     left: 1172px;
-    background: url('../images/right-gray.png') no-repeat;
+    background: url('../images/home/right-gray.png') no-repeat;
 }
 .service-right:hover {
-    background: url('../images/right-orange.png') no-repeat;
+    background: url('../images/home/right-orange.png') no-repeat;
 }
 
 
@@ -568,22 +568,22 @@
     color: #7bcfe4;
 }
 .cart-active .solve-pic1 {
-    background: url('../images/product-white.png') no-repeat center;
+    background: url('../images/home/product-white.png') no-repeat center;
 }
 .cart-active .solve-pic2 {
-    background: url('../images/operation-white.png') no-repeat   center;
+    background: url('../images/home/operation-white.png') no-repeat   center;
 }
 .cart-active .solve-pic3 {
-    background: url('../images/solution-white.png') no-repeat    center;
+    background: url('../images/home/solution-white.png') no-repeat    center;
 }
 .solve-pic1 {
-    background: url('../images/product-black.png') no-repeat center;
+    background: url('../images/home/product-black.png') no-repeat center;
 }
 .solve-pic2 {
-    background: url('../images/operation-black.png') no-repeat   center;
+    background: url('../images/home/operation-black.png') no-repeat   center;
 }
 .solve-pic3 {
-    background: url('../images/solution-black.png') no-repeat    center;
+    background: url('../images/home/solution-black.png') no-repeat    center;
 }
 .cart-up {
     height: 230px;
@@ -616,7 +616,7 @@
 /* 合作伙伴 */
 .partner {
     width: 100%;
-    background: url('../images/partner.jpg') no-repeat;
+    background: url('../images/home/partner.jpg') no-repeat;
     background-size: 100% 100%;
 }
 .partner-title {
@@ -640,7 +640,7 @@
 .register {
     width: 100%;
     height: 220px;
-    background: url('../images/zhuce.png');
+    background: url('../images/home/zhuce.png');
     background-color: #1dc3ed;
 }
 .r-title {
@@ -660,11 +660,11 @@
 }
 .r-btn div {
     height: 44px;
-    background: url('../images/sign-up-right-away.png');
+    background: url('../images/home/sign-up-right-away.png');
 }
 .r-btn div:hover {
     height: 44px;
-    background: url('../images/sign-up-right-away-white.png');
+    background: url('../images/home/sign-up-right-away-white.png');
 }
 /* footer */
 .footer {
