@@ -263,7 +263,7 @@
 .p-tb-head {
     text-align: center;
     font-size: 16px;
-    color: #333;
+    color: #666;
     height: 60px;
     line-height: 60px;
     position: relative;
@@ -273,7 +273,7 @@
     top: 4px;
     left: -5px;
     display: inline-block;
-    width: 16px;
+    width: 17px;
     height: 20px;
 }
 
@@ -289,6 +289,7 @@
     height: 30px;
     line-height: 30px;
     font-size: 16px;
+    font-weight: bold;
     color: #81999f;
     background: #ecf9fd;
 }
@@ -336,7 +337,7 @@
     box-sizing: border-box;
     border: 1px solid #f0f0f0;
     margin: 20px 0 0 0;
-    height:  340px;
+    height: 240px;
 }
 .apply-tab {
     width: 100%;
@@ -351,7 +352,7 @@
     text-align: center;
     list-style: none;
     display: inline-block;
-    color: #333;
+    color: #666;
     font-weight: bold;
     box-sizing: border-box;
     border-bottom: 1px solid #f0f0f0;
@@ -413,7 +414,7 @@
     color: #333;
 }
 .faq-a p {
-    margin: 20px 0 0 -20px;
+    margin: 20px 0 0 0;
     font-size: 14px;
     color: #666;
 }
