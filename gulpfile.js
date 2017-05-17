@@ -26,7 +26,7 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('images', function () {
-    return gulp.src('images/*.*')
+    return gulp.src('images/**/*.*')
         .pipe(rev())
         .pipe(gulp.dest('dist/images'))
         .pipe( rev.manifest() )
