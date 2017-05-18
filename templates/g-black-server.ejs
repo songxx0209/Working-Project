@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8" />
+	<title>国美云 - 解决一切不可能</title>
+	<link rel="icon" href="./images/home/favicon.png">
+	<link rel="stylesheet" type="text/css" href="./css/header-nav.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/g-black-server.css">
+</head>
+
+<body>
+    <!-- 联系我们，回到顶部 -->
+    <div class="flow-msg">
+        <div class="connect-us" onClick="pageScrollBottom()">联系我们</div>
+        <div class="back-top"><a onClick="pageScrollTop()"></a></div>
+    </div>
+    <!-- header -->
+    <%- include('header-nav.ejs', {}) %>
+	<div class="banner-description">
+	    <div class="banner-description-content">
+	        <div style="width: 110px;height: 110px;float: left;margin-right: 40px;">
+	            <img src="./images/newPage/GBS.png" style="width: 100%; height: 100%;">
+	        </div>
+	        <div style="height: 110px;float: left;">
+	            <p style="font-size: 38px;color: #333;">国美云硬盘 GBS</p>
+	            <p style="font-size: 16px; color: #333;margin-top: 15px;">国美云硬盘（Gome Block Storage）,为国美云服务器提供持久便捷的块存储，用户可以像使用物理块设备一样来使用。<br />国美云硬盘，国美云硬盘会在其可用区内自动复制多份数据副本，防止硬件损坏导致的数据不可用，从而提升应用性能。</p>
+	        </div>
+	    </div>
+	</div>
+	
+
+	<!-- 云服务~导航 -->
+    <div class="c-outer">
+        <div class="cloud-head">
+            <div class="c-h-content">
+                <ul class="cloud-menu-box">
+                    <li class="c-m-b-li" onClick="pageScrollHeight(420)">产品概述</li>
+                    <li class="c-m-b-li" onClick="pageScrollHeight(720)">功能介绍</li>
+                    <li class="c-m-b-li" onClick="pageScrollHeight(840)">应用场景</li>
+                    <li class="c-m-b-li" onClick="pageScrollHeight(1120)">常见问题</li>
+                </ul>
+                <a href="" class="cloud-btn">立即注册</a>
+                <div class="cloud-product-menu">
+                    <div class="p-menu-title">
+                        <div class="cloud-all-menu">
+                            <span class="all-menu"></span>
+                            <span>全部产品</span>
+                        </div>
+                        <!-- 下拉菜单 -->
+                        <div class="cloud-nav-menu">
+                            <div class="cloud-menu">
+                                    <div class="cloud-menu-one">
+                                        <ul>
+                                            <li class="cloud-menu-one-active">云计算基础服务 <span class="icon"></span></li>
+                                            <!-- <li>产品2 <span class="icon"></span></li>
+                                            <li>产品3 <span class="icon"></span></li>
+                                            <li>产品4 <span class="icon"></span></li>
+                                            <li>产品5 <span class="icon"></span></li>
+                                            <li>产品6 <span class="icon"></span></li> -->
+                                        </ul>
+                                    </div>
+                                    <div class="cloud-menu-tow">
+                                        <div style="display:block;">
+                                            <div class="cloud-menu-three">
+                                                <ul>
+                                                    <li class="cloud-menu-three-active">弹性计算</li>
+                                                    <li>内容分发</li>
+                                                    <li>网络</li>
+                                                </ul>
+                                            </div>
+                                            <div class="cloud-menu-four">
+                                                <div style="display:block;">
+                                                    <div class="cloud-m-f-item">
+                                                        <a href="./cloud-server.html" style="text-decoration:none;">
+                                                            <p class="m-f-item1">云服务器（EC2）</p>
+                                                            <p class="m-f-item2">一种低开销，简单且高效的弹性计算服务</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="cloud-m-f-item">
+                                                        <p class="cloud-m-f-item1">块存储（EBS）</p>
+                                                        <p class="cloud-m-f-item2">为云服务器提供高可用、持久性、低延迟的数据块级随机存储</p>
+                                                    </div>
+                                                </div>
+                                                <div style="display:none;">
+                                                    <div class="cloud-m-f-item">
+                                                        <p class="cloud-m-f-item1">负载均衡（GLB）</p>
+                                                        <p class="cloud-m-f-item2">对多台云服务器的传入流量进行分发的负载均衡服务</p>
+                                                    </div>
+                                                    <div class="cloud-m-f-item">
+                                                        <p class="cloud-m-f-item1">CDN</p>
+                                                        <p class="cloud-m-f-item2">一种高质量的内容分发服务</p>
+                                                    </div>
+                                                    <div class="cloud-m-f-item">
+                                                        <p class="cloud-m-f-item1">GDNS</p>
+                                                        <p class="cloud-m-f-item2">一站式域名解析服务</p>
+                                                    </div>
+                                                </div>
+                                                <div style="display:none;">
+                                                    <div class="cloud-m-f-item">
+                                                        <p class="cloud-m-f-item1">虚拟专有网络(VPC)</p>
+                                                        <p class="cloud-m-f-item2">完全属于您的逻辑隔离网络环境,保障资源安全</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- <div style="display:none;"></div>
+                                        <div style="display:none;"></div>
+                                        <div style="display:none;"></div>
+                                        <div style="display:none;"></div>
+                                        <div style="display:none;"></div> -->
+                                    </div>
+                                    <div class="cloud-upIcon"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+
+	<!-- 云服务·介绍 -->
+    <div class="cloud-body">
+
+        <!-- 产品介绍 -->
+        <div class="product-introduction">
+            <p class="cloud-title-noe"><span class="cloud-title-noe-pic"></span>产品概述</p>
+            <table class="p-table">
+                <thead class="p-thead">
+                    <tr>
+                        <th style="width: 200px;text-align: center;"></th>
+                        <td style="width: 400px;text-align: center;text-align: center;">国美云硬盘</td>
+                        <td style="width: 140px;text-align: center;"></td>
+                        <td style="width: 360px;text-align: center;text-align: center;">传统硬盘</td>
+                        <td style="width: 100px;text-align: center;"></td>
+                    </tr>
+                </thead>
+                <tbody class="p-tb">
+                    <tr style="height: 20px;"></tr>
+                    <tr>
+                        <th class="p-tb-head"><span class="p-tb-head-icon" style="background: url('./images/newPage/safety.png') no-repeat;"></span><span class="p-tb-head-content">易用性</span></th>
+                        <td class="p-tb-content">通过控制台即可完成对云硬盘管理，无需等待漫长的采购周期</td>
+                        <td class="p-tb-content"></td>
+                        <td class="p-tb-content">需要等待漫长的采购周期以及后期人工上架管理</td>
+                        <td class="p-tb-content"></td>
+                    </tr>
+                    <tr class="p-space"></tr>
+                    <tr>
+                        <th class="p-tb-head"><span class="p-tb-head-icon" style="background: url('./images/newPage/elasticity.png') no-repeat;"></span class="p-tb-head-content"><span>数据可靠性</span></th>
+                        <td class="p-tb-content">云硬盘会在其可用区自动复制多份数据副本，保证数据可靠性</td>
+                        <td class="p-tb-content"></td>
+                        <td class="p-tb-content">需要人工创建数据副本</td>
+                        <td class="p-tb-content"></td>
+                    </tr>
+                    <tr class="p-space"></tr>
+                    <tr>
+                        <th class="p-tb-head"><span class="p-tb-head-icon" style="background: url('./images/newPage/cost.png') no-repeat;"></span><span class="p-tb-head-content">成本可控性</span></th>
+                        <td class="p-tb-content">普通硬盘0.27/G/月，高速盘1.08/G/月，根据磁盘容量进行收费，合理利用资源</td>
+                        <td class="p-tb-content"></td>
+                        <td class="p-tb-content">传统硬盘磁盘容量固定，容易造成资源浪费</td>
+                        <td class="p-tb-content"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 功能介绍 -->
+        <div class="function-introduction">
+            <p class="cloud-title-noe"><span class="cloud-title-noe-pic"></span>功能介绍</p>
+            <p class="cloud-content">方便管理：国美云硬盘提供控制台进行管理，用户可在控制台上<span style="color: #1dc3ed;">创建/挂载/删除</span>云硬盘。</p>
+        </div>
+
+        <!-- 应用场景 -->
+        <div class="apply-scene">
+        	<p class="cloud-title-noe"><span class="cloud-title-noe-pic"></span>应用场景</p>
+        	<div class="apply-content">
+        		<div class="apply-item a-i-1">
+        			<div class="apply-item-middle">
+        				<p>企业官网/Web应用</p>
+        			</div>
+        		</div>
+	        	<div class="apply-item a-i-2">
+	        		<p style="font-size: 14px;margin: 20px 0 0 20px;">不会频繁读写磁盘，对磁盘I/O性能要求不高</p>
+	        		<p class="apply-conf"><span>推荐配置：</span>100G普通磁盘</p>
+	        	</div>
+	        	<div class="apply-item a-i-3">
+	        	<div class="apply-item-middle">
+	        		<p>中等规模关系型数据库/NoSQL数据库</p>
+	        		</div>
+	        	</div>
+	        	<div class="apply-item a-i-4">
+	        		<p style="font-size: 14px;margin: 20px 0 0 20px;">会频繁读写磁盘数据，对磁盘I/O性能要求较高</p>
+	        		<p class="apply-conf"><span>推荐配置：</span>500G高速盘</p>
+	        	</div>
+        	</div>
+        </div>
+
+        <!-- 常见问题 -->
+        <div class="faq">
+            <p class="cloud-title-noe"><span class="cloud-title-noe-pic"></span>常见问题</p>
+            <p class="cloud-title-three">●&nbsp;&nbsp;Gome云服务器实例终止时，会对用户的数据产生什么影响？</p>
+            <p class="cloud-content">与保存在本地实例存储的数据（只要实例存在，数据就始终存在）不同，保存在国美云云硬盘卷中的数据存续不受实例寿命的影响。因此我们建议将本地实例存储仅用于临时数据，而对于需要保存较长时间的数据使用国美云云硬盘来保存。</p>
+            <p class="cloud-title-three">●&nbsp;&nbsp;国美云云硬盘预计可以带来什么样的性能？</p>
+            <p class="cloud-content">国美云云硬盘提供两种卷类型：普通盘，快速盘：<br />1.普通盘主要使用在应用对磁盘读写性能要求不高的场景下，例如Web应用等。<br />2.快速盘主要使用在应用需要较高读写性能的场景下，例如关系型数据库，非关系型数据库等。</p>
+            <p class="cloud-title-three">●&nbsp;&nbsp;能否将多个卷一起条带化以获得更好性能？</p>
+            <p class="cloud-content">能。可以将挂载到较大云服务器的多个卷一起条带化，例如利用LVM将多个云硬盘创建到一个卷组（Volumn Group, 简称VG）当中，以实现更出色的性能。</p>
+        </div>
+    </div>
+
+	<!-- footer -->
+    <%- include('footer.ejs', {}) %>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+	<script src="./js/main.js"></script>
+	    <script src="./js/g-black-server.js"></script>
+    <script type="text/javascript">
+
+	    function pageScrollTop() {
+	        var scrollTop = document.body.scrollTop;
+	        if (scrollTop !== 0){
+	            window.scrollBy(0,-100);
+	            scrolldelay = setTimeout('pageScrollTop()',20);
+	        }
+	    }
+
+	    function pageScrollBottom() {
+	        document.body.scrollTop=document.body.scrollHeight;
+	    }
+
+	    function pageScrollHeight(high) {
+	        var scrollH = document.body.scrollTop;
+	        var cha = Math.abs(parseInt(high) - parseInt(scrollH));
+	        if (scrollH < high && scrollH !== high){
+	            window.scrollBy(0,100);
+	            if(cha < 100) {
+	                scrollH = high;
+	            }
+	            setTimeout('pageScrollHeight('+ high +')',40);
+	        } else if (scrollH > high && scrollH !== high) {
+	            window.scrollBy(0,-100);
+	            if(cha < 100) {
+	                document.body.scrollTop = high;
+	            } else {
+	                setTimeout('pageScrollHeight('+ high +')',40);
+	            }
+	        }
+	    }
+    </script>
+</body>
+
+</html>

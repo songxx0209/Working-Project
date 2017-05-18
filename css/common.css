@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 联系我们-fixed */
+.flow-msg {
+    position: fixed;
+    top: 60%;
+    right: 5px;
+    width: 40px;
+    height: 140px;
+    background: #000;
+    z-index: 999;
+}
+.connect-us {
+    width: 20px;
+    height: 90px;
+    padding: 5px 10px;
+    word-wrap: break-word;
+    color: white;
+    text-align: center;
+    background: #4fd1d9;
+}
+.back-top {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url('../images/home/up.png') no-repeat 0 -87px;
+}
+.back-top a {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+
+/* 段落间距，字体大小 */
+.cloud-title-noe {
+    font-size: 24px;
+    margin: 0;
+}
+
+.cloud-title-noe-pic {
+    background: url(../images/newPage/tab.png) no-repeat;
+    width: 20px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    top: 3px; 
+}
+
+.cloud-title-tow {
+	height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #81999f;
+    background: #ecf9fd;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.cloud-title-three {
+	font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.cloud-content {
+	font-size: 14px;
+    color: #666;
+    margin: 0;
+    margin-top: 10px;
+}
+
+
+/* 注册 */
+.register {
+    width: 100%;
+    height: 220px;
+    background: url('../images/home/zhuce.png');
+    background-color: #1dc3ed;
+}
+.r-title {
+    font-size: 25px;
+    padding: 50px 0;
+    text-align: center;
+}
+.r-title p {
+    padding-bottom: 15px;
+    color: white;
+}
+.r-btn {
+    width: 180px;
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+}
+.r-btn div {
+    height: 44px;
+    background: url('../images/home/sign-up-right-away.png');
+}
+.r-btn div:hover {
+    height: 44px;
+    background: url('../images/home/sign-up-right-away-white.png');
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 484px;
+    background: #373737;
+}
+.footer-container {
+    height: 484px;
+}
+.f-content {
+    width: 1200px;
+    height: 320px;
+    margin: 0px auto;
+    padding-top: 80px;
+}
+.f-item {
+    width: 200px;
+    height: 320px;
+    margin: 0 50px;
+    padding: 0;
+    color: #ffffff;
+    float: left;
+}
+.f-item span {
+    color: #d8d8d8;
+}
+.f-item p {
+    color: #b2b2b2;
+    font-size: 12px;
+    padding: 3px 0;
+}
+.f-item hr {
+    display: block;
+    margin: 20px 0;
+    height:01px;
+    border:none;
+}
+.f-item a {
+    text-decoration:none;
+    color: #1dc3ed;
+}
+.contact-icon {
+    width: 110px;
+    height: 23px;
+    margin: 0 auto;
+}
+.f-c-icon {
+    width: 24px;
+    height: 23px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+.contact-icon span {
+    display: block;
+    height: 23px;
+    line-height: 23px;
+    font-size: 12px;
+    float: left;
+}
+.qrcode {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #939393;
+    margin: 24px auto 0;
+    padding: 6px;
+}
+.qrcode img {
+    width:100%;
+    height: 100%;
+    display: block;
+}
+.f-q-notice {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.f-down {
+    height: 84px;
+    box-sizing: border-box;
+    border-top: 1px solid #aeaeae;
+    /*background-color: lightblue;*/
+}
+.f-d-content {
+    width: 900px;
+    height: 84px;
+    margin: 0 auto;
+    text-align: center;
+}
+.f-d-item {
+    height: 84px;
+    line-height: 84px;
+    color: #aeaeae;
+    font-size: 14px;
+}
+/*@media (max-width: 1370px){
+    .hd-container, .container {
+        width: 1200px;
+    }
+    .upIcon {
+        left: 95px;
+    }
+ 
+}*/
+
+.banner-description {
+    width: 100%;
+    height: 328px;
+    position: relative;
+    background: url("../images/newPage/banner.png") no-repeat;
+    background-size: 100% 100%;
+}
+.banner-description-content {
+    width: 1000px;
+    height: 118px;
+    margin: 0px auto;
+    padding: 105px 0;
+}
+@media (max-width: 1200px){
+    .header-bg, .register, .footer {
+        width: 1200px;
+    }
+}
