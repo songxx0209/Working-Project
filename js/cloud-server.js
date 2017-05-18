@@ -19,10 +19,10 @@ $(function() {
         if (scrollTop >= 800) {
         	$('.cloud-menu-box li:eq(1)').attr('class', 'c-m-b-li c-m-b-active').siblings().attr('class', 'c-m-b-li');
         } 
-        if(scrollTop >= 2040) {
+        if(scrollTop >= 2070) {
         	$('.cloud-menu-box li:eq(2)').attr('class', 'c-m-b-li c-m-b-active').siblings().attr('class', 'c-m-b-li');
         } 
-        if(scrollTop >= 2480) {
+        if(scrollTop >= 2350) {
         	$('.cloud-menu-box li:eq(3)').attr('class', 'c-m-b-li c-m-b-active').siblings().attr('class', 'c-m-b-li');
         }
     }
