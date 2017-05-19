@@ -4,8 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta charset="utf-8" />
 	<title>国美云 - 解决一切不可能</title>
-	<link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="stylesheet" type="text/css" href="./css/cloudServer.css">
+    <link rel="stylesheet" href="./css/header-child-page.css">
+    <link rel="stylesheet" type="text/css" href="./css/cloud-server.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="icon" href="./images/home/favicon.png">
 </head>
 
@@ -17,96 +18,111 @@
     </div>
     
     <!-- header -->
-    <%- include('product-page-header.ejs', {}) %>
+    <%- include('header.ejs', {}) %>
+
+    <!-- banner -->
+    <div class="banner-description">
+        <div class="banner-description-content">
+            <div style="width: 110px;height: 110px;float: left;margin-right: 40px;">
+                <img src="./images/newPage/GCS.png" style="width: 100%; height: 100%;">
+            </div>
+            <div style="height: 110px;float: left;">
+                <p style="font-size: 38px;color: #333;">云服务器 GCS</p>
+                <p style="font-size: 16px; color: #333;margin-top: 15px;">国美云服务器（Gome Cloud Server, 简称GCS），一种低开销、简单高效的弹性计算服务。<br />可快速完成云服务器创建，按时间灵活计费，有效降低基础设施成本，无需底层运维，真正致力于核心业务发展。</p>
+            </div>
+        </div>
+    </div>
 
     <!-- 云服务~导航 -->
     <div class="c-outer">
         <div class="cloud-head">
-        <div class="c-h-content">
-            <ul class="cloud-menu-box">
-                <li class="c-m-b-li" onClick="pageScrollHeight(420)">产品概述</li>
-                <li class="c-m-b-li" onClick="pageScrollHeight(800)">功能介绍</li>
-                <li class="c-m-b-li" onClick="pageScrollHeight(2070)">应用场景</li>
-                <li class="c-m-b-li" onClick="pageScrollHeight(2400)">常见问题</li>
-            </ul>
-            <a href="" class="cloud-btn">立即注册</a>
-            <div class="cloud-product-menu">
-                <div class="p-menu-title">
-                    <div class="cloud-all-menu">
-                        <span class="all-menu"></span>
-                        <span>全部产品</span>
-                    </div>
-                    <!-- 下拉菜单 -->
-                    <div class="cloud-nav-menu">
-                        <div class="cloud-menu">
-                                <div class="cloud-menu-one">
-                                    <ul>
-                                        <li class="cloud-menu-one-active">云计算基础服务 <span class="icon"></span></li>
-                                        <!-- <li>产品2 <span class="icon"></span></li>
-                                        <li>产品3 <span class="icon"></span></li>
-                                        <li>产品4 <span class="icon"></span></li>
-                                        <li>产品5 <span class="icon"></span></li>
-                                        <li>产品6 <span class="icon"></span></li> -->
-                                    </ul>
-                                </div>
-                                <div class="cloud-menu-tow">
-                                    <div style="display:block;">
-                                        <div class="cloud-menu-three">
-                                            <ul>
-                                                <li class="cloud-menu-three-active">弹性计算</li>
-                                                <li>内容分发</li>
-                                                <li>网络</li>
-                                            </ul>
-                                        </div>
-                                        <div class="cloud-menu-four">
-                                            <div style="display:block;">
-                                                <div class="cloud-m-f-item">
-                                                    <a href="./cloud-server.html" style="text-decoration:none;">
-                                                        <p class="m-f-item1">云服务器（EC2）</p>
-                                                        <p class="m-f-item2">一种低开销，简单且高效的弹性计算服务</p>
-                                                    </a>
-                                                </div>
-                                                <div class="cloud-m-f-item">
-                                                    <p class="cloud-m-f-item1">块存储（EBS）</p>
-                                                    <p class="cloud-m-f-item2">为云服务器提供高可用、持久性、低延迟的数据块级随机存储</p>
-                                                </div>
-                                            </div>
-                                            <div style="display:none;">
-                                                <div class="cloud-m-f-item">
-                                                    <p class="cloud-m-f-item1">负载均衡（GLB）</p>
-                                                    <p class="cloud-m-f-item2">对多台云服务器的传入流量进行分发的负载均衡服务</p>
-                                                </div>
-                                                <div class="cloud-m-f-item">
-                                                    <p class="cloud-m-f-item1">CDN</p>
-                                                    <p class="cloud-m-f-item2">一种高质量的内容分发服务</p>
-                                                </div>
-                                                <div class="cloud-m-f-item">
-                                                    <p class="cloud-m-f-item1">GDNS</p>
-                                                    <p class="cloud-m-f-item2">一站式域名解析服务</p>
-                                                </div>
-                                            </div>
-                                            <div style="display:none;">
-                                                <div class="cloud-m-f-item">
-                                                    <p class="cloud-m-f-item1">虚拟专有网络(VPC)</p>
-                                                    <p class="cloud-m-f-item2">完全属于您的逻辑隔离网络环境,保障资源安全</p>
-                                                </div>
-                                            </div>
-
-                                        </div>
+            <div class="c-h-content">
+                <ul class="cloud-menu-box">
+                    <li class="c-m-b-li" onClick="pageScrollHeight(420)">产品概述</li>
+                    <li class="c-m-b-li" onClick="pageScrollHeight(800)">功能介绍</li>
+                    <li class="c-m-b-li" onClick="pageScrollHeight(2070)">应用场景</li>
+                    <li class="c-m-b-li" onClick="pageScrollHeight(2400)">常见问题</li>
+                </ul>
+                <a href="" class="cloud-btn">立即注册</a>
+                <div class="cloud-product-menu">
+                    <div class="p-menu-title">
+                        <div class="cloud-all-menu">
+                            <span class="all-menu"></span>
+                            <span>全部产品</span>
+                        </div>
+                        <!-- 下拉菜单 -->
+                        <div class="cloud-nav-menu">
+                            <div class="cloud-menu">
+                                    <div class="cloud-menu-one">
+                                        <ul>
+                                            <li class="cloud-menu-one-active">云计算基础服务 <span class="icon"></span></li>
+                                            <!-- <li>产品2 <span class="icon"></span></li>
+                                            <li>产品3 <span class="icon"></span></li>
+                                            <li>产品4 <span class="icon"></span></li>
+                                            <li>产品5 <span class="icon"></span></li>
+                                            <li>产品6 <span class="icon"></span></li> -->
+                                        </ul>
                                     </div>
-                                    <!-- <div style="display:none;"></div>
-                                    <div style="display:none;"></div>
-                                    <div style="display:none;"></div>
-                                    <div style="display:none;"></div>
-                                    <div style="display:none;"></div> -->
-                                </div>
-                                <div class="cloud-upIcon"></div>
+                                    <div class="cloud-menu-tow">
+                                        <div style="display:block;">
+                                            <div class="cloud-menu-three">
+                                                <ul>
+                                                    <li class="cloud-menu-three-active">弹性计算</li>
+                                                    <li>内容分发</li>
+                                                    <li>网络</li>
+                                                </ul>
+                                            </div>
+                                            <div class="cloud-menu-four">
+                                                <div style="display:block;">
+                                                    <div class="cloud-m-f-item">
+                                                        <a href="./cloud-server.html" style="text-decoration:none;">
+                                                            <p class="cloud-m-f-item1">云服务器（GCS）</p>
+                                                            <p class="cloud-m-f-item2">一种低开销，简单且高效的弹性计算服务</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="cloud-m-f-item">
+                                                        <a href="./g-black-server.html" style="text-decoration:none;">
+                                                            <p class="cloud-m-f-item1">块存储（GBS）</p>
+                                                            <p class="cloud-m-f-item2">为云服务器提供高可用、持久性、低延迟的数据块级随机存储</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div style="display:none;">
+                                                    <div class="cloud-m-f-item">
+                                                        <p class="cloud-m-f-item1">负载均衡（GLB）</p>
+                                                        <p class="cloud-m-f-item2">对多台云服务器的传入流量进行分发的负载均衡服务</p>
+                                                    </div>
+                                                    <div class="cloud-m-f-item">
+                                                        <p class="cloud-m-f-item1">CDN</p>
+                                                        <p class="cloud-m-f-item2">一种高质量的内容分发服务</p>
+                                                    </div>
+                                                    <div class="cloud-m-f-item">
+                                                        <p class="cloud-m-f-item1">GDNS</p>
+                                                        <p class="cloud-m-f-item2">一站式域名解析服务</p>
+                                                    </div>
+                                                </div>
+                                                <div style="display:none;">
+                                                    <div class="cloud-m-f-item">
+                                                        <p class="cloud-m-f-item1">虚拟专有网络(VPC)</p>
+                                                        <p class="cloud-m-f-item2">完全属于您的逻辑隔离网络环境,保障资源安全</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- <div style="display:none;"></div>
+                                        <div style="display:none;"></div>
+                                        <div style="display:none;"></div>
+                                        <div style="display:none;"></div>
+                                        <div style="display:none;"></div> -->
+                                    </div>
+                                    <div class="cloud-upIcon"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!-- 云服务·介绍 -->
@@ -114,7 +130,7 @@
 
         <!-- 产品介绍 -->
         <div class="product-introduction">
-            <p class="cloud-item-head"><span class="head-pic"></span>产品概述</p>
+            <p class="cloud-title-noe"><span class="cloud-title-noe-pic"></span>产品概述</p>
             <table class="p-table">
                 <thead class="p-thead">
                     <tr>
@@ -164,11 +180,11 @@
 
         <!-- 功能介绍 -->
         <div class="function-introduction">
-            <p class="cloud-item-head"><span class="head-pic"></span>功能介绍</p>
+            <p class="cloud-title-noe"><span class="cloud-title-noe-pic"></span>功能介绍</p>
             <div>
-                <p class="f-item-title1">&nbsp;&nbsp;计算</p>
-                <p class="f-item-title2">丰富的机型配置，满足各种业务需求</p>
-                <p class="f-item-title3">国美云服务器采用Boardwell架构处理器、DDR4内存，更强的性能支撑，为您提供更好的计算服务。国美云服务器提供9种机型配置，满足各类使用场景需求。您可以按需选择机型，合理利用资源，充分节约成本。</p>
+                <p class="cloud-title-tow">&nbsp;&nbsp;计算</p>
+                <p class="cloud-title-three">丰富的机型配置，满足各种业务需求</p>
+                <p class="cloud-content">国美云服务器采用Boardwell架构处理器、DDR4内存，更强的性能支撑，为您提供更好的计算服务。国美云服务器提供9种机型配置，满足各类使用场景需求。您可以按需选择机型，合理利用资源，充分节约成本。</p>
                 <table class="f-table">
                   <thead class="f-thead">
                     <tr>
@@ -235,30 +251,30 @@
                     </tr>
                   </tbody>
                 </table>
-                <p class="f-item-title2">支持两种磁盘，满足不同场景I/O需求</p>
-                <p class="f-item-title3">国美云针对不同I/O性能需求，提供两种类型磁盘：普通盘、高速盘。<br />普通盘：针对非频繁读写磁盘数据的应用。如：中小型Web应用，小型关系数据库。<br />高速盘：针对频繁读写磁盘数据的应用。如：I/O密集型应用，NoSQL数据库，中大型关系数据库。</p>
+                <p class="cloud-title-three">支持两种磁盘，满足不同场景I/O需求</p>
+                <p class="cloud-content">国美云针对不同I/O性能需求，提供两种类型磁盘：普通盘、高速盘。<br />普通盘：针对非频繁读写磁盘数据的应用。如：中小型Web应用，小型关系数据库。<br />高速盘：针对频繁读写磁盘数据的应用。如：I/O密集型应用，NoSQL数据库，中大型关系数据库。</p>
             </div>
             <div>
-                <p class="f-item-title1">&nbsp;&nbsp;管理</p>
-                <p class="f-item-title2">提供系统常用指标监控，全面了解资源使用情况</p>
-                <p class="f-item-title3">自动创建多个系统监控项，用户无需任何配置，即可全面了解国美云主机资源使用情况，合理管理云资源。<br />国美云服务器监控项：CPU空闲率、内存可用率、网卡入流量、网卡出流量、磁盘IOPS。</p>
+                <p class="cloud-title-tow">&nbsp;&nbsp;管理</p>
+                <p class="cloud-title-three">提供系统常用指标监控，全面了解资源使用情况</p>
+                <p class="cloud-content">自动创建多个系统监控项，用户无需任何配置，即可全面了解国美云主机资源使用情况，合理管理云资源。<br />国美云服务器监控项：CPU空闲率、内存可用率、网卡入流量、网卡出流量、磁盘IOPS。</p>
 
-                <p class="f-item-title2">控制台、远程终端——便捷管理云服务器</p>
-                <p class="f-item-title3">国美云提供控制台及远程终端，让您管理更便捷。连接远程终端，您可以像管理传统服务器一样管理云服务器，在系统中执行各项操作；也可以通过控制台对云主机进行创建、重启、删除等便捷操作。</p>
+                <p class="cloud-title-three">控制台、远程终端——便捷管理云服务器</p>
+                <p class="cloud-content">国美云提供控制台及远程终端，让您管理更便捷。连接远程终端，您可以像管理传统服务器一样管理云服务器，在系统中执行各项操作；也可以通过控制台对云主机进行创建、重启、删除等便捷操作。</p>
             </div>
             <div>
-                <p class="f-item-title1">&nbsp;&nbsp;网络</p>
-                <p class="f-item-title2">私网IP和公网IP</p>
-                <p class="f-item-title3">用户可根据业务灵活配置私网IP和公网IP。<br />私网IP：云服务器创建成功后，会被赋予一个私网IP，该IP只能用于私网通信。<br />公网IP：云服务器可以通过绑定公网IP的方式，实现与Internet的通信。</p>
+                <p class="cloud-title-tow">&nbsp;&nbsp;网络</p>
+                <p class="cloud-title-three">私网IP和公网IP</p>
+                <p class="cloud-content">用户可根据业务灵活配置私网IP和公网IP。<br />私网IP：云服务器创建成功后，会被赋予一个私网IP，该IP只能用于私网通信。<br />公网IP：云服务器可以通过绑定公网IP的方式，实现与Internet的通信。</p>
 
-                <p class="f-item-title2">经典网络和专有网络——自由规划定制网络环境</p>
-                <p class="f-item-title3">经典网络：私网IP由国美云统一分配，无需网络配置。<br />专有网络：用户可按需自由规划、管理网络，选择网络地址，子网数量，路由等，定制度高，安全性更强。</p>
+                <p class="cloud-title-three">经典网络和专有网络——自由规划定制网络环境</p>
+                <p class="cloud-content">经典网络：私网IP由国美云统一分配，无需网络配置。<br />专有网络：用户可按需自由规划、管理网络，选择网络地址，子网数量，路由等，定制度高，安全性更强。</p>
             </div>   
         </div>
 
         <!-- 应用场景 -->
         <div class="apply-scene">
-            <p class="cloud-item-head"><span class="head-pic"></span>应用场景</p>
+            <p class="cloud-title-noe"><span class="cloud-title-noe-pic"></span>应用场景</p>
             <div class="apply-content">
                 <ul class="apply-tab">
                     <li class="apply-tab-li a-tab-active-0" >开发测试环境</li>
@@ -289,66 +305,28 @@
 
         <!-- 常见问题 -->
         <div class="faq">
-            <p class="cloud-item-head"><span class="head-pic"></span>常见问题</p>
-            <ul>
-                <li class="faq-q">什么是国美云服务器 (GCS)？</li>
-            </ul>
-            <p class="faq-a">云服务器（Gome Cloud Server, 简称GCS）,一种低开销，简单且高效的弹性计算服务。按照云服务器运行时长计费，几秒即可完成云服务器创建，无需考虑底层运维，方便您专注于业务创新。
+            <p class="cloud-title-noe"><span class="cloud-title-noe-pic"></span>常见问题</p>
+            
+            <p class="cloud-title-three">●&nbsp;&nbsp;什么是国美云服务器 (GCS)？</p>
+            <p class="cloud-content">云服务器（Gome Cloud Server, 简称GCS）,一种低开销，简单且高效的弹性计算服务。按照云服务器运行时长计费，几秒即可完成云服务器创建，无需考虑底层运维，方便您专注于业务创新。
             </p>
-            <ul>
-                <li class="faq-q" style="margin: 40px 0 0 20px;">使用国美云服务器如何收费？ </li>
-            </ul>   
-            <p class="faq-a">国美云服务器支持多种计费模式：<br />1.以实际用量付费，按小时计算，定价为每种实例所消耗的实例小时数，数据传输与磁盘单独计费。<br />
+
+            <p class="cloud-title-three">●&nbsp;&nbsp;使用国美云服务器如何收费？</p>
+            <p class="cloud-content">国美云服务器支持多种计费模式：<br />1.以实际用量付费，按小时计算，定价为每种实例所消耗的实例小时数，数据传输与磁盘单独计费。<br />
             2.包年包月付费，您可预先支付全额或一定比例的费用，同时享受优惠的折扣力度。<br />3.数据传输与磁盘单独计费。
             </p>
 
-            <ul>
-                <li class="faq-q" style="margin: 40px 0 0 20px;">应计费的GCS实例小时如何定义？</li>
-            </ul>
-            <p class="faq-a">您的实例处于<span style="color: #1dc3ed;">“power on”</span>态的任何时候都算作应计费的实例小时。如果您不再希望您的实例被收取费用，必须“停止”或“终止”该实例，以免产生更多应计费实例小时数。当实例进入运行状态时就会开始计费。
+            <p class="cloud-title-three">●&nbsp;&nbsp;应计费的GCS实例小时如何定义？</p>
+            <p class="cloud-content">您的实例处于<span style="color: #1dc3ed;">“power on”</span>态的任何时候都算作应计费的实例小时。如果您不再希望您的实例被收取费用，必须“停止”或“终止”该实例，以免产生更多应计费实例小时数。当实例进入运行状态时就会开始计费。
             </p>
         </div>
     </div>
     
-
+    <!-- footer -->
     <%- include('footer', {}) %>
     
     <script type="text/javascript" src="./js/jquery.js"></script>
-    <script src="./js/banner.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/common.js"></script>
     <script src="./js/cloud-server.js"></script>
-    <script type="text/javascript">
-
-        function pageScrollTop() {
-            var scrollTop = document.body.scrollTop;
-            if (scrollTop !== 0){
-                window.scrollBy(0,-100);
-                scrolldelay = setTimeout('pageScrollTop()',20);
-            }
-        }
-        function pageScrollBottom() {
-            document.body.scrollTop=document.body.scrollHeight;
-        }
-
-        function pageScrollHeight(high) {
-            var scrollH = document.body.scrollTop;
-            var cha = Math.abs(parseInt(high) - parseInt(scrollH));
-            if (scrollH < high && scrollH !== high){
-                window.scrollBy(0,100);
-                if(cha < 100) {
-                    scrollH = high;
-                }
-                setTimeout('pageScrollHeight('+ high +')',20);
-            } else if (scrollH > high && scrollH !== high) {
-                window.scrollBy(0,-100);
-                console.log('cha', cha);
-                if(cha < 100) {
-                    document.body.scrollTop = high;
-                } else {
-                    setTimeout('pageScrollHeight('+ high +')',20);
-                }
-            }
-        }
-    </script>
 </body>
 </html>
