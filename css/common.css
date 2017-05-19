@@ -37,6 +37,7 @@
 
 /* 段落间距，字体大小 */
 .cloud-title-noe {
+    font-family: 'PingFangSC-regular';
     font-size: 24px;
     margin: 0;
 }
