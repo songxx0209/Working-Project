@@ -236,6 +236,7 @@
 .p-tb-head {
     text-align: center;
     font-size: 16px;
+    font-weight: bold;
     color: #666;
     height: 60px;
     line-height: 60px;
@@ -272,6 +273,7 @@
 
 .faq {
     margin: 40px 0;
+    font-family: 'PingFang SC';
 }
 
 /* ------------------ */
@@ -320,8 +322,9 @@
         .apply-item-middle p {
             width: 160px;
             margin: 0 auto;
+            font-weight: bold;
             font-size: 16px;
-            color: #000;
+            color: #333;
         }
         .apply-conf {
             margin: 20px 0 0 20px;

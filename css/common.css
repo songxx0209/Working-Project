@@ -1,5 +1,5 @@
 * {
-    font-family: PingFangSC-Light,'helvetica neue','hiragino sans gb',arial,'microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+    font-family: 'PingFangSC-light','helvetica neue','hiragino sans gb','arial','microsoft yahei ui','microsoft yahei','simsun','sans-serif';
     margin: 0;
     padding: 0;
 }
@@ -223,7 +223,7 @@
     background-size: 100% 100%;
 }
 .banner-description-content {
-    width: 1000px;
+    width: 1030px;
     height: 118px;
     margin: 0px auto;
     padding: 105px 0;
