@@ -26,7 +26,7 @@ $(function() {
         }
     }
 
-
+    // 应用场景 交互效果
 	$('.apply-tab li').click(function() {
 		var _index=$(this).index();
 		if(_index === 0) {
@@ -58,7 +58,6 @@ $(function() {
 			var _index=$(this).index();
 			setTimeout(function () {
 				$(".cloud-menu-one ul li").eq(_index).attr('class', 'cloud-menu-one-active').siblings().attr('class', '');
-				// console.log($(this).index());
 		        $('.cloud-menu-tow > div').eq(_index).css('display','block').siblings().css('display','none');
 		    }, 200);
 			

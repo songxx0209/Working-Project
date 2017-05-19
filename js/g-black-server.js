@@ -26,7 +26,7 @@ $(function() {
         }
     }
 
-
+    // 应用场景 交互效果
 	$('.apply-tab li').click(function() {
 		var _index=$(this).index();
 		if(_index === 0) {

@@ -1,43 +1,7 @@
-.flow-msg {
-    position: fixed;
-    top: 60%;
-    right: 5px;
-    width: 40px;
-    height: 140px;
-    background: #000;
-    z-index: 999;
-}
-.connect-us {
-    width: 20px;
-    height: 90px;
-    padding: 5px 10px;
-    word-wrap: break-word;
-    color: white;
-    text-align: center;
-    background: #4fd1d9;
-}
-.back-top {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    background: url('../images/home/up.png') no-repeat 0 -87px;
-}
-.back-top a {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-}
+/*  header  */
 .header {
     width: 100%;
-    height: 574px;
-    background: url('../images/home/banner-bg.png') no-repeat;
-    background-size: 100% 100%;
-}
-/*  header  */
-* {
-    font-family: PingFangSC-Light,'helvetica neue','hiragino sans gb',arial,'microsoft yahei ui','microsoft yahei',simsun,sans-serif;
-    margin: 0;
-    padding: 0;
+    height: 66px;
 }
 .hd {
     width: 100%;
@@ -49,20 +13,7 @@
     z-index: 1000;
     background: #373a3f;
 }
-/*.content-bg {
-    width: 100%;
-    height: 0;
-    transition:height .2s, background .2s;
-    -moz-transition:height .2s, background .2s;
-    -webkit-transition:height .2s, background .2s;
-    -o-transition:height .2s, background .2s;
-    transition-timing-function: cubic-bezier(.2,1,.3,1);
-    -webkit-transition-timing-function: cubic-bezier(.2,1,.3,1);
-}
-.content-bg-hover {
-    height: 66px;
-    background: #373a3f;
-}*/
+
 .container {
     width: 1360px;
     margin: 0 auto;
@@ -214,7 +165,6 @@
     padding: 0;
 }
 .menu-three li {
-    /*color: white;*/
     position: relative;
     list-style: none;
     padding: 10px;
@@ -249,6 +199,8 @@
     height: 560px;
     overflow: hidden;
     position: relative;
+    background: url('../images/home/banner-bg.png') no-repeat;
+    background-size: 100% 100%;
 }
 .b-img {
     width: 100%;
@@ -316,8 +268,6 @@
     display: block;
     cursor: pointer;
     width: 14px;
-    /*height: 14px;
-    border-radius: 50%;*/
     border: 3px solid #fff;
     float: left;
     margin: 0 5px;
@@ -637,131 +587,7 @@
     text-align: center;
     float: left;
 }
-.register {
-    width: 100%;
-    height: 220px;
-    background: url('../images/home/zhuce.png');
-    background-color: #1dc3ed;
-}
-.r-title {
-    font-size: 25px;
-    padding: 50px 0;
-    text-align: center;
-}
-.r-title p {
-    padding-bottom: 15px;
-    color: white;
-}
-.r-btn {
-    width: 180px;
-    height: 44px;
-    display: block;
-    margin: 0 auto;
-}
-.r-btn div {
-    height: 44px;
-    background: url('../images/home/sign-up-right-away.png');
-}
-.r-btn div:hover {
-    height: 44px;
-    background: url('../images/home/sign-up-right-away-white.png');
-}
-/* footer */
-.footer {
-    width: 100%;
-    height: 484px;
-    background: #373737;
-}
-.footer-container {
-    height: 484px;
-}
-.f-content {
-    width: 1200px;
-    height: 320px;
-    margin: 0px auto;
-    padding-top: 80px;
-}
-.f-item {
-    width: 200px;
-    height: 320px;
-    margin: 0 50px;
-    padding: 0;
-    color: #ffffff;
-    float: left;
-}
-.f-item span {
-    color: #d8d8d8;
-}
-.f-item p {
-    color: #b2b2b2;
-    font-size: 12px;
-    padding: 3px 0;
-}
-.f-item hr {
-    display: block;
-    margin: 20px 0;
-    height:01px;
-    border:none;
-}
-.f-item a {
-    text-decoration:none;
-    color: #1dc3ed;
-}
-.contact-icon {
-    width: 110px;
-    height: 23px;
-    margin: 0 auto;
-}
-.f-c-icon {
-    width: 24px;
-    height: 23px;
-    display: block;
-    float: left;
-    margin-right: 10px;
-}
-.contact-icon span {
-    display: block;
-    height: 23px;
-    line-height: 23px;
-    font-size: 12px;
-    float: left;
-}
-.qrcode {
-    width: 90px;
-    height: 90px;
-    border: 1px solid #939393;
-    margin: 24px auto 0;
-    padding: 6px;
-}
-.qrcode img {
-    width:100%;
-    height: 100%;
-    display: block;
-}
-.f-q-notice {
-    display: block;
-    text-align: center;
-    font-size: 12px;
-    margin-top: 5px;
-}
-.f-down {
-    height: 84px;
-    box-sizing: border-box;
-    border-top: 1px solid #aeaeae;
-    /*background-color: lightblue;*/
-}
-.f-d-content {
-    width: 900px;
-    height: 84px;
-    margin: 0 auto;
-    text-align: center;
-}
-.f-d-item {
-    height: 84px;
-    line-height: 84px;
-    color: #aeaeae;
-    font-size: 14px;
-}
+
 @media (max-width: 1370px){
     .hd-container, .container {
         width: 1200px;
@@ -799,7 +625,7 @@
     }
 }
 @media (max-width: 1200px){
-    .computing, .solvePlan, .partner, .register, .footer {
+    .computing, .solvePlan, .partner {
         width: 1200px;
     }
     .upIcon {

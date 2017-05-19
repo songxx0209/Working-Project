@@ -4,17 +4,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta charset="utf-8" />
 	<title>国美云 - 解决一切不可能</title>
-	<link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="icon" href="./images/home/favicon.png">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" href="./css/common.css">
 </head>
 <body>
+    <!-- 联系我们，回到顶部 -->
     <div class="flow-msg">
         <div class="connect-us" onClick="pageScrollBottom()">联系我们</div>
         <div class="back-top"><a onClick="pageScrollTop()"></a></div>
     </div>
+
 	<!-- header -->
     <%- include('header', {}) %>
-	
+
+	<!-- Banner -->
+    <div class="banner">
+        <div class="b-img">
+            <div class="b-outer">
+                <div class="b-container">
+                    <div class="b-left">
+                        <h3>云服务器 (EC2) </h3>
+                        <p>一种低开消，简单且高效且弹性的计算服务</p>
+                        <a class="b-btn"></a>
+                    </div>
+                    <div class="b-right"></div>
+                </div>
+            </div>
+            <!-- <div class="b-outer">
+                <a href="#" style="background:url(./images/banner1.jpg) center no-repeat; background-size: 100%;"></a>
+            </div>
+            <div class="b-outer">
+                <a href="#" style="background:url(./images/banner2.jpg) center no-repeat; background-size: cover;"></a>
+            </div> -->
+        </div>
+        <div class="b-list"></div>
+        <!-- <a class="bar-left" href="#"><em></em></a><a class="bar-right" href="#"><em></em></a> -->
+    </div>
+
     <!-- 活动信息 -->
     <div class="activeInfo">
     	<div class="container">
@@ -170,19 +197,6 @@
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script src="./js/banner.js"></script>
     <script src="./js/main.js"></script>
-    <script type="text/javascript">
-        function pageScrollTop() {
-            var scrollTop = document.body.scrollTop;
-            // var contentHeight = document.body.scrollHeight;
-            console.log('23232323');
-            if (scrollTop !== 0){
-                window.scrollBy(0,-100);
-                scrolldelay = setTimeout('pageScrollTop()',20);
-            } 
-        }
-        function pageScrollBottom() {
-            document.body.scrollTop=document.body.scrollHeight;
-        }
-    </script>
+    <script src="./js/common.js"></script>
 </body>
 </html>
