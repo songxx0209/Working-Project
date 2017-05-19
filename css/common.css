@@ -1,5 +1,5 @@
 * {
-    font-family: 'PingFangSC-light','helvetica neue','hiragino sans gb','arial','microsoft yahei ui','microsoft yahei','simsun','sans-serif';
+    font-family: 'microsoft yahei ui','PingFangSC-light','helvetica neue','hiragino sans gb','arial','microsoft yahei','simsun','sans-serif';
     margin: 0;
     padding: 0;
 }
@@ -37,7 +37,6 @@
 
 /* 段落间距，字体大小 */
 .cloud-title-noe {
-    font-family: 'PingFangSC-regular';
     font-size: 24px;
     margin: 0;
 }
