@@ -1,0 +1,15 @@
+#main {
+  border: 1px solid black;
+  height: 200px;
+}
+#main p {
+  font-size: 20px;
+  color: red;
+}
+#main div {
+  width: 200px;
+  height: 200px;
+}
+#main div p {
+  font-size: 20px;
+}
