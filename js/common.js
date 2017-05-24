@@ -1,18 +1,24 @@
 
 $(function() {
 
+	var timer = null;
 	$(".nav-left .left-item:eq(0)").mouseover(function(){
-		var _index=$(this).index();
-		if(_index === 0){
+		clearTimeout(timer);
+		// var _index=$(this).index();
+		// if(_index === 0){
 			$('.nav-menu').css('display', 'block');
-		}	
+		// }	
 	})
 
-	$(".nav-left > div").mouseout(function() {
-		var _index=$(this).index();
-		if(_index === 0){
-			$('.nav-menu').css('display', 'none');
-		}
+	$(".nav-left > div:eq(0)").mouseout(function() {
+		// var _index=$(this).index();
+		// if(_index === 0){
+			timer = setTimeout(function() {
+				console.log('23');
+				$('.nav-menu').css('display', 'none');
+			},300);
+			
+		// }
 	})
 
 	// 一级导航
@@ -26,15 +32,24 @@ $(function() {
 		}
 	)
 
+	var subTimer = null;
 	// 二级导航
 	$(".menu-three ul li").mouseover(function(){
 			var _index=$(this).index();
-			setTimeout(function () {
+			subTimer = setTimeout(function () {
 				$(".menu-three ul li").eq(_index).attr('class', 'menu-three-active').siblings().attr('class', '');
 				$('.menu-four > div').eq(_index).css('display','block').siblings().css('display','none');
-			}, 200);	
+			}, 150);	
 		}
 	)
+
+	$(".menu-three ul li").mouseout(function(){
+		clearTimeout(subTimer);
+	})
+
+
+
+
 })
 
 function pageScrollTop() {

@@ -64,15 +64,20 @@ $(function() {
 		}
 	)
 
+	var subTimer = null;
 	// 二级导航
 	$(".cloud-menu-three ul li").mouseover(function(){
 			var _index=$(this).index();
-			setTimeout(function () {
+			subTimer = setTimeout(function () {
 				$(".cloud-menu-three ul li").eq(_index).attr('class', 'cloud-menu-three-active').siblings().attr('class', '');
 				$('.cloud-menu-four > div').eq(_index).css('display','block').siblings().css('display','none');
 			}, 200);	
 		}
 	)
+
+	$(".cloud-menu-three ul li").mouseout(function(){
+		clearTimeout(subTimer);
+	})
 
 
 })
