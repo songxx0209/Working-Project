@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8" />
+	<title>国美云 - 解决一切不可能</title>
+	<link rel="icon" href="./images/home/favicon.png">
+	<link rel="stylesheet" href="./css/common.min.css">
+	<link rel="stylesheet" href="./css/cloudcomputeserver/vpc.min.css">
+</head>
+
+<body>
+    <!-- 联系我们，回到顶部 -->
+    <div class="flow-msg">
+        <div class="connect-us" onClick="pageScrollBottom()">联系我们</div>
+        <div class="back-top"><a onClick="pageScrollTop()"></a></div>
+    </div>
+    <!-- header -->
+    <%- include('header.ejs', {}) %>
+    
+    <!-- banner -->
+	<div class="banner-description">
+	    <div class="banner-description-content">
+	        <div style="width: 110px;height: 110px;float: left;margin-right: 40px;">
+	            <img src="./images/newPage/VPC.png" style="width: 100%; height: 100%;">
+	        </div>
+	        <div style="width: 870px;height: 110px;float: left;">
+	            <p style="font-size: 38px;color: #333;">虚拟专用网络 VPC</p>
+	            <p style="font-size: 16px; color: #333;margin-top: 15px;">虚拟专用网络（Virtual Private Cloud，简称VPC），提供一个国美云专属的网络环境，可以自定义IP地址范围、网段和网关等。基于国美云网络，您可以创建国美云资源，包括云服务器、负载均衡等等。</p>
+	        </div>
+	    </div>
+	</div>
+
+	<!-- 云服务~导航 -->
+    <%- include('subnav.ejs', {user:{
+        product: 420,
+        fun: 1260,
+        apply: 1860,
+        faq: 2380
+    }}) %>
+	
+	<!-- 云服务·介绍 -->
+    <div class="cloud-body">
+
+        <!-- 产品介绍 -->
+        <div class="product-introduction">
+            <p class="cloud-title-noe"><span class="cloud-title-noe-pic"></span>产品概述</p>
+
+            <table class="p-table">
+                <thead class="p-thead">
+                    <tr>
+                        <th style="width: 200px;text-align: center;"></th>
+                        <td style="width: 205px;text-align: center;text-align: center;">国美云VPC</td>
+                        <td style="width: 100px;text-align: center;"></td>
+                        <td style="width: 190px;text-align: center;text-align: center;">传统网络架构</td>
+                        <td style="width: 100px;text-align: center;"></td>
+                    </tr>
+                </thead>
+                <tbody class="p-tb">
+                    <tr style="height: 20px;"></tr>
+                    <tr>
+                        <th class="p-tb-head"><span class="p-tb-head-icon" style="background: url('./images/newPage/slb.png') no-repeat;"></span><span class="p-tb-head-content">易用性</span></th>
+                        <td class="p-tb-content">短短十几分钟即可在控制台上完成VPC的创建</td>
+                        <td class="p-tb-content"></td>
+                        <td class="p-tb-content">配置传统网络设备，上架时间周期长</td>
+                        <td class="p-tb-content"></td>
+                    </tr>
+                    <tr class="p-space"></tr>
+                    <tr>
+                        <th class="p-tb-head"><span class="p-tb-head-icon" style="background: url('./images/newPage/cost.png') no-repeat;"></span class="p-tb-head-content"><span class="p-tb-head-content">安全性</span></th>
+                        <td class="p-tb-content">完全属于业务的专有网络，在控制台中可以自由定义安全策略，无需担心安全问题</td>
+                        <td class="p-tb-content"></td>
+                        <td class="p-tb-content">采购防火墙等设备保障网络安全，同时提供专业网络工程师配置安全策略</td>
+                        <td class="p-tb-content"></td>
+                    </tr>
+                    <tr class="p-space"></tr>
+                    <tr>
+                        <th class="p-tb-head"><span class="p-tb-head-icon" style="background: url('./images/newPage/cost.png') no-repeat;"></span class="p-tb-head-content"><span class="p-tb-head-content">成本</span></th>
+                        <td class="p-tb-content">专有网络完全免费，只需要支付部署在专有网络中其他资源的费用</td>
+                        <td class="p-tb-content"></td>
+                        <td class="p-tb-content">交换机、路由器、防火墙等网络设备采购费用高昂</td>
+                        <td class="p-tb-content"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 功能介绍 -->
+        <div class="function-introduction">
+            <p class="cloud-title-noe"><span class="cloud-title-noe-pic"></span>功能介绍</p>
+            <p class="cloud-title-tow" style="margin-top: 20px;">&nbsp;&nbsp;安全性</p>
+            <p class="cloud-title-three">二层逻辑隔离，安全可靠</p>
+            <p class="cloud-content">基于OverLay技术在物理网络基础上构建虚拟网络。使用Vxlan协议对每个VPC网络进行隔离，不同VPC之间保证二层逻辑隔离，在未经允许前提下无法进行通信。</p>
+
+            <p class="cloud-title-tow">&nbsp;&nbsp;灵活性</p>
+            <p class="cloud-title-three">自定义网络环境，满足多种业务场景</p>
+            <p class="cloud-content">可以根据业务需求，将专有网络的私有IP地址划分成一个或多个子网，根据需要将应用程序和其他服务部署在不同子网中。</p>
+            <p class="cloud-title-three">按需绑定弹性IP，随时与公网互联</p>
+            <p class="cloud-content">按需绑定弹性IP到相同地域下VPC内云服务器上，即可实现与公网互连。针对没有访问公网需求的云服务器，可以不绑定弹性IP，该类云服务器将只能进行内网通信。</p>
+
+            <p class="cloud-title-tow">&nbsp;&nbsp;易用性</p>
+            <p class="cloud-title-three">在控制台上即可完成VPC管理,方便快捷</p>
+            <p class="cloud-content">您通过国美云控制台即可完成VPC创建，无需繁琐的配置，仅十几分钟即可完成创建，后续管理VPC也可通过控制台进行。</p>
+        </div>
+
+        <!-- 应用场景 -->
+        <div class="apply-scene">
+        	<p class="cloud-title-noe"><span class="cloud-title-noe-pic"></span>应用场景</p>
+            <div class="apply-content">
+                <div class="a-c-top">
+                    <div>
+                        <p>在VPC中构建属于不同可用区的两个子网，分别在不同子网中部署Web服务器以及数据库。数据库通过内网与Web服务器进行交互，Web服务器通过负载均衡与互联网进行交互。在提高应用可用性的同时，也保障了内部服务的安全性。</p>
+                        <p class="apply-conf"><span class="apply-conf-title">推荐配置：</span><span style="font-weight: bold;font-size: 12px;">VPC+GCS+GLB</span></p>
+                    </div>
+                </div>
+                <div class="a-c-down">
+                    <img src="./images/newPage/vpc-apply.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- 常见问题 -->
+        <div class="faq">
+            <p class="cloud-title-noe"><span class="cloud-title-noe-pic"></span>常见问题</p>
+
+            <p class="cloud-title-three" style="margin-top: 20px;"><span style="font-size: 14px;">●</span>&nbsp;&nbsp;VPC的使用如何收费？</p>
+            <p class="cloud-content">VPC完全免费，您只需支付部署在VPC环境内部的其他资源费用，如云服务器，云硬盘，负载均衡等。</p>
+
+            <p class="cloud-title-three" style="margin-top: 30px;"><span style="font-size: 14px;">●</span>&nbsp;&nbsp;VPC 中的实例如何访问 Internet？</p>
+            <p class="cloud-content">您可以使用弹性IP地址（Elastic IP，EIP）让VPC中的云服务器直接与Internet 进行出站通信，以及从 Internet（例如 Web 服务器）接收主动提供的入站流量。</p>
+        </div>
+    </div>
+
+	<!-- footer -->
+    <%- include('footer.ejs', {}) %>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script type="text/javascript" src="./js/cloudcomputeserver/gomeglb.js"></script>
+</body>
+
+</html>
