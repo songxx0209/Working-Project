@@ -1,15 +1,37 @@
-var ejs = require("gulp-ejs")
-var gulp = require("gulp")
+var gulp = require("gulp");
+var ejs = require("gulp-ejs");
 var uglify = require('gulp-uglify');
 
-var gulp = require('gulp');
 var rev = require('gulp-rev');
-var clean = require('gulp-clean');
+var clean = require('gulp-clean');  // 删除文件
 var connect = require('gulp-connect');
 
+var cleanCSS = require('gulp-clean-css');  // 压缩css文件
+var rename = require("gulp-rename");  // 文件重命名
+var less = require('gulp-less');  // 使用less
+var path = require('path');
 
-gulp.task('css', function () {
-    return gulp.src('css/*.css')
+gulp.task('less', function () {
+  return gulp.src([ './less/*.less', './less/**/*.less'])
+    .pipe(less({
+      paths: [ path.join(__dirname, 'less', 'includes') ]
+    }))
+    .pipe(gulp.dest('css'));
+});
+
+gulp.task('minify-css', ['less'], function() {
+  return gulp.src(['css/*.css', 'css/**/*.css','!css/*.min.css', '!css/**/*.min.css'])
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(rename(function (path) {
+        // path.dirname += "/ciao";
+        // path.basename += "-goodbye";
+        path.extname = ".min.css"
+    }))
+    .pipe(gulp.dest('css'));
+});
+
+gulp.task('css', ['minify-css'], function () {
+    return gulp.src(['css/*.min.css', 'css/**/*.min.css'])
         .pipe(rev())
         .pipe(gulp.dest('temp/css'))
         .pipe( rev.manifest() )
@@ -19,7 +41,7 @@ gulp.task('css', function () {
 gulp.task('scripts', function () {
     return gulp.src('js/*.js')
         .pipe(rev())
-        // .pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('temp/js'))
         .pipe( rev.manifest() )
         .pipe( gulp.dest( 'rev/js' ) );
@@ -34,7 +56,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('ejs', function(){
-    return gulp.src(['templates/*.ejs'])
+    return gulp.src(['templates/*.ejs','!./templates/footer.ejs', '!./templates/header.ejs', '!./templates/subnav.ejs'])
         .pipe(ejs({
         }, {}, {ext: '.html'}))
         .pipe( gulp.dest('temp/templates') );
@@ -44,7 +66,7 @@ var revCollector = require('gulp-rev-collector');
 var minifyHTML   = require('gulp-minify-html');
 
 gulp.task('rev-css', ['css', 'images'], function () {
-    return gulp.src(['rev/**/*.json', 'temp/css/*.css'])
+    return gulp.src(['rev/**/*.json', 'temp/css/*.css', 'temp/css/**/*.css'])
         .pipe( revCollector({
             replaceReved: true,
             dirReplacements: {
@@ -63,7 +85,6 @@ gulp.task('rev-js', ['scripts', 'images'], function () {
         .pipe( gulp.dest('dist/js') );
 });
 
-
 gulp.task('rev', ['rev-css', 'rev-js', 'ejs'], function () {
     return gulp.src(['rev/**/*.json', 'temp/templates/*.html'])
         .pipe( revCollector({
@@ -81,10 +102,14 @@ gulp.task('rev', ['rev-css', 'rev-js', 'ejs'], function () {
         .pipe( gulp.dest('dist/templates') );
 });
 
+gulp.task('del', function () {
+    return gulp.src(['dist', 'temp', 'rev'], {read: false})
+        .pipe(clean());
+});
+
 gulp.task('reload', ['rev'], function(){
     return gulp.src('./dist/templates/*.html').pipe(connect.reload());
 })
-
 
 gulp.task('connect', function() {
   connect.server({
@@ -93,22 +118,18 @@ gulp.task('connect', function() {
   });
 });
 
-
-gulp.task('default', ['rev', 'connect', 'watch'], function() {
-    return gulp.src('temp')
-        .pipe(clean({}))
-
+gulp.task('default', ['rev'], function() {
+    gulp.start('connect', 'watch');
 });
 
-gulp.task('deploy', ['rev'], function(){
-    return gulp.src('temp')
-        .pipe(clean({}))
+gulp.task('deploy',['del'], function(){
+    gulp.start('rev');
 })
 
 gulp.task('watch', function () {
 
     gulp.watch('templates/*.ejs', ['reload']);
-    gulp.watch('css/*.css', ['reload']);
+    gulp.watch(['css/*.css', 'css/**/*.css','!css/*.min.css', '!css/**/*.min.css'], ['reload']);
     gulp.watch('js/*.js', ['reload']);
 });
 
