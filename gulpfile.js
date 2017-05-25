@@ -39,7 +39,7 @@ gulp.task('css', ['minify-css'], function () {
 });
 
 gulp.task('scripts', function () {
-    return gulp.src('js/*.js')
+    return gulp.src(['js/*.js', 'js/**/*.js'])
         .pipe(rev())
         .pipe(uglify())
         .pipe(gulp.dest('temp/js'))
@@ -76,7 +76,7 @@ gulp.task('rev-css', ['css', 'images'], function () {
 });
 
 gulp.task('rev-js', ['scripts', 'images'], function () {
-    return gulp.src(['rev/**/*.json', 'temp/js/*.js'])
+    return gulp.src(['rev/**/*.json', 'temp/js/*.js', 'temp/js/**/*.js'])
         .pipe( revCollector({
             replaceReved: true,
             dirReplacements: {
@@ -127,10 +127,10 @@ gulp.task('deploy',['del'], function(){
 })
 
 gulp.task('watch', function () {
-
     gulp.watch('templates/*.ejs', ['reload']);
+    gulp.watch(['less/*.less', 'less/**/*.less'], ['reload']);
     gulp.watch(['css/*.css', 'css/**/*.css','!css/*.min.css', '!css/**/*.min.css'], ['reload']);
-    gulp.watch('js/*.js', ['reload']);
+    gulp.watch(['js/*.js', 'js/**/*.js'], ['reload']);
 });
 
 

@@ -1,9 +1,48 @@
 
-$(function() {
+var funHigt = $('.function-introduction').offset().top - 80;
+var applyHigt = $('.apply-scene').offset().top - 80;
+var faqHigt = $('.faq').offset().top - 80;
+var subLiEle = document.getElementsByClassName('c-m-b-li');
 
+subLiEle[0].onclick = function () {
+	pageScrollHeight(400);
+}
+subLiEle[1].onclick = function () {
+	pageScrollHeight(funHigt);
+} 
+subLiEle[2].onclick = function () {
+	pageScrollHeight(applyHigt);
+} 
+subLiEle[3].onclick = function () {
+	pageScrollHeight(faqHigt);
+}
+
+function pageScrollHeight(high) {
+    var scrollH = document.body.scrollTop;
+    var dValue = Math.abs(parseInt(high) - parseInt(scrollH));
+    if (scrollH < high && scrollH !== high){
+        window.scrollBy(0,100);
+        if(dValue < 100) {
+            scrollH = high;
+        }
+        setTimeout('pageScrollHeight('+ high +')',20);
+    } else if (scrollH > high && scrollH !== high) {
+        window.scrollBy(0,-100);
+        if(dValue < 100) {
+            document.body.scrollTop = high;
+        } else {
+            setTimeout('pageScrollHeight('+ high +')',20);
+        }
+    }
+}
+
+
+$(function() {
 	// 检测滚动条位置
 	window.onscroll = function () {
+		// console.log('ssse', higt);
         var scrollTop = document.body.scrollTop;
+        // console.log(scrollTop);
         if (scrollTop >= 394) {
             $('.cloud-head').attr('class', 'cloud-head c-fixed');
             $('.cloud-product-menu').css('display', 'block');
@@ -15,17 +54,17 @@ $(function() {
             $('.cloud-head').attr('class', 'cloud-head');
             $('.cloud-menu-box li:eq(0)').attr('class', 'c-m-b-li').siblings().attr('class', 'c-m-b-li');
         }
-        if (scrollTop >= 720) {
+        if (scrollTop >= funHigt) {
         	$('.cloud-menu-box li:eq(1)').attr('class', 'c-m-b-li c-m-b-active').siblings().attr('class', 'c-m-b-li');
         } 
-        if(scrollTop >= 840) {
+        if(scrollTop >= applyHigt) {
         	$('.cloud-menu-box li:eq(2)').attr('class', 'c-m-b-li c-m-b-active').siblings().attr('class', 'c-m-b-li');
         } 
-        if(scrollTop >= 1120) {
+        if(scrollTop >= faqHigt) {
         	$('.cloud-menu-box li:eq(3)').attr('class', 'c-m-b-li c-m-b-active').siblings().attr('class', 'c-m-b-li');
         }
     }
-
+    
     // 应用场景 交互效果
 	$('.apply-tab li').click(function() {
 		var _index=$(this).index();
@@ -43,7 +82,6 @@ $(function() {
 		var _index=$(this).index();
 		$(this).attr('class', 'c-m-b-li c-m-b-active').siblings().attr('class', 'c-m-b-li');
 	});
-
 
 	// 控制导航栏显示
 	$(".cloud-product-menu").mouseover(function(){
@@ -71,7 +109,7 @@ $(function() {
 			subTimer = setTimeout(function () {
 				$(".cloud-menu-three ul li").eq(_index).attr('class', 'cloud-menu-three-active').siblings().attr('class', '');
 				$('.cloud-menu-four > div').eq(_index).css('display','block').siblings().css('display','none');
-			}, 200);	
+			}, 200);
 		}
 	)
 
@@ -81,3 +119,4 @@ $(function() {
 
 
 })
+
