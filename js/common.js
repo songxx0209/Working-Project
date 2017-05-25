@@ -48,8 +48,6 @@ $(function() {
 	})
 
 
-
-
 })
 
 function pageScrollTop() {
@@ -61,23 +59,4 @@ function pageScrollTop() {
 }
 function pageScrollBottom() {
     document.body.scrollTop=document.body.scrollHeight;
-}
-
-function pageScrollHeight(high) {
-    var scrollH = document.body.scrollTop;
-    var cha = Math.abs(parseInt(high) - parseInt(scrollH));
-    if (scrollH < high && scrollH !== high){
-        window.scrollBy(0,100);
-        if(cha < 100) {
-            scrollH = high;
-        }
-        setTimeout('pageScrollHeight('+ high +')',20);
-    } else if (scrollH > high && scrollH !== high) {
-        window.scrollBy(0,-100);
-        if(cha < 100) {
-            document.body.scrollTop = high;
-        } else {
-            setTimeout('pageScrollHeight('+ high +')',20);
-        }
-    }
 }

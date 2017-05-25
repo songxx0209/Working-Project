@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta charset="utf-8" />
@@ -21,24 +20,19 @@
     
     <!-- banner -->
 	<div class="banner-description">
-	    <div class="banner-description-content">
-	        <div style="width: 110px;height: 110px;float: left;margin-right: 40px;">
+	    <div class="banner-description-container">
+	        <div class="banner-description-icon">
 	            <img src="./images/newPage/GBS.png" style="width: 100%; height: 100%;">
 	        </div>
-	        <div style="width: 870px;height: 110px;float: left;">
-	            <p style="font-size: 38px;color: #333;">国美云硬盘 GBS</p>
-	            <p style="font-size: 16px; color: #333;margin-top: 15px;">国美云硬盘（Gome Block Storage）,为国美云服务器提供持久便捷的块存储，用户可以像使用物理块设备一样来使用国美云硬盘，国美云硬盘会在其可用区内自动复制多份数据副本，防止硬件损坏导致的数据不可用，从而提升应用性能。</p>
+	        <div class="banner-description-content">
+	            <p class="b-d-c-title">国美云硬盘 GBS</p>
+	            <p class="b-d-c-font">国美云硬盘（Gome Block Storage）,为国美云服务器提供持久便捷的块存储，用户可以像使用物理块设备一样来使用国美云硬盘，国美云硬盘会在其可用区内自动复制多份数据副本，防止硬件损坏导致的数据不可用，从而提升应用性能。</p>
 	        </div>
 	    </div>
 	</div>
 	
     <!-- 云服务~导航 -->
-    <%- include('subnav.ejs', {user:{
-        product: 420,
-        fun: 720,
-        apply: 840,
-        faq: 1120
-    }}) %>
+    <%- include('subnav.ejs', {}) %>
 	
 	<!-- 云服务·介绍 -->
     <div class="cloud-body">
@@ -135,7 +129,7 @@
     <%- include('footer.ejs', {}) %>
     <script type="text/javascript" src="./js/jquery.js"></script>
 	<script type="text/javascript" src="./js/common.js"></script>
-	<script type="text/javascript" src="./js/gomecomputeserver/gomegbs.js"></script>
+	<script type="text/javascript" src="./js/cloudcomputeserver/cloudcomputing.js"></script>
 </body>
 
 </html>

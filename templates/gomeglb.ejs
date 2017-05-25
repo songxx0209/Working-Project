@@ -8,30 +8,6 @@
 	<link rel="icon" href="./images/home/favicon.png">
 	<link rel="stylesheet" href="./css/common.min.css">
 	<link rel="stylesheet" href="./css/cloudcomputeserver/glb.min.css">
-    <style>
-        .product-pic {
-            border: 1px solid #f0f0f0;
-            width: 100%;
-            height: 500px;
-            margin-top: 20px;
-            position: relative;
-        }
-        .product-pic img {
-            position: relative;
-            left: 280px;
-            top: 50px;
-        }
-        .apply-pic {
-            height: 341px;
-            position: relative;
-            text-align: center;
-            clear: both;
-        }
-        .apply-pic img {
-            position: relative;
-            top: 40px;
-        }
-    </style>
 </head>
 
 <body>
@@ -44,25 +20,20 @@
     <%- include('header.ejs', {}) %>
     
     <!-- banner -->
-	<div class="banner-description">
-	    <div class="banner-description-content">
-	        <div style="width: 110px;height: 110px;float: left;margin-right: 40px;">
-	            <img src="./images/newPage/GLB.png" style="width: 100%; height: 100%;">
-	        </div>
-	        <div style="width: 870px;height: 110px;float: left;">
-	            <p style="font-size: 38px;color: #333;">负载均衡 GLB</p>
-	            <p style="font-size: 16px; color: #333;margin-top: 15px;">负载均衡（Gome Load Balancer, 简称GLB），是一种将传入流量自动分发到后端多台云服务器上的负载均衡服务。通过流量的均衡分发承载较大规模的流量，扩充系统对外服务能力。通过消除单点故障隐患，提升服务对外可用性。</p>
-	        </div>
-	    </div>
-	</div>
+    <div class="banner-description">
+        <div class="banner-description-container">
+            <div class="banner-description-icon">
+                <img src="./images/newPage/GBS.png" style="width: 100%; height: 100%;">
+            </div>
+            <div class="banner-description-content">
+                <p class="b-d-c-title">负载均衡 GLB</p>
+                <p class="b-d-c-font">负载均衡（Gome Load Balancer, 简称GLB），是一种将传入流量自动分发到后端多台云服务器上的负载均衡服务。通过流量的均衡分发承载较大规模的流量，扩充系统对外服务能力。通过消除单点故障隐患，提升服务对外可用性。</p>
+            </div>
+        </div>
+    </div>
 
 	<!-- 云服务~导航 -->
-    <%- include('subnav.ejs', {user:{
-        product: 420,
-        fun: 1260,
-        apply: 1860,
-        faq: 2380
-    }}) %>
+    <%- include('subnav.ejs', {}) %>
 	
 	<!-- 云服务·介绍 -->
     <div class="cloud-body">
@@ -163,7 +134,7 @@
     <%- include('footer.ejs', {}) %>
     <script type="text/javascript" src="./js/jquery.js"></script>
 	<script type="text/javascript" src="./js/common.js"></script>
-	<script type="text/javascript" src="./js/cloudcomputeserver/gomeglb.js"></script>
+	<script type="text/javascript" src="./js/cloudcomputeserver/cloudcomputing.js"></script>
 </body>
 
 </html>

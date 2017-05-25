@@ -479,19 +479,40 @@
     background: url("../images/newPage/banner.png") no-repeat;
     background-size: 100% 100%;
 }
-.banner-description-content {
+.banner-description-container {
     width: 1030px;
     height: 118px;
     margin: 0px auto;
     padding: 105px 0;
 }
+.banner-description-icon {
+    width: 110px;
+    height: 110px;
+    float: left;
+    margin-right: 40px;
+}
+.banner-description-content {
+    width: 870px;
+    height: 110px;
+    float: left;
+}
+.b-d-c-title {
+    font-size: 38px;
+    color: #333;
+}
+.b-d-c-font {
+    font-size: 16px;
+    color: #333;
+    margin-top: 15px;
+}
+
 @media (max-width: 1200px){
     .banner-description, .register, .footer {
         width: 1200px;
     }
 }
 
-/* 二级导航 */
+/* 云计算服务-子级导航 */
 .c-outer {
     height: 66px;
 }
@@ -561,7 +582,7 @@
 }
 .cloud-product-menu {
     text-align: left;
-    width: 120px;
+    width: 150px;
     position: absolute;
     top: 0;
     height: 50px;

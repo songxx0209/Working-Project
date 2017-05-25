@@ -130,7 +130,7 @@ gulp.task('watch', function () {
     gulp.watch('templates/*.ejs', ['reload']);
     gulp.watch(['less/*.less', 'less/**/*.less'], ['reload']);
     gulp.watch(['css/*.css', 'css/**/*.css','!css/*.min.css', '!css/**/*.min.css'], ['reload']);
-    gulp.watch('js/*.js', ['reload']);
+    gulp.watch(['js/*.js', 'js/**/*.js'], ['reload']);
 });
 
 

@@ -20,25 +20,20 @@
     <%- include('header.ejs', {}) %>
     
     <!-- banner -->
-	<div class="banner-description">
-	    <div class="banner-description-content">
-	        <div style="width: 110px;height: 110px;float: left;margin-right: 40px;">
-	            <img src="./images/newPage/VPC.png" style="width: 100%; height: 100%;">
-	        </div>
-	        <div style="width: 870px;height: 110px;float: left;">
-	            <p style="font-size: 38px;color: #333;">虚拟专用网络 VPC</p>
-	            <p style="font-size: 16px; color: #333;margin-top: 15px;">虚拟专用网络（Virtual Private Cloud，简称VPC），提供一个国美云专属的网络环境，可以自定义IP地址范围、网段和网关等。基于国美云网络，您可以创建国美云资源，包括云服务器、负载均衡等等。</p>
-	        </div>
-	    </div>
-	</div>
+    <div class="banner-description">
+        <div class="banner-description-container">
+            <div class="banner-description-icon">
+                <img src="./images/newPage/GBS.png" style="width: 100%; height: 100%;">
+            </div>
+            <div class="banner-description-content">
+                <p class="b-d-c-title">虚拟专用网络 VPC</p>
+                <p class="b-d-c-font">虚拟专用网络（Virtual Private Cloud，简称VPC），提供一个国美云专属的网络环境，可以自定义IP地址范围、网段和网关等。基于国美云网络，您可以创建国美云资源，包括云服务器、负载均衡等等。</p>
+            </div>
+        </div>
+    </div>
 
 	<!-- 云服务~导航 -->
-    <%- include('subnav.ejs', {user:{
-        product: 420,
-        fun: 1260,
-        apply: 1860,
-        faq: 2380
-    }}) %>
+    <%- include('subnav.ejs', {}) %>
 	
 	<!-- 云服务·介绍 -->
     <div class="cloud-body">
@@ -60,7 +55,7 @@
                 <tbody class="p-tb">
                     <tr style="height: 20px;"></tr>
                     <tr>
-                        <th class="p-tb-head"><span class="p-tb-head-icon" style="background: url('./images/newPage/slb.png') no-repeat;"></span><span class="p-tb-head-content">易用性</span></th>
+                        <th class="p-tb-head"><span class="p-tb-head-icon" style="background: url('./images/newPage/convenience.png') no-repeat;"></span><span class="p-tb-head-content">易用性</span></th>
                         <td class="p-tb-content">短短十几分钟即可在控制台上完成VPC的创建</td>
                         <td class="p-tb-content"></td>
                         <td class="p-tb-content">配置传统网络设备，上架时间周期长</td>
@@ -68,7 +63,7 @@
                     </tr>
                     <tr class="p-space"></tr>
                     <tr>
-                        <th class="p-tb-head"><span class="p-tb-head-icon" style="background: url('./images/newPage/cost.png') no-repeat;"></span class="p-tb-head-content"><span class="p-tb-head-content">安全性</span></th>
+                        <th class="p-tb-head"><span class="p-tb-head-icon" style="background: url('./images/newPage/safety.png') no-repeat;"></span class="p-tb-head-content"><span class="p-tb-head-content">安全性</span></th>
                         <td class="p-tb-content">完全属于业务的专有网络，在控制台中可以自由定义安全策略，无需担心安全问题</td>
                         <td class="p-tb-content"></td>
                         <td class="p-tb-content">采购防火墙等设备保障网络安全，同时提供专业网络工程师配置安全策略</td>
@@ -136,7 +131,7 @@
     <%- include('footer.ejs', {}) %>
     <script type="text/javascript" src="./js/jquery.js"></script>
 	<script type="text/javascript" src="./js/common.js"></script>
-	<script type="text/javascript" src="./js/cloudcomputeserver/gomeglb.js"></script>
+	<script type="text/javascript" src="./js/cloudcomputeserver/cloudcomputing.js"></script>
 </body>
 
 </html>

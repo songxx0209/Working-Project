@@ -1,9 +1,9 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta charset="utf-8" />
-	<title>国美云 - 解决一切不可能</title>
+	  <meta charset="utf-8" />
+	  <title>国美云 - 解决一切不可能</title>
     <link rel="icon" href="./images/home/favicon.png">
     <link rel="stylesheet" href="./css/common.min.css">
     <link rel="stylesheet" type="text/css" href="./css/cloudcomputeserver/gcs.min.css">
@@ -21,24 +21,19 @@
 
     <!-- banner -->
     <div class="banner-description">
-        <div class="banner-description-content">
-            <div style="width: 110px;height: 110px;float: left;margin-right: 40px;">
-                <img src="./images/newPage/GCS.png" style="width: 100%; height: 100%;">
-            </div>
-            <div style="height: 110px;float: left;">
-                <p style="font-size: 38px;color: #333;">云服务器 GCS</p>
-                <p style="font-size: 16px; color: #333;margin-top: 15px;">国美云服务器（Gome Cloud Server, 简称GCS），一种低开销、简单高效的弹性计算服务。<br />可快速完成云服务器创建，按时间灵活计费，有效降低基础设施成本，无需底层运维，真正致力于核心业务发展。</p>
-            </div>
-        </div>
-    </div>
+      <div class="banner-description-container">
+          <div class="banner-description-icon">
+              <img src="./images/newPage/GBS.png" style="width: 100%; height: 100%;">
+          </div>
+          <div class="banner-description-content">
+              <p class="b-d-c-title">云服务器 GCS</p>
+              <p class="b-d-c-font">国美云服务器（Gome Cloud Server, 简称GCS），一种低开销、简单高效的弹性计算服务。<br />可快速完成云服务器创建，按时间灵活计费，有效降低基础设施成本，无需底层运维，真正致力于核心业务发展。</p>
+          </div>
+      </div>
+  </div>
 
     <!-- 云服务~导航 -->
-    <%- include('subnav.ejs', {user:{
-        product: 420,
-        fun: 800,
-        apply: 2070,
-        faq: 2400
-    }}) %>
+    <%- include('subnav.ejs', {}) %>
 
     <!-- 云服务·介绍 -->
     <div class="cloud-body">
@@ -242,6 +237,6 @@
     
     <script type="text/javascript" src="./js/jquery.js"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/cloudcomputeserver/gomegcs.js"></script>
+    <script src="./js/cloudcomputeserver/cloudcomputing.js"></script>
 </body>
 </html>
