@@ -4,21 +4,15 @@ $(function() {
 	var timer = null;
 	$(".nav-left .left-item:eq(0)").mouseover(function(){
 		clearTimeout(timer);
-		// var _index=$(this).index();
-		// if(_index === 0){
-			$('.nav-menu').css('display', 'block');
-		// }	
+		$(".nav-left > div:eq(0)").css('color', '#1dc3ed');
+		$('.nav-menu').css('display', 'block');
 	})
 
 	$(".nav-left > div:eq(0)").mouseout(function() {
-		// var _index=$(this).index();
-		// if(_index === 0){
-			timer = setTimeout(function() {
-				console.log('23');
-				$('.nav-menu').css('display', 'none');
-			},300);
-			
-		// }
+		timer = setTimeout(function() {
+			$(".nav-left > div:eq(0)").css('color', 'white');
+			$('.nav-menu').css('display', 'none');
+		},200);
 	})
 
 	// 一级导航
@@ -26,7 +20,6 @@ $(function() {
 			var _index=$(this).index();
 			setTimeout(function () {
 				$(".menu-one ul li").eq(_index).attr('class', 'menu-one-active').siblings().attr('class', '');
-				// console.log($(this).index());
 		        $('.menu-tow > div').eq(_index).css('display','block').siblings().css('display','none');
 		    }, 200);	
 		}
