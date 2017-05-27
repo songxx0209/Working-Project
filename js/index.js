@@ -1,6 +1,6 @@
 // 页面交互效果
 $(function() {
-
+	var you = 'song';
 	// 解决方案交互
 	var solveHover ;
 	$(".solvePlan-container li").mouseover(function(){

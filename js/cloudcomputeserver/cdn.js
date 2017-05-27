@@ -5,15 +5,12 @@ var faqHigt = $('.faq').offset().top - 80;
 var subLiEle = document.getElementsByClassName('c-m-b-li');
 
 subLiEle[0].onclick = function () {
-	pageScrollHeight(400);
-}
-subLiEle[1].onclick = function () {
 	pageScrollHeight(funHigt);
 } 
-subLiEle[2].onclick = function () {
+subLiEle[1].onclick = function () {
 	pageScrollHeight(applyHigt);
 } 
-subLiEle[3].onclick = function () {
+subLiEle[2].onclick = function () {
 	pageScrollHeight(faqHigt);
 }
 
@@ -41,7 +38,7 @@ $(function() {
 	// 检测滚动条位置
 	window.onscroll = function () {
         var scrollTop = document.body.scrollTop;
-        if (scrollTop >= 394) {
+        if (scrollTop >= funHigt) {
             $('.cloud-head').attr('class', 'cloud-head c-fixed');
             $('.cloud-product-menu').css('display', 'block');
             $('.cloud-btn').css('display', 'block');
@@ -52,15 +49,12 @@ $(function() {
             $('.cloud-head').attr('class', 'cloud-head');
             $('.cloud-menu-box li:eq(0)').attr('class', 'c-m-b-li').siblings().attr('class', 'c-m-b-li');
         }
-        if (scrollTop >= funHigt) {
+        if (scrollTop >= applyHigt) {
         	$('.cloud-menu-box li:eq(1)').attr('class', 'c-m-b-li c-m-b-active').siblings().attr('class', 'c-m-b-li');
         } 
-        if(scrollTop >= applyHigt) {
+        if(scrollTop >= faqHigt) {
         	$('.cloud-menu-box li:eq(2)').attr('class', 'c-m-b-li c-m-b-active').siblings().attr('class', 'c-m-b-li');
         } 
-        if(scrollTop >= faqHigt) {
-        	$('.cloud-menu-box li:eq(3)').attr('class', 'c-m-b-li c-m-b-active').siblings().attr('class', 'c-m-b-li');
-        }
     }
     
     // 应用场景 交互效果

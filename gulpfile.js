@@ -1,37 +1,31 @@
 var gulp = require("gulp");
 var ejs = require("gulp-ejs");
 var uglify = require('gulp-uglify');
+var watch = require('gulp-watch'); // 只编译修改后的文件
 
 var rev = require('gulp-rev');
 var clean = require('gulp-clean');  // 删除文件
-var connect = require('gulp-connect');
+var connect = require('gulp-connect');  // 创建一个服务启动项目
 
 var cleanCSS = require('gulp-clean-css');  // 压缩css文件
 var rename = require("gulp-rename");  // 文件重命名
 var less = require('gulp-less');  // 使用less
 var path = require('path');
 
+// less转换为css
 gulp.task('less', function () {
   return gulp.src([ './less/*.less', './less/**/*.less'])
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
-    .pipe(gulp.dest('css'));
-});
-
-gulp.task('minify-css', ['less'], function() {
-  return gulp.src(['css/*.css', 'css/**/*.css','!css/*.min.css', '!css/**/*.min.css'])
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(rename(function (path) {
-        // path.dirname += "/ciao";
-        // path.basename += "-goodbye";
-        path.extname = ".min.css"
-    }))
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('css', ['minify-css'], function () {
-    return gulp.src(['css/*.min.css', 'css/**/*.min.css'])
+
+// css, js, image, 进行MD5命名并保存名字的json数据到rev文件夹
+gulp.task('css', ['less'], function () {
+    return gulp.src(['css/*.css', 'css/**/*.css'])
         .pipe(rev())
         .pipe(gulp.dest('temp/css'))
         .pipe( rev.manifest() )
@@ -55,15 +49,15 @@ gulp.task('images', function () {
         .pipe( gulp.dest( 'rev/images' ) );
 });
 
+//  将ejs文件转换为html文件并保存到temp文件夹中
 gulp.task('ejs', function(){
     return gulp.src(['templates/*.ejs','!./templates/footer.ejs', '!./templates/header.ejs', '!./templates/subnav.ejs'])
-        .pipe(ejs({
-        }, {}, {ext: '.html'}))
+        .pipe(ejs({}, {}, {ext: '.html'}))
         .pipe( gulp.dest('temp/templates') );
 })
 
-var revCollector = require('gulp-rev-collector');
-var minifyHTML   = require('gulp-minify-html');
+var revCollector = require('gulp-rev-collector');  // 转换文件中所有引用路径（md5命名的文件）
+var minifyHTML   = require('gulp-minify-html');  // 压缩html文件
 
 gulp.task('rev-css', ['css', 'images'], function () {
     return gulp.src(['rev/**/*.json', 'temp/css/*.css', 'temp/css/**/*.css'])
@@ -103,7 +97,7 @@ gulp.task('rev', ['rev-css', 'rev-js', 'ejs'], function () {
 });
 
 gulp.task('del', function () {
-    return gulp.src(['dist', 'temp', 'rev'], {read: false})
+    return gulp.src(['dist', 'temp', 'rev', 'css'], {read: false})
         .pipe(clean());
 });
 
@@ -119,17 +113,16 @@ gulp.task('connect', function() {
 });
 
 gulp.task('default', ['rev'], function() {
-    gulp.start('connect', 'watch');
+    gulp.start('connect', 'watched');
 });
 
 gulp.task('deploy',['del'], function(){
     gulp.start('rev');
 })
 
-gulp.task('watch', function () {
+gulp.task('watched', function () {
     gulp.watch('templates/*.ejs', ['reload']);
     gulp.watch(['less/*.less', 'less/**/*.less'], ['reload']);
-    gulp.watch(['css/*.css', 'css/**/*.css','!css/*.min.css', '!css/**/*.min.css'], ['reload']);
     gulp.watch(['js/*.js', 'js/**/*.js'], ['reload']);
 });
 
