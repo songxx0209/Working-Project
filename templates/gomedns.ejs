@@ -8,6 +8,42 @@
 	<link rel="icon" href="./images/home/favicon.png">
 	<link rel="stylesheet" href="./css/common.css">
 	<link rel="stylesheet" href="./css/cloudcomputeserver/cdn.css">
+    <style>
+        .apply-div {
+            width: 432px;
+            height: 128px;
+            position: absolute;
+            top: 38px;
+            right: 160px;
+            box-sizing: border-box;
+            border: 1px solid #22d2dd;
+        }
+        .apply-table {
+            width: 100%;
+            max-width: 100%;
+            font-size: 12px;
+            border-collapse:collapse; 
+            border-spacing:0;
+        }
+        th, td {
+            border-right: 1px solid #d3dde1;
+            border-bottom: 1px solid #d3dde1;
+            padding: 5px 15px;
+        }
+        thead {
+            color: #333;
+            background: #e6f5f8
+        }
+        thead tr {
+            height: 46px;
+        }
+        tbody {
+            color: #666;
+        }
+        tbody tr {
+            height: 40px
+        }
+    </style>
 </head>
 
 <body>
@@ -23,11 +59,11 @@
     <div class="banner-description">
         <div class="banner-description-container">
             <div class="banner-description-icon">
-                <img src="./images/newPage/CDN.png" style="width: 100%; height: 100%;">
+                <img src="./images/newPage/DNS.png" style="width: 100%; height: 100%;">
             </div>
             <div class="banner-description-content">
-                <p class="b-d-c-title">CDN</p>
-                <p class="b-d-c-font">内容分发网络（Content Distribution Network，简称CDN），国美CDN部署节点遍布全国。将源站内容部署到离用户物理位置最近的节点，方便用户快速获取数据，降低延迟，提升用户体验。</p>
+                <p class="b-d-c-title">云域名解析系统DNS</p>
+                <p class="b-d-c-font">云域名解析系统（Domain Name System，简称DNS）是一种可用性高、扩展性强的云域名系统 。<br />旨在为开发人员和企业提供一种安全可靠且经济高效的域名解析方式，可以把域名（例如 www.example.com）<br />转换为计算机用于互相连接的IP地址（例如 192.0.2.1），从而将最终用户路由到Internet应用程序。</p>
             </div>
         </div>
     </div>
@@ -138,44 +174,64 @@
         <!-- 功能介绍 -->
         <div class="function-introduction">
             <p class="cloud-title-noe"><span class="cloud-title-noe-pic"></span>功能介绍</p>
-            <p class="cloud-title-tow" style="margin-top: 20px;">&nbsp;&nbsp;成本</p>
-            <p class="cloud-title-three">计费模式合理，有效节约用户成本</p>
-            <p class="cloud-content">采用95计费模式，针对异常流量有效起到缓冲作用，用户无需为少量异常流量付费，一定程度节约用户成本。</p>
+            <p class="cloud-title-tow" style="margin-top: 20px;">&nbsp;&nbsp;基础解析</p>
+            <p class="cloud-title-three">完整构建域名产品体系，一站式服务方便快捷</p>
+            <p class="cloud-content">从域名注册到域名解析，用户无需借助第三方服务，一站式满足用户的整体需求。</p>
+            <p class="cloud-title-three">稳定域名解析，无后顾之忧</p>
+            <p class="cloud-content">云域名解析系统提供稳定、安全、极速的域名解析能力，使您专心于核心业务开发，无需担心域名解析问题。</p>
+            <p class="cloud-title-three">多解析记录类型，满足用户大多数业务场景</p>
+            <p class="cloud-content">支持A、MX、CNAME等记录类型，覆盖用户大多数业务场景。</p>
 
-            <p class="cloud-title-tow">&nbsp;&nbsp;性能</p>
-            <p class="cloud-title-three">节点遍布全国，结合智能调度，提高访问速度，提升用户体验</p>
-            <p class="cloud-content">全国各个省份部署加速节点，覆盖移动、联通、电信及十几家中小型运营商。结合智能GSLB调度体系，结合全网实时监控数据，将用户请求精准调度至最优接入节点。有效提高用户访问的响应速度和成功率，提升用户体验。</p>
-
-            <p class="cloud-title-tow">&nbsp;&nbsp;多样性</p>
-            <p class="cloud-title-three">全网实时监控，掌握资源热度</p>
-            <p class="cloud-content">利用遍布全国的监测点，定频访问监测文件，对全国各地域、运营商的CDN访问状态进行监控、分析。</p>
-            <p class="cloud-title-three">HTTPS加密，防盗链，有效保障数据安全</p>
-            <p class="cloud-content">支持全网HTTPS加密传输，保障数据安全，避免遭受内容劫持。通过配置访问黑白名单来对访问者身份进行识别和过滤，从而限制资源被访问的情况。</p>
-            <p class="cloud-title-three">定义缓存过期时间，满足用户多样化业务场景</p>
-            <p class="cloud-content">自定义指定资源内容的缓存过期时间规则，支持指定路径 /test/... 或者文件名后缀如 *.html 方式。</p>
-
-            <p class="cloud-title-tow">&nbsp;&nbsp;易用性</p>
-            <p class="cloud-title-three">接入方便，无需业务调整</p>
-            <p class="cloud-content">添加域名后，仅需前往域名服务商处添加对应CNAME记录，即可完成接入，无需业务方做任何调整 。</p>
-            <p class="cloud-title-three">多样化管理方式，满足用户个性化需求</p>
-            <p class="cloud-content">实时反馈业务访问情况、消耗明细、热门资源分析，支持十几项自助功能配置，提供全方位API接口，多样化管理。</p>            
+            <p class="cloud-title-tow">&nbsp;&nbsp;智能解析</p>
+            <p class="cloud-title-three">三大运营商线路细分</p>
+            <p class="cloud-content">支持移动、联通、电信三大运营商的线路细分。</p>
+            <p class="cloud-title-three">搜索引擎线路选择</p>
+            <p class="cloud-content">云域名解析系统支持谷歌、百度、必应、有道、雅虎等搜索引擎线路。</p>
+            
         </div>
 
         <!-- 应用场景 -->
         <div class="apply-scene">
         	<p class="cloud-title-noe"><span class="cloud-title-noe-pic"></span>应用场景</p>
-        	<div class="apply-content">
+        	<div class="apply-content" style="height: 785px;">
         		<div class="apply-item a-i-1">
         			<div class="apply-item-middle">
-        				<p>CDN多用于企业网站构建</p>
+        				<p>多线路智能化解决</p>
         			</div>
         		</div>
 	        	<div class="apply-item a-i-2">
-	        		<p class="a-i-up">通过国美云覆盖广泛的边缘节点缓存网站内容，用户每次访问网站，根据智能调度选取较近的节点获取内容，提高用户访问网站的响应速度，提升用户体验。</p>
-	        		<p class="apply-conf"><span>推荐配置：</span>GCS+CDN</p>
+	        		<p class="a-i-up">基于云域名解析系统多线路智能解析服务，实现对访问流量负载均衡。</p>
+	        		<p class="apply-conf"><span>推荐配置：</span>GCS+GLB+DNS</p>
 	        	</div>
                 <div class="apply-pic">
-                    <img src="./images/newPage/cdnapply.png" alt="" >
+                    <img src="./images/newPage/dns-apply.png" alt="" >
+
+                    <div class="apply-div">
+                        <table class="apply-table">
+                            <thead>
+                                <tr>
+                                    <th>域名</th>
+                                    <th>记录类型</th>
+                                    <th>类型</th>
+                                    <th style="border-right: none; style="border-bottom: none;"">线路类型</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>www.example.com</th>
+                                    <th>A</th>
+                                    <th>192.168.0.1</th>
+                                    <th style="border-right: none; style="border-bottom: none;"">移动</th>
+                                </tr>
+                                <tr>
+                                    <th style="border-bottom: none;">www.example.com</th>
+                                    <th style="border-bottom: none;">A</th>
+                                    <th style="border-bottom: none;">192.168.0.1</th>
+                                    <th style="border-bottom: none;border-right: none;">联通</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
         	</div>
         </div>
@@ -184,14 +240,11 @@
         <div class="faq">
             <p class="cloud-title-noe"><span class="cloud-title-noe-pic"></span>常见问题</p>
 
-            <p class="cloud-title-three" style="margin-top: 20px;"><span style="font-size: 14px;">●</span>&nbsp;&nbsp;国美云CDN计费方式是什么？</p>
-            <p class="cloud-content">国美云CDN采用后付费方式进行收费，按照95计费规则计费。</p>
+            <p class="cloud-title-three" style="margin-top: 20px;"><span style="font-size: 14px;">●</span>&nbsp;&nbsp;什么是域名解析（DNS）服务？</p>
+            <p class="cloud-content">DNS是一种域名解析服务，可以将www.example.com等方便用户访问的名称转换为192.0.2.1等数字IP地址，供计算机用于互相连接。Internet 的 DNS 系统的工作原理和电话簿相似，都是管理名称和数字之间的映射关系。对于DNS而言，名称为方便人们记忆的域名（www.example.com），数字为指定计算机在Internet上位置的 IP 地址（192.0.2.1）。DNS 服务器可以将名称请求转换为 IP 地址，从而控制最终用户在 Web 浏览器中输入域名时所访问的服务器。</p>
 
-            <p class="cloud-title-three" style="margin-top: 30px;"><span style="font-size: 14px;">●</span>&nbsp;&nbsp;什么是95计费？</p>
-            <p class="cloud-content">国美云95计费方式按照如下规则执行：<br />把一个月的流量，按每5分钟统计一次，取流量最高值做一个点，这样一个月会得到很多流量峰值点。然后把当中高流量的5%的点去掉，按照剩下（100-5）% 来计算费用。</p>
-
-            <p class="cloud-title-three" style="margin-top: 30px;"><span style="font-size: 14px;">●</span>&nbsp;&nbsp;如何使用国美云CDN？</p>
-            <p class="cloud-content">如果您打算使用国美云CDN，请发送邮件到以下邮箱（<a href="mailto:zhaoyue-kg@gome.com.cn">zhaoyue-kg@gome.com.cn</a>或者<a href="mailto:zhaochen-kg@gome.com.cn">zhaochen-kg@gome.com.cn</a>）会有专业运维工程师指导您如何使用。</p>
+            <p class="cloud-title-three" style="margin-top: 30px;"><span style="font-size: 14px;">●</span>&nbsp;&nbsp;如何使用国美云域名解析系统？</p>
+            <p class="cloud-content">您可以在控制台上选择域名进行配置。</p>
         </div>
     </div>
 
