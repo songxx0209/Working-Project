@@ -10,7 +10,7 @@
     "gulp-uglify": "^2.1.2"
   },
   "scripts": {
-    "start": "gulp --watch --watch-poll",
+    "start": "gulp",
     "deploy": "gulp deploy"
   },
   "devDependencies": {
