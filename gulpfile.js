@@ -14,7 +14,7 @@ var path = require('path');
 
 // less转换为css
 gulp.task('less', function () {
-  return gulp.src([ './less/*.less', './less/**/*.less'])
+  return gulp.src([ './less/*.less', './less/**/*.less', './less/*.css'])
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
