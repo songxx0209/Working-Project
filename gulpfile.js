@@ -35,7 +35,7 @@ gulp.task('css', ['less'], function () {
 gulp.task('scripts', function () {
     return gulp.src(['js/*.js', 'js/**/*.js'])
         .pipe(rev())
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(gulp.dest('temp/js'))
         .pipe( rev.manifest() )
         .pipe( gulp.dest( 'rev/js' ) );

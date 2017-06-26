@@ -9,39 +9,7 @@
 	<link rel="stylesheet" href="./css/common.css">
 	<link rel="stylesheet" href="./css/cloudcomputeserver/joinus.css">
   <link rel="stylesheet" href="./css/bootstrap.css">
-  <script type="text/javascript" src="./js/jquery.js"></script>
-  <script type="text/javascript" src="./js/joinus/page.js"></script>
-  <style>
-    .backTop {
-      position: fixed;
-      top: 60%;
-      right: 5px;
-      width: 40px;
-      height: 140px;
-      background: #000;
-      z-index: 999;
-  }
-  .j-connect-us {
-      width: 40px;
-      height: 100px;
-      padding: 5px 10px;
-      word-wrap: break-word;
-      color: white;
-      text-align: center;
-      background: #4fd1d9;
-  }
-  .f-back-top {
-      position: relative;
-      width: 40px;
-      height: 40px;
-      background: url('./images/home/up.png') no-repeat 0 -87px;
-  }
-  .f-back-top a {
-      position: absolute;
-      width: 40px;
-      height: 40px;
-  }
-  </style>
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
 </head>
 
 <body>
@@ -68,7 +36,7 @@
           <div id="jobInfo" class="r-serrch">
             <div class="input-group">
               <img class="r-search-icon" src="./images/joinus/search.png" alt="">
-              <input id="search-inp" class="form-control r-input" >
+              <input id="search-inp" class="form-control r-input" onkeypress="EnterPress()" onkeydown="EnterPress()" >
               <span id="search-btn" class="input-group-addon r-btn">搜索</span>
             </div>
           </div><br><br>
@@ -76,10 +44,10 @@
           <!--招聘信息-->
           <div class="job-list-content">
             <div class="job-head">
-              <p class="job-table-head">职位名称</p>
-              <p class="job-table-head">职位类型</p>
-              <p class="job-table-head">工作地址</p>
-              <p class="job-table-head">发布时间</p>
+              <p class="job-table-head1">职位名称</p>
+              <p class="job-table-head2">职位类型</p>
+              <p class="job-table-head3">工作地址</p>
+              <p class="job-table-head4">发布时间</p>
             </div>
             <div id="job-body" class="job-body">
 
@@ -121,7 +89,7 @@
           </div>
 
           <!--分页区-->
-          <div style="width: 250px;height: 50px;margin: 15px auto 0;">
+          <div style="width: 270px;height: 50px;margin: 15px auto 0;">
               <ul class="page" maxshowpageitem="3" pagelistcount="10"  id="page"></ul>
           </div>
         </div>
@@ -132,19 +100,20 @@
 	<!-- footer -->
   <%- include('footer.ejs', {}) %>
 	<script type="text/javascript" src="./js/common.js"></script>
+  <script type="text/javascript" src="./js/joinus/page.js"></script>
   <script type="text/javascript" src="./js/bootstrap.min.js"></script>
   <script type="text/javascript" src="./js/joinus/joinus.js"></script>
   <script>
     $('.job-item-title').click(function() {
-		var _index=$(this).index();
-    var _span = $(this).children('p').children('span');
-		var _span_class = _span.attr('class');
-    if (_span_class === 'shrink') {
-      _span.attr('class', 'extend');
-    } else {
-      _span.attr('class', 'shrink');
-    }
-	});
+  		var _index=$(this).index();
+      var _span = $(this).children('p').children('span');
+  		var _span_class = _span.attr('class');
+      if (_span_class === 'shrink') {
+        _span.attr('class', 'extend');
+      } else {
+        _span.attr('class', 'shrink');
+      }
+  	});
   </script>
 </body>
 

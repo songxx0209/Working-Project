@@ -19,7 +19,7 @@ var data = [
         '精通 Linux内核，熟悉KVM/VMware虚拟化，具有OpenStack开发经验；',
         '熟悉Kubernetes、Docker、Mesos、Openstack等主流开源项目架构和源码；',
         '热衷前沿技术的探索，能快速掌握和理解新技术；具备良好的团队合作精神，善于沟通交流；',
-        '具有开源项目贡献经验者优先；',
+        '具有开源项目贡献经验者优先；'
       ]
     }
   },
@@ -36,7 +36,7 @@ var data = [
         '熟悉常用网络技术 gre,vxlan，VPN，VRRP，TC等',
         '熟悉SDN技术优先，比如OpenFlow，OpenVSwitch，如开发过SDN控制器者优先',
         '熟悉Openstack Neutron开发经验优先；',
-        '有大中型网站或公司机房网络设计经验优先；',
+        '有大中型网站或公司机房网络设计经验优先；'
       ]
     }
   },
@@ -72,7 +72,7 @@ var data = [
         '5年以上系统研发经验；两年以上团队管理经验；具有大团队（超过50人）管理经验着优先;',
         '良好的沟通协调能力，有大项目经验者优先;',
         '熟悉主流开发语言，Java /Python/Go，具有Python大系统开发经验者优先',
-        '熟悉云计算平台，从事相关方向开发与管理工作这优先',
+        '熟悉云计算平台，从事相关方向开发与管理工作这优先'
       ]
     }
   },
@@ -89,7 +89,7 @@ var data = [
         '熟悉主流开发语言以及特性（Java/Python/Go），并使用过这些语言开发过大型系统',
         '熟悉架构设计原则以及当前常用架构理念并具有运用实践',
         '责任心强，具有自驱力，能不断打磨技术，推动产品的技术升级',
-        '具有良好的沟通与协调能力以及团队合作精神',
+        '具有良好的沟通与协调能力以及团队合作精神'
       ]
     }
   },
@@ -105,7 +105,7 @@ var data = [
         '3年以上安全领域工作经验',
         '熟悉系统加固，信息加密，接口验证等常用安全防护手段',
         '具有DDOS，CC攻击防护经验，具有相关产品研发经验者优先',
-        '具有代码安全审计经验，从事过代码安全审计产品开发经验者优先',
+        '具有代码安全审计经验，从事过代码安全审计产品开发经验者优先'
       ]
     }
   },
@@ -138,7 +138,7 @@ var data = [
         '负责云平台的稳定性和技术架构的持续优化',
         '负责虚拟化关键模块的技术攻关以及新技术探索',
         '负责虚拟化核心技术的研究、开发、功能改进等工作',
-        '负责解决私有云部署、开发、运维中出现的各种问题',
+        '负责解决私有云部署、开发、运维中出现的各种问题'
       ],
       Requirement: [
         '5年以上互联网领域工作经验，熟悉主流云计算平台技术架构',
@@ -164,7 +164,7 @@ var data = [
         '商业云平台产品规划设计及实施落地：负责商业云版本规划，建设里程碑计划，并引导研发团队按照里程碑计划完成平台版本开发和上线；',
         '云服务商业流程设计：负责云服务核心商业流程设计，云平台核心能力与服务目录规划和设计；',
         '负责对来自用户和公司内部的产品相关需求进行管理、分析，并最终形成产品需求文档，为研发及销售团队提供广泛支持；',
-        '负责公司云计算产品的持续优化等相关工作。',
+        '负责公司云计算产品的持续优化等相关工作。'
       ],
       Requirement: [
         '7年以上云服务平台的规划、设计工作经验，有带领团队完成相关云平台的规划及实施的成功经验；',
@@ -172,7 +172,7 @@ var data = [
         '具备大型、全球跨区域云服务系统的设计及实施能力与经验，了解相关的实施技术，如：全球组网、VPN、CDN、异构云实施等方面的设计实施经验；',
         '出色的产品规划能力和逻辑分析能力抽象、集成整合能力；',
         '能够从商业目标出发识别关键需求，结合移动化、电商化、产业互联网、大数据等趋势，识别关键业务场景及服务需求；',
-        '具备跨团队沟通及协调推动能力，具备高层沟通能力；具备业界论坛发言能力、具备业界影响力者优先。',
+        '具备跨团队沟通及协调推动能力，具备高层沟通能力；具备业界论坛发言能力、具备业界影响力者优先。'
       ]
     }
   },
@@ -184,7 +184,7 @@ var data = [
         '推动主要的技术决策，进行技术风险评估，并最终表达为产品构架；',
         '独立设计产品原型图及需求文档；思维脑图等详细设计文档；',
         '负责后台系统的相关管理工作，制定产品项目管理流程、阶段目标、产品关键KPI，分解任务目标，并协调研发、设计、运营等其他部门，确保项目按时保质完成；',
-        '对产品进行持续优化和改进，完善功能，不断提升产品用户体验；发现、分析、解决产品线问题；',
+        '对产品进行持续优化和改进，完善功能，不断提升产品用户体验；发现、分析、解决产品线问题；'
       ],
       Requirement: [
         '6年以上大型软件或者互联网企业工作经验，至少3年以上系统后台架构经验；',
@@ -210,7 +210,7 @@ var data = [
         '负责Oracle和mysql数据库性能监控和调优，SQL review，数据备份/恢复计划的制定、执行；',
         '负责依据业务需求优化数据存储结构，负责数据库系统部署方案的计划、设计和实施；',
         '负责对应用程序进行审查，为开发人员提供数据库支持。如数据库迁移，测试库安装，数据导入等；',
-        '负责系统数据库定期检查，进行性能分析与调优，定期对中间件产品进行健康检查并出具检查报告，充分保证信息系统数据的安全及系统高效运行。',
+        '负责系统数据库定期检查，进行性能分析与调优，定期对中间件产品进行健康检查并出具检查报告，充分保证信息系统数据的安全及系统高效运行。'
       ],
       Requirement: [
         '计算机或相关专业本科以上，有过大型数据库集群管理维护经验者优先；',
@@ -221,7 +221,7 @@ var data = [
         '熟悉数据库调优方法；能够基于业务需求，提供数据库解决方案；',
         '熟悉Linux操作系统，熟悉python/go/shell等语言中至少一种，具有良好编程风格，善于通过程序解决日常效率问题；',
         '拥有良好的沟通表达能力和服务意识，有较强的团队合作意识，快速处理系统突发事件的能力；',
-        '熟悉redis/mongodb/cassandra 等nosql系统，有相关的DBA认证证书者优先。',
+        '熟悉redis/mongodb/cassandra 等nosql系统，有相关的DBA认证证书者优先。'
       ]
     }
   },
@@ -234,7 +234,7 @@ var data = [
         '负责Oracle和mysql数据库性能监控和调优，SQL review，数据备份/恢复计划的制定、执行；',
         '负责依据业务需求优化数据存储结构，负责数据库系统部署方案的计划、设计和实施；',
         '负责对应用程序进行审查，为开发人员提供数据库支持。如数据库迁移，测试库安装，数据导入等；',
-        '负责系统数据库定期检查，进行性能分析与调优，定期对中间件产品进行健康检查并出具检查报告，充分保证信息系统数据的安全及系统高效运行。',
+        '负责系统数据库定期检查，进行性能分析与调优，定期对中间件产品进行健康检查并出具检查报告，充分保证信息系统数据的安全及系统高效运行。'
       ],
       Requirement: [
         '计算机或相关专业本科以上，有过大型数据库集群管理维护经验者优先；',
@@ -245,21 +245,21 @@ var data = [
         '熟悉数据库调优方法；能够基于业务需求，提供数据库解决方案；',
         '熟悉Linux操作系统，熟悉python/go/shell等语言中至少一种，具有良好编程风格，善于通过程序解决日常效率问题；',
         '拥有良好的沟通表达能力和服务意识，有较强的团队合作意识，快速处理系统突发事件的能力；',
-        '熟悉redis/mongodb/cassandra 等nosql系统，有相关的DBA认证证书者优先。',
+        '熟悉redis/mongodb/cassandra 等nosql系统，有相关的DBA认证证书者优先。'
       ]
     }
-  },
+  }
 ];
 
 loadHtml(data);
 jobBody.innerHTML = content[0];
 pagination();
-inp.addEventListener('keypress', function(event) {
-  if(event.keyCode == 13) {  
+function EnterPress(e) {
+  var e = e || window.event; 
+  if(e.keyCode == 13){ 
     search();
-  }  
-});
-  
+  } 
+}
 btn.onclick = search;
 
 // 搜索
@@ -304,7 +304,7 @@ function loadHtml(data) {
     content[jj] = '';
   }
   for(var j =0; j < digit; j++) {
-    for(var i = 0; i< data.length; i++) {
+    for(var i = 0; i < data.length; i++) {
       var ifDisplay = 'collapse'; // i === 0 ? 'collapse in' : 'collapse';
       var LiOneData = data[i].descript.duty; 
       var LiTowData = data[i].descript.Requirement; 
@@ -318,7 +318,7 @@ function loadHtml(data) {
         LiTowList += '<li>'+ LiTowData[n] +'</li>'
       }
       if(i >= j*10 && i < (j+1)*10) {
-        content[j] += '<div class="job-item"><div class="job-item-title" data-toggle="collapse" data-target="#item'+ i +'"><p class="job-item-head">'+ data[i].itemTitle[0] +'</p><p class="job-item-head" style="text-align:left; padding-left: 30px;">'+ data[i].itemTitle[1] +'</p><p class="job-item-head">'+ data[i].itemTitle[2] +'</p><p class="job-item-head">'+ data[i].itemTitle[3] +' <span class="shrink"></span></p><hr style="margin: 0 20px;" /></div><div id="item'+ i +'" class="'+ ifDisplay +'"><div class="job-detail"><p>岗位职责</p><ul>'+
+        content[j] += '<div class="job-item"><div class="job-item-title" data-toggle="collapse" data-target="#item'+ i +'"><p class="job-item-head1">'+ data[i].itemTitle[0] +'</p><p class="job-item-head2" style="text-align: left;padding-left: 45px;">'+ data[i].itemTitle[1] +'</p><p class="job-item-head3">'+ data[i].itemTitle[2] +'</p><p class="job-item-head4">'+ data[i].itemTitle[3] +' <span class="shrink"></span></p><hr style="margin: 0 20px;" /></div><div id="item'+ i +'" class="'+ ifDisplay +'"><div class="job-detail"><p>岗位职责</p><ul>'+
         LiOneList 
         +'</ul><p>任职资格</p><ul>'+
         LiTowList
