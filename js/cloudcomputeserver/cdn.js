@@ -26,7 +26,7 @@ function pageScrollHeight(high) {
     } else if (scrollH > high && scrollH !== high) {
         window.scrollBy(0,-100);
         if(dValue < 100) {
-            document.body.scrollTop = high;
+            document.body.scrollTop ? document.body.scrollTop = high : window.pageYOffset = high;
         } else {
             setTimeout('pageScrollHeight('+ high +')',20);
         }
