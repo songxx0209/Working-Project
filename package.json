@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "gulp",
-    "deploy": "gulp deploy"
+    "dist": "gulp dist"
   },
   "devDependencies": {
     "gulp-clean-css": "^3.4.0",

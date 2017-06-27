@@ -116,7 +116,7 @@ gulp.task('default', ['rev'], function() {
     gulp.start('connect', 'watched');
 });
 
-gulp.task('deploy',['del'], function(){
+gulp.task('dist',['del'], function(){
     gulp.start('rev');
 })
 
