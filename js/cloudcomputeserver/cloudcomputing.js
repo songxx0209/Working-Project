@@ -21,13 +21,13 @@ function pageScrollHeight(high) {
     var dValue = Math.abs(parseInt(high) - parseInt(scrollH));
     if (scrollH < high && scrollH !== high){
         window.scrollBy(0,30);
-        if(dValue < 100) {
+        if(dValue < 31) {
             scrollH = high;
         }
         setTimeout('pageScrollHeight('+ high +')',20);
     } else if (scrollH > high && scrollH !== high) {
         window.scrollBy(0,-30);
-        if(dValue < 100) {
+        if(dValue < 31) {
             scrollH = high;
         } else {
             setTimeout('pageScrollHeight('+ high +')',20);

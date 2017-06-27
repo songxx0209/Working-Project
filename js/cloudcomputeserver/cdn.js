@@ -6,7 +6,7 @@ var faqHigt = $('.faq').offset().top - 80;
 $('.c-m-b-li').click(function() {
 	var _index=$(this).index();
 	if(_index === 0) {
-		pageScrollHeight(funHigt);
+		pageScrollHeight(funHigt - 20);
 	} else if (_index === 1) {
 		pageScrollHeight(applyHigt);
 	} else if (_index === 2) {
@@ -19,13 +19,13 @@ function pageScrollHeight(high) {
     var dValue = Math.abs(parseInt(high) - parseInt(scrollH));
     if (scrollH < high && scrollH !== high){
         window.scrollBy(0,30);
-        if(dValue < 100) {
+        if(dValue < 31) {
             scrollH = high;
         }
         setTimeout('pageScrollHeight('+ high +')',20);
     } else if (scrollH > high && scrollH !== high) {
         window.scrollBy(0,-30);
-        if(dValue < 100) {
+        if(dValue < 31) {
             scrollH = high;
         } else {
             setTimeout('pageScrollHeight('+ high +')',20);
