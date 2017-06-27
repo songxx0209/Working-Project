@@ -42,15 +42,16 @@ $(function() {
 	})
 })
 
-function pageScrollTop() {
-    var scrollTop = document.body.scrollTop;
+ function pageScrollTop() {
+    var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
     if (scrollTop !== 0){
         window.scrollBy(0,-100);
         scrolldelay = setTimeout('pageScrollTop()',20);
     }
 }
 function pageScrollBottom() {
-    document.body.scrollTop=document.body.scrollHeight;
+	var yScroll = document.body.clientHeight || document.documentElement.scrollHeight; 
+  window.scrollBy(0,yScroll);
 }
 
 function getExplorerInfo() {
