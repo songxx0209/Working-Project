@@ -7,12 +7,32 @@
     <link rel="icon" href="./images/home/favicon.png">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" type="text/css" href="./css/cloudcomputeserver/gcs.css">
+    <script>
+      //解决IE10以下不支持Function.bind
+  if (!Function.prototype.bind) {
+      Function.prototype.bind = function(oThis) {
+          if (typeof this !== "function") {
+              throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");
+          }
+          var aArgs = Array.prototype.slice.call(arguments, 1),
+              fToBind = this,
+              fNOP = function() {},
+              fBound = function() {
+                  return fToBind.apply(this instanceof fNOP && oThis ? this : oThis,
+                      aArgs.concat(Array.prototype.slice.call(arguments)));
+              };
+          fNOP.prototype = this.prototype;
+          fBound.prototype = new fNOP();
+          return fBound;
+      };
+  }
+    </script>
 </head>
 
 <body>
     <!-- 联系我们，回到顶部 -->
     <div class="flow-msg">
-        <div class="connect-us" onClick="pageScrollBottom()">联系我们</div>
+        <div class="connect-us" onClick="pageScrollBottom()">联系我们1</div>
         <div class="back-top"><a onClick="pageScrollTop()"></a></div>
     </div>
     

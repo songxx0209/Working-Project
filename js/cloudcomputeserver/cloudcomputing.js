@@ -2,23 +2,22 @@
 var funHigt = $('.function-introduction').offset().top - 80;
 var applyHigt = $('.apply-scene').offset().top - 80;
 var faqHigt = $('.faq').offset().top - 80;
-var subLiEle = document.getElementsByClassName('c-m-b-li');
 
-subLiEle[0].onclick = function () {
-	pageScrollHeight(400);
-}
-subLiEle[1].onclick = function () {
-	pageScrollHeight(funHigt);
-} 
-subLiEle[2].onclick = function () {
-	pageScrollHeight(applyHigt);
-} 
-subLiEle[3].onclick = function () {
-	pageScrollHeight(faqHigt);
-}
+$('.c-m-b-li').click(function() {
+	var _index=$(this).index();
+	if(_index === 0) {
+		pageScrollHeight(400);
+	} else if (_index === 1) {
+		pageScrollHeight(funHigt);
+	} else if (_index === 2) {
+		pageScrollHeight(applyHigt);
+	} else if (_index === 3) {
+		pageScrollHeight(faqHigt);
+	}
+});
 
 function pageScrollHeight(high) {
-    var scrollH = document.body.scrollTop;
+    var scrollH = document.body.scrollTop || window.pageYOffset; // 兼容ie
     var dValue = Math.abs(parseInt(high) - parseInt(scrollH));
     if (scrollH < high && scrollH !== high){
         window.scrollBy(0,100);
@@ -40,7 +39,7 @@ function pageScrollHeight(high) {
 $(function() {
 	// 检测滚动条位置
 	window.onscroll = function () {
-        var scrollTop = document.body.scrollTop;
+        var scrollTop = document.body.scrollTop || window.pageYOffset;;
         if (scrollTop >= 394) {
             $('.cloud-head').attr('class', 'cloud-head c-fixed');
             $('.cloud-product-menu').css('display', 'block');
