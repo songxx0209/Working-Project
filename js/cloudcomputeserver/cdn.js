@@ -15,18 +15,18 @@ $('.c-m-b-li').click(function() {
 });
 
 function pageScrollHeight(high) {
-    var scrollH = document.body.scrollTop || window.pageYOffset; // 兼容ie;
+    var scrollH = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop; // 兼容ie
     var dValue = Math.abs(parseInt(high) - parseInt(scrollH));
     if (scrollH < high && scrollH !== high){
-        window.scrollBy(0,100);
+        window.scrollBy(0,30);
         if(dValue < 100) {
             scrollH = high;
         }
         setTimeout('pageScrollHeight('+ high +')',20);
     } else if (scrollH > high && scrollH !== high) {
-        window.scrollBy(0,-100);
+        window.scrollBy(0,-30);
         if(dValue < 100) {
-            document.body.scrollTop ? document.body.scrollTop = high : window.pageYOffset = high;
+            scrollH = high;
         } else {
             setTimeout('pageScrollHeight('+ high +')',20);
         }
@@ -37,8 +37,8 @@ function pageScrollHeight(high) {
 $(function() {
 	// 检测滚动条位置
 	window.onscroll = function () {
-        var scrollTop = document.body.scrollTop || window.pageYOffset; // 兼容ie;
-        if (scrollTop >= funHigt) {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop; // 兼容ie
+        if (scrollTop >= funHigt - 100) {
             $('.cloud-head').attr('class', 'cloud-head c-fixed');
             $('.cloud-product-menu').css('display', 'block');
             $('.cloud-btn').css('display', 'block');
@@ -49,10 +49,10 @@ $(function() {
             $('.cloud-head').attr('class', 'cloud-head');
             $('.cloud-menu-box li:eq(0)').attr('class', 'c-m-b-li').siblings().attr('class', 'c-m-b-li');
         }
-        if (scrollTop >= applyHigt) {
+        if (scrollTop >= applyHigt - 150) {
         	$('.cloud-menu-box li:eq(1)').attr('class', 'c-m-b-li c-m-b-active').siblings().attr('class', 'c-m-b-li');
         } 
-        if(scrollTop >= faqHigt) {
+        if(scrollTop >= faqHigt - 150) {
         	$('.cloud-menu-box li:eq(2)').attr('class', 'c-m-b-li c-m-b-active').siblings().attr('class', 'c-m-b-li');
         } 
     }
