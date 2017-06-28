@@ -114,6 +114,5 @@ $(function() {
 		clearTimeout(subTimer);
 	})
 
-
 })
 

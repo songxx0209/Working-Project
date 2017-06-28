@@ -108,7 +108,6 @@ $(function() {
 	$(".cloud-menu-three ul li").mouseout(function(){
 		clearTimeout(subTimer);
 	})
-
-
+	
 })
 
