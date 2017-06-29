@@ -1,0 +1,191 @@
+{% extends "base.html" %}
+
+
+{% block headerJsAndCss %}
+{{ super() }}
+<link rel="stylesheet" href="./css/cloudcomputeserver/cdn.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- banner -->
+<div class="banner-description">
+    <div class="banner-description-container">
+        <div class="banner-description-icon">
+            <img src="./images/newPage/CDN.png" style="width: 100%; height: 100%;">
+        </div>
+        <div class="banner-description-content">
+            <p class="b-d-c-title">内容分发网络（CDN）</p>
+            <p class="b-d-c-font">内容分发网络（Content Distribution Network，简称CDN），国美CDN部署节点遍布全国。将源站内容部署到离用户物理位置最近的节点，方便用户快速获取数据，降低延迟，提升用户体验。</p>
+        </div>
+    </div>
+</div>
+
+<!-- 云服务~导航 -->
+<div class="c-outer">
+    <div class="cloud-head">
+        <div class="c-h-content">
+            <ul class="cloud-menu-box">
+                <li class="c-m-b-li" style="margin: 0 60px;">功能介绍</li>
+                <li class="c-m-b-li" style="margin: 0 60px;">应用场景</li>
+                <li class="c-m-b-li" style="margin: 0 60px;">常见问题</li>
+            </ul>
+            <a href="" class="cloud-btn">立即注册</a>
+            <div class="cloud-product-menu">
+                <div class="p-menu-title">
+                    <div class="cloud-all-menu">
+                        <span class="all-menu"></span>
+                        <span>全部产品</span>
+                    </div>
+                    <!-- 下拉菜单 -->
+                    <div class="cloud-nav-menu">
+                        <div class="cloud-menu">
+                                <div class="cloud-menu-one">
+                                    <ul>
+                                        <li class="cloud-menu-one-active">云计算基础服务 <span class="icon"></span></li>
+                                        <!-- <li>产品2 <span class="icon"></span></li>
+                                        <li>产品3 <span class="icon"></span></li>
+                                        <li>产品4 <span class="icon"></span></li>
+                                        <li>产品5 <span class="icon"></span></li>
+                                        <li>产品6 <span class="icon"></span></li> -->
+                                    </ul>
+                                </div>
+                                <div class="cloud-menu-tow">
+                                    <div style="display:block;">
+                                        <div class="cloud-menu-three">
+                                            <ul>
+                                                <li class="cloud-menu-three-active">弹性计算</li>
+                                                <li>内容分发</li>
+                                                <li>网络</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cloud-menu-four">
+                                            <div style="display:block;">
+                                                <div class="cloud-m-f-item">
+                                                    <a href="./gomeEC2.html" style="text-decoration:none;">
+                                                        <p class="cloud-m-f-item1">国美云服务器（EC2）</p>
+                                                        <p class="cloud-m-f-item2">一种低开销，简单且高效的弹性计算服务</p>
+                                                    </a>
+                                                </div>
+                                                <div class="cloud-m-f-item">
+                                                    <a href="./gomeEBS.html" style="text-decoration:none;">
+                                                        <p class="cloud-m-f-item1">国美云硬盘（EBS）</p>
+                                                        <p class="cloud-m-f-item2">为云服务器提供高可用、持久性、低延迟的数据块级随机存储</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div style="display:none;">
+                                                <div class="m-f-item">
+                                                    <a href="./gomeELB.html" style="text-decoration:none;">
+                                                        <p class="cloud-m-f-item1">国美云负载均衡（ELB）</p>
+                                                        <p class="cloud-m-f-item2">对多台云服务器的传入流量进行分发的负载均衡服务</p>
+                                                    </a>
+                                                </div>
+                                                <div class="m-f-item">
+                                                    <a href="./gomeCDN.html" style="text-decoration:none;">
+                                                        <p class="cloud-m-f-item1">内容分发网络（CDN）</p>
+                                                        <p class="cloud-m-f-item2">一种高质量的内容分发服务</p>
+                                                    </a>
+                                                </div>
+                                                <div class="m-f-item">
+                                                    <a href="./gomeDNS.html" style="text-decoration:none;">
+                                                        <p class="cloud-m-f-item1">国美云域名解析系统（DNS）</p>
+                                                        <p class="cloud-m-f-item2">一站式域名解析服务</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div style="display:none;">
+                                                <div class="m-f-item">
+                                                    <a href="./gomeVPC.html" style="text-decoration:none;">
+                                                        <p class="cloud-m-f-item1">虚拟专有网络（VPC）</p>
+                                                        <p class="cloud-m-f-item2">完全属于您的逻辑隔离网络环境,保障资源安全</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- <div style="display:none;"></div>
+                                    <div style="display:none;"></div>
+                                    <div style="display:none;"></div>
+                                    <div style="display:none;"></div>
+                                    <div style="display:none;"></div> -->
+                                </div>
+                                <div class="cloud-upIcon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 云服务·介绍 -->
+<div class="cloud-body">
+    
+    <!-- 功能介绍 -->
+    <div class="function-introduction">
+        <p class="cloud-title-noe"><span class="cloud-title-noe-pic"></span>功能介绍</p>
+        <p class="cloud-title-tow" style="margin-top: 20px;">&nbsp;&nbsp;成本</p>
+        <p class="cloud-title-three">计费模式合理，有效节约用户成本</p>
+        <p class="cloud-content">采用95计费模式，针对异常流量有效起到缓冲作用，用户无需为少量异常流量付费，一定程度节约用户成本。</p>
+
+        <p class="cloud-title-tow">&nbsp;&nbsp;性能</p>
+        <p class="cloud-title-three">节点遍布全国，结合智能调度，提高访问速度，提升用户体验</p>
+        <p class="cloud-content">全国各个省份部署加速节点，覆盖移动、联通、电信及十几家中小型运营商。结合智能GSLB调度体系，结合全网实时监控数据，将用户请求精准调度至最优接入节点。有效提高用户访问的响应速度和成功率，提升用户体验。</p>
+
+        <p class="cloud-title-tow">&nbsp;&nbsp;多样性</p>
+        <p class="cloud-title-three">全网实时监控，掌握资源热度</p>
+        <p class="cloud-content">利用遍布全国的监测点，定频访问监测文件，对全国各地域、运营商的CDN访问状态进行监控、分析。</p>
+        <p class="cloud-title-three">HTTPS加密，防盗链，有效保障数据安全</p>
+        <p class="cloud-content">支持全网HTTPS加密传输，保障数据安全，避免遭受内容劫持。通过配置访问黑白名单来对访问者身份进行识别和过滤，从而限制资源被访问的情况。</p>
+        <p class="cloud-title-three">定义缓存过期时间，满足用户多样化业务场景</p>
+        <p class="cloud-content">自定义指定资源内容的缓存过期时间规则，支持指定路径 /test/... 或者文件名后缀如 *.html 方式。</p>
+
+        <p class="cloud-title-tow">&nbsp;&nbsp;易用性</p>
+        <p class="cloud-title-three">接入方便，无需业务调整</p>
+        <p class="cloud-content">添加域名后，仅需前往域名服务商处添加对应CNAME记录，即可完成接入，无需业务方做任何调整 。</p>
+        <p class="cloud-title-three">多样化管理方式，满足用户个性化需求</p>
+        <p class="cloud-content">实时反馈业务访问情况、消耗明细、热门资源分析，支持十几项自助功能配置，提供全方位API接口，多样化管理。</p>            
+    </div>
+
+    <!-- 应用场景 -->
+    <div class="apply-scene">
+      <p class="cloud-title-noe"><span class="cloud-title-noe-pic"></span>应用场景</p>
+      <div class="apply-content">
+        <div class="apply-item a-i-1">
+          <div class="apply-item-middle">
+            <p>CDN多用于企业网站构建</p>
+          </div>
+        </div>
+        <div class="apply-item a-i-2">
+          <p class="a-i-up">通过国美云覆盖广泛的边缘节点缓存网站内容，用户每次访问网站，根据智能调度选取较近的节点获取内容，提高用户访问网站的响应速度，提升用户体验。</p>
+          <p class="apply-conf"><span>推荐配置：</span>EC2+CDN</p>
+        </div>
+            <div class="apply-pic">
+                <img src="./images/newPage/cdnapply.png" alt="" >
+            </div>
+      </div>
+    </div>
+
+    <!-- 常见问题 -->
+    <div class="faq">
+        <p class="cloud-title-noe"><span class="cloud-title-noe-pic"></span>常见问题</p>
+
+        <p class="cloud-title-three" style="margin-top: 20px;"><span style="font-size: 14px;">●</span>&nbsp;&nbsp;国美云CDN计费方式是什么？</p>
+        <p class="cloud-content">国美云CDN采用后付费方式进行收费，按照95计费规则计费。</p>
+
+        <p class="cloud-title-three" style="margin-top: 30px;"><span style="font-size: 14px;">●</span>&nbsp;&nbsp;什么是95计费？</p>
+        <p class="cloud-content">国美云95计费方式按照如下规则执行：<br />把一个月的流量，按每5分钟统计一次，取流量最高值做一个点，这样一个月会得到很多流量峰值点。然后把当中高流量的5%的点去掉，按照剩下（100-5）% 来计算费用。</p>
+
+        <p class="cloud-title-three" style="margin-top: 30px;"><span style="font-size: 14px;">●</span>&nbsp;&nbsp;如何使用国美云CDN？</p>
+        <p class="cloud-content">如果您打算使用国美云CDN，请发送邮件到以下邮箱（<a href="mailto:zhaoyue-kg@gome.com.cn">zhaoyue-kg@gome.com.cn</a>或者<a href="mailto:zhaochen-kg@gome.com.cn">zhaochen-kg@gome.com.cn</a>）会有专业运维工程师指导您如何使用。</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block footerJsAndCss %}
+{{ super() }}
+<script type="text/javascript" src="./js/cloudcomputeserver/cdn.js"></script>
+{% endblock %}

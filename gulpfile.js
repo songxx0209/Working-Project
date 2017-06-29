@@ -1,5 +1,4 @@
 var gulp = require("gulp");
-var ejs = require("gulp-ejs");
 var uglify = require('gulp-uglify');
 var watch = require('gulp-watch'); // 只编译修改后的文件
 
@@ -11,6 +10,7 @@ var cleanCSS = require('gulp-clean-css');  // 压缩css文件
 var rename = require("gulp-rename");  // 文件重命名
 var less = require('gulp-less');  // 使用less
 var path = require('path');
+const nunjucks = require('gulp-nunjucks');
 
 // less转换为css
 gulp.task('less', function () {
@@ -49,10 +49,9 @@ gulp.task('images', function () {
         .pipe( gulp.dest( 'rev/images' ) );
 });
 
-//  将ejs文件转换为html文件并保存到temp文件夹中
-gulp.task('ejs', function(){
-    return gulp.src(['templates/*.ejs','!./templates/footer.ejs', '!./templates/header.ejs', '!./templates/subnav.ejs'])
-        .pipe(ejs({}, {}, {ext: '.html'}))
+gulp.task('html', function(){
+    return gulp.src(['templates/*.html'])
+        .pipe(nunjucks.compile())
         .pipe( gulp.dest('temp/templates') );
 })
 
@@ -79,7 +78,7 @@ gulp.task('rev-js', ['scripts', 'images'], function () {
         .pipe( gulp.dest('dist/js') );
 });
 
-gulp.task('rev', ['rev-css', 'rev-js', 'ejs'], function () {
+gulp.task('rev', ['rev-css', 'rev-js', 'html'], function () {
     return gulp.src(['rev/**/*.json', 'temp/templates/*.html'])
         .pipe( revCollector({
             replaceReved: true,
@@ -121,7 +120,7 @@ gulp.task('dist',['del'], function(){
 })
 
 gulp.task('watched', function () {
-    gulp.watch('templates/*.ejs', ['reload']);
+    gulp.watch('templates/*.html', ['reload']);
     gulp.watch(['less/*.less', 'less/**/*.less'], ['reload']);
     gulp.watch(['js/*.js', 'js/**/*.js'], ['reload']);
 });
