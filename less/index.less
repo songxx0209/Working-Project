@@ -1,9 +1,9 @@
-/*  header  */
-.header {
-    width: 100%;
-    height: 66px;
+* {
+  margin: 0;
+  padding: 0;
 }
-.hd {
+/*  header  */
+.gm-header {
     width: 100%;
     height: 66px;
     margin: 0 auto;
@@ -13,38 +13,48 @@
     z-index: 1000;
     background: #373a3f;
 }
+// .hd {
+//     width: 100%;
+//     height: 66px;
+//     margin: 0 auto;
+//     position: fixed;
+//     top: 0px;
+//     right: 0px;
+//     z-index: 1000;
+//     background: #373a3f;
+// }
 
-.container {
-    width: 1360px;
+// .container {
+//     width: 1360px;
+//     margin: 0 auto;
+// }
+.gm-container {
+    width: 1200px;
+    height: 66px;
     margin: 0 auto;
 }
-.hd-container {
-    min-width: 1200px;
-    height: 66px;
-
-}
-.logo {
+.gm-logo {
     width: 12%;
     height: 66px;
     float: left;
 }
-.logo img {
+.gm-logo img {
     margin: 15px 0;
 }
-.nav {
+.gm-nav {
     width: 88%;
     height: 66px;
     float: left;
 }
-.nav:hover {
+.gm-nav:hover {
     cursor:pointer;
 }
-.nav-left {
+.gm-nav-left {
     width: 60%;
     height: 66px;
     float: left;
 }
-.nav-right {
+.gm-nav-right {
     width: 40%;
     height: 66px;
     float: left;
@@ -588,8 +598,10 @@
     float: left;
 }
 
+
 @media (max-width: 1370px){
-    .hd-container, .container {
+
+    .hd-container, .container, .activeContainer {
         width: 1200px;
     }
     .upIcon {
@@ -631,16 +643,27 @@
     .upIcon {
         visibility: collapse;
     }
-    .header {
-        width: 1200px !important;
+    // .header {
+    //     width: 1200px !important;
+    // }
+    .logo {
+        width: 12%;
+        height: 66px;
+        float: left;
+        margin-left: 2%;
+    }
+    .nav {
+        width: 70%;
+        height: 66px;
+        float: left;
     }
     .nav-left {
-        width: 40%;
+        width: 60%;
         height: 66px;
         float: left;
     }
     .nav-right {
-        width: 30%;
+        width: 38%;
         height: 66px;
         float: left;
     }
