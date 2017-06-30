@@ -1,9 +1,9 @@
-
+{% macro subnav(type=4) %}
 <div class="c-outer">
     <div class="cloud-head">
         <div class="c-h-content">
             <ul class="cloud-menu-box">
-                <li class="c-m-b-li">产品概述</li>
+                {% if type==4 %} <li class="c-m-b-li">产品概述</li> {% endif %}
                 <li class="c-m-b-li">功能介绍</li>
                 <li class="c-m-b-li">应用场景</li>
                 <li class="c-m-b-li">常见问题</li>
@@ -97,3 +97,4 @@
         </div>
     </div>
 </div>
+{% endmacro %}

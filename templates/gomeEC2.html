@@ -8,20 +8,14 @@
 
 {% block body %}
 <!-- banner -->
-<div class="banner-description">
-  <div class="banner-description-container">
-      <div class="banner-description-icon">
-          <img src="./images/newPage/EC2.png" style="width: 100%; height: 100%;">
-      </div>
-      <div class="banner-description-content">
-          <p class="b-d-c-title">国美云服务器 EC2</p>
-          <p class="b-d-c-font">国美云服务器（Elastic Compute Cloud, 简称EC2），一种低开销、简单高效的弹性计算服务。<br />可快速完成云服务器创建，按时间灵活计费，有效降低基础设施成本，无需底层运维，真正致力于核心业务发展。</p>
-      </div>
-  </div>
-</div>
+{% import "productBanner.html" as productBanner %}
+{{productBanner.banner('./images/newPage/EBS.png', 
+'国美云硬盘 EBS', 
+'国美云服务器（Elastic Compute Cloud, 简称EC2），一种低开销、简单高效的弹性计算服务。<br />可快速完成云服务器创建，按时间灵活计费，有效降低基础设施成本，无需底层运维，真正致力于核心业务发展。')}}
 
 <!-- 云服务~导航 -->
-{% include "subnav.html" %}
+{% from "subnav.html" import subnav %}
+{{subnav()}}
 
 <!-- 云服务·介绍 -->
 <div class="cloud-body">

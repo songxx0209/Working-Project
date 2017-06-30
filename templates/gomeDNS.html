@@ -8,117 +8,13 @@
 
 {% block body %}
 <!-- banner -->
-<div class="banner-description">
-    <div class="banner-description-container">
-        <div class="banner-description-icon">
-            <img src="./images/newPage/DNS.png" style="width: 100%; height: 100%;">
-        </div>
-        <div class="banner-description-content">
-            <p class="b-d-c-title">国美云域名解析系统 DNS</p>
-            <p class="b-d-c-font">云域名解析系统（Domain Name System，简称DNS）是一种可用性高、扩展性强的云域名系统 。<br />旨在为开发人员和企业提供一种安全可靠且经济高效的域名解析方式。</p>
-        </div>
-    </div>
-</div>
+{% import "productBanner.html" as productBanner %}
+{{productBanner.banner('./images/newPage/DNS.png', 
+'国美云域名解析系统 DNS', 
+'云域名解析系统（Domain Name System，简称DNS）是一种可用性高、扩展性强的云域名系统 。<br />旨在为开发人员和企业提供一种安全可靠且经济高效的域名解析方式。')}}
 
-<!-- 云服务~导航 -->
-<div class="c-outer">
-    <div class="cloud-head">
-        <div class="c-h-content">
-            <ul class="cloud-menu-box">
-                <li class="c-m-b-li" style="margin: 0 60px;">功能介绍</li>
-                <li class="c-m-b-li" style="margin: 0 60px;">应用场景</li>
-                <li class="c-m-b-li" style="margin: 0 60px;">常见问题</li>
-            </ul>
-            <a href="" class="cloud-btn">立即注册</a>
-            <div class="cloud-product-menu">
-                <div class="p-menu-title">
-                    <div class="cloud-all-menu">
-                        <span class="all-menu"></span>
-                        <span>全部产品</span>
-                    </div>
-                    <!-- 下拉菜单 -->
-                    <div class="cloud-nav-menu">
-                        <div class="cloud-menu">
-                                <div class="cloud-menu-one">
-                                    <ul>
-                                        <li class="cloud-menu-one-active">云计算基础服务 <span class="icon"></span></li>
-                                        <!-- <li>产品2 <span class="icon"></span></li>
-                                        <li>产品3 <span class="icon"></span></li>
-                                        <li>产品4 <span class="icon"></span></li>
-                                        <li>产品5 <span class="icon"></span></li>
-                                        <li>产品6 <span class="icon"></span></li> -->
-                                    </ul>
-                                </div>
-                                <div class="cloud-menu-tow">
-                                    <div style="display:block;">
-                                        <div class="cloud-menu-three">
-                                            <ul>
-                                                <li class="cloud-menu-three-active">弹性计算</li>
-                                                <li>内容分发</li>
-                                                <li>网络</li>
-                                            </ul>
-                                        </div>
-                                        <div class="cloud-menu-four">
-                                            <div style="display:block;">
-                                                <div class="cloud-m-f-item">
-                                                    <a href="./gomeEC2.html" style="text-decoration:none;">
-                                                        <p class="cloud-m-f-item1">国美云服务器（EC2）</p>
-                                                        <p class="cloud-m-f-item2">一种低开销，简单且高效的弹性计算服务</p>
-                                                    </a>
-                                                </div>
-                                                <div class="cloud-m-f-item">
-                                                    <a href="./gomeEBS.html" style="text-decoration:none;">
-                                                        <p class="cloud-m-f-item1">国美云硬盘（EBS）</p>
-                                                        <p class="cloud-m-f-item2">为云服务器提供高可用、持久性、低延迟的数据块级随机存储</p>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div style="display:none;">
-                                                <div class="m-f-item">
-                                                    <a href="./gomeELB.html" style="text-decoration:none;">
-                                                        <p class="cloud-m-f-item1">国美云负载均衡（ELB）</p>
-                                                        <p class="cloud-m-f-item2">对多台云服务器的传入流量进行分发的负载均衡服务</p>
-                                                    </a>
-                                                </div>
-                                                <div class="m-f-item">
-                                                    <a href="./gomeCDN.html" style="text-decoration:none;">
-                                                        <p class="cloud-m-f-item1">内容分发网络（CDN）</p>
-                                                        <p class="cloud-m-f-item2">一种高质量的内容分发服务</p>
-                                                    </a>
-                                                </div>
-                                                <div class="m-f-item">
-                                                    <a href="./gomeDNS.html" style="text-decoration:none;">
-                                                        <p class="cloud-m-f-item1">国美云域名解析系统（DNS）</p>
-                                                        <p class="cloud-m-f-item2">一站式域名解析服务</p>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div style="display:none;">
-                                                <div class="m-f-item">
-                                                    <a href="./gomeVPC.html" style="text-decoration:none;">
-                                                        <p class="cloud-m-f-item1">虚拟专有网络（VPC）</p>
-                                                        <p class="cloud-m-f-item2">完全属于您的逻辑隔离网络环境,保障资源安全</p>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <!-- <div style="display:none;"></div>
-                                    <div style="display:none;"></div>
-                                    <div style="display:none;"></div>
-                                    <div style="display:none;"></div>
-                                    <div style="display:none;"></div> -->
-                                </div>
-                                <div class="cloud-upIcon"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+{% from "subnav.html" import subnav %}
+{{subnav(type=3)}}
 
 <!-- 云服务·介绍 -->
 <div class="cloud-body">

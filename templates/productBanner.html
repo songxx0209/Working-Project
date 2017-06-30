@@ -1,0 +1,14 @@
+{% macro banner(imgSrc, title, content) %}
+
+<div class="banner-description">
+    <div class="banner-description-container">
+        <div class="banner-description-icon">
+            <img src="{{imgSrc}}" style="width: 100%; height: 100%;">
+        </div>
+        <div class="banner-description-content">
+            <p class="b-d-c-title">{{title}}</p>
+            <p class="b-d-c-font">{{content| safe}}</p>
+        </div>
+    </div>
+</div>
+{% endmacro %}
