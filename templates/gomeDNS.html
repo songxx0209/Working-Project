@@ -8,17 +8,10 @@
 
 {% block body %}
 <!-- banner -->
-<div class="banner-description">
-    <div class="banner-description-container">
-        <div class="banner-description-icon">
-            <img src="./images/newPage/DNS.png" style="width: 100%; height: 100%;">
-        </div>
-        <div class="banner-description-content">
-            <p class="b-d-c-title">国美云域名解析系统 DNS</p>
-            <p class="b-d-c-font">云域名解析系统（Domain Name System，简称DNS）是一种可用性高、扩展性强的云域名系统 。<br />旨在为开发人员和企业提供一种安全可靠且经济高效的域名解析方式。</p>
-        </div>
-    </div>
-</div>
+{% import "productBanner.html" as productBanner %}
+{{productBanner.banner('./images/newPage/DNS.png', 
+'国美云域名解析系统 DNS', 
+'云域名解析系统（Domain Name System，简称DNS）是一种可用性高、扩展性强的云域名系统 。<br />旨在为开发人员和企业提供一种安全可靠且经济高效的域名解析方式。')}}
 
 <!-- 云服务~导航 -->
 <div class="c-outer">

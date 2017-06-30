@@ -8,17 +8,12 @@
 
 {% block body %}
 <!-- banner -->
-<div class="banner-description">
-    <div class="banner-description-container">
-        <div class="banner-description-icon">
-            <img src="./images/newPage/ELB.png" style="width: 100%; height: 100%;">
-        </div>
-        <div class="banner-description-content">
-            <p class="b-d-c-title">国美云负载均衡 ELB</p>
-            <p class="b-d-c-font">国美云负载均衡（Elastic Load Balancer, 简称ELB），是一种将传入流量自动分发到后端多台云服务器上的负载均衡服务。通过流量的均衡分发承载较大规模的流量，扩充系统对外服务能力。通过消除单点故障隐患，提升服务对外可用性。</p>
-        </div>
-    </div>
-</div>
+
+{% import "productBanner.html" as productBanner %}
+{{productBanner.banner('./images/newPage/ELB.png', 
+'国美云负载均衡 ELB', 
+'国美云负载均衡（Elastic Load Balancer, 简称ELB），是一种将传入流量自动分发到后端多台云服务器上的负载均衡服务。通过流量的均衡分发承载较大规模的流量，扩充系统对外服务能力。通过消除单点故障隐患，提升服务对外可用性。')}}
+
 
 <!-- 云服务~导航 -->
 {% include "subnav.html" %}

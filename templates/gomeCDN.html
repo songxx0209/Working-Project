@@ -9,17 +9,10 @@
 {% block body %}
 
 <!-- banner -->
-<div class="banner-description">
-    <div class="banner-description-container">
-        <div class="banner-description-icon">
-            <img src="./images/newPage/CDN.png" style="width: 100%; height: 100%;">
-        </div>
-        <div class="banner-description-content">
-            <p class="b-d-c-title">内容分发网络（CDN）</p>
-            <p class="b-d-c-font">内容分发网络（Content Distribution Network，简称CDN），国美CDN部署节点遍布全国。将源站内容部署到离用户物理位置最近的节点，方便用户快速获取数据，降低延迟，提升用户体验。</p>
-        </div>
-    </div>
-</div>
+{% import "productBanner.html" as productBanner %}
+{{productBanner.banner('./images/newPage/CDN.png', 
+'内容分发网络（CDN）', 
+'内容分发网络（Content Distribution Network，简称CDN），国美CDN部署节点遍布全国。将源站内容部署到离用户物理位置最近的节点，方便用户快速获取数据，降低延迟，提升用户体验。')}}
 
 <!-- 云服务~导航 -->
 <div class="c-outer">
