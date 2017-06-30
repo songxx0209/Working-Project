@@ -3,16 +3,16 @@ $(function() {
 	
 	
 	var timer = null;
-	$(".nav-left .left-item:eq(0)").mouseover(function(){
+	$(".gm-nav-left .left-item:eq(0)").mouseover(function(){
 		clearTimeout(timer);
-		$(".nav-left > div:eq(0)").css('color', '#1dc3ed');
-		$('.nav-menu').css('display', 'block');
+		$(".gm-nav-left > div:eq(0)").css('color', '#1dc3ed');
+		$('.gm-nav-menu').css('visibility', 'visible');
 	})
 
-	$(".nav-left > div:eq(0)").mouseout(function() {
+	$(".gm-nav-left > div:eq(0)").mouseout(function() {
 		timer = setTimeout(function() {
-			$(".nav-left > div:eq(0)").css('color', 'white');
-			$('.nav-menu').css('display', 'none');
+			$(".gm-nav-left > div:eq(0)").css('color', 'white');
+			$('.gm-nav-menu').css('visibility', 'hidden');
 		},200);
 	})
 

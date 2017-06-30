@@ -3,7 +3,7 @@
   padding: 0;
 }
 /*  header  */
-.gm-header {
+.gm {
     width: 100%;
     height: 66px;
     margin: 0 auto;
@@ -13,21 +13,6 @@
     z-index: 1000;
     background: #373a3f;
 }
-// .hd {
-//     width: 100%;
-//     height: 66px;
-//     margin: 0 auto;
-//     position: fixed;
-//     top: 0px;
-//     right: 0px;
-//     z-index: 1000;
-//     background: #373a3f;
-// }
-
-// .container {
-//     width: 1360px;
-//     margin: 0 auto;
-// }
 .gm-container {
     width: 1200px;
     height: 66px;
@@ -54,11 +39,6 @@
     height: 66px;
     float: left;
 }
-.gm-nav-right {
-    width: 40%;
-    height: 66px;
-    float: left;
-}
 .left-item {
     height: 66px;
     float: left;
@@ -66,9 +46,19 @@
     font-size: 16px;
     padding: 0 25px;
 }
+.left-item-pd {
+  line-height: 66px;
+}
 .left-item:hover {
     color: #1dc3ed;
 }
+
+.gm-nav-right {
+    width: 40%;
+    height: 66px;
+    float: left;
+}
+
 .right-item {
     height: 66px;
     line-height: 66px;
@@ -92,20 +82,23 @@
     color: #1dc3ed;
 }
 
+
+
+
 /*  nav 导航  */
-.nav-menu {
+.gm-nav-menu {
     width: 100%;
     height: 0px;
     color: #333;
     font-size: 14px;
     position: absolute;
     left: 0;
-    display: none;
+    visibility: hidden;
     z-index: 2;
 }
-.menu {
+.gm-menu {
     position: relative;
-    width: 1320px;
+    width: 1160px;
     height: 260px;
     margin: -10px auto 0;
     padding: 20px;
@@ -121,18 +114,19 @@
     height: 8px;
     background: url(../images/home/upIcon.png) no-repeat;
     top: -8px;
-    left: 193px;
+    left: 173px;
 }
 .menu-one {
     width: 12%;
     float: left;
 }
 .menu-tow {
-    width: 88%;
+    width: 86%;
     float: left;
+    margin-left: 1%;
 }
 .menu-one ul {
-    width: 155px;
+    width: 100%;
     height: 260px;
     border-right: 1px solid #e5e5e5;
 }
@@ -150,7 +144,7 @@
     height:15px;
     position:absolute;
     right:5px;
-    top:17px;
+    top:13px;
     display:inline-block;
     background:url("../images/home/nav-left.png") no-repeat;
 }
@@ -158,7 +152,7 @@
     background:url("../images/home/nav-left2.png") no-repeat;
 }
 .menu-three {
-    width: 148px;
+    width: 15%;
     height: 260px;
     float: left;
     padding-left: 10px;
@@ -167,7 +161,6 @@
 .menu-four {
     width: 80%;
     float: left;
-    margin: 0 20px;
 }
 .menu-three ul {
     height: 100%;
@@ -202,10 +195,29 @@
     font-size: 12px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  bannner  */
 .banner {
     width: 100%;
-    min-width: 1200px;
+    // min-width: 1200px;
     height: 560px;
     overflow: hidden;
     position: relative;
@@ -336,9 +348,38 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* info */
 .activeInfo {
     width: 100%;
+    min-width: 1200px;
     height: 150px;
     box-sizing: border-box;
 }
@@ -468,6 +509,23 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 解决方案 */
 .solvePlan {
     width: 100%;
@@ -573,6 +631,23 @@
     padding: 25px 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 合作伙伴 */
 .partner {
     width: 100%;
@@ -587,6 +662,7 @@
 }
 .partner-container {
     height: 120px;
+    width: 1200px;
     margin: 0 auto;
     padding-bottom: 100px;
 }
@@ -599,72 +675,154 @@
 }
 
 
-@media (max-width: 1370px){
 
-    .hd-container, .container, .activeContainer {
-        width: 1200px;
-    }
-    .upIcon {
-        left: 95px;
-    }
-    .menu {
-        width: 1000px;
-    }
-    .menu-one ul {
-        width: 140px;
-        padding: 0 5px 0 0;
-        border-right: 1px solid #e5e5e5;    
-    }
-    .menu-four {
-        width: 70%;
-        float: left;
-        margin: 0 20px;
-    }
-    .menu {
-        height: 300px;
-    }
-    .menu-one ul {
-        height: 300px;
-    }
-    .menu-three {
-        height: 300px;
-    }
-    .menu-tow {
-        width: 800px !important;
-    }
-    .menu-one {
-        width: 163px !important;
-    }
+
+
+
+
+
+
+
+
+
+/* 注册 */
+.register {
+    width: 100%;
+    height: 220px;
+    background: url('../images/home/zhuce.png');
+    background-color: #1dc3ed;
 }
+.r-title {
+    font-size: 25px;
+    padding: 50px 0;
+    text-align: center;
+}
+.r-title p {
+    padding-bottom: 15px;
+    color: white;
+}
+.r-btn {
+    width: 180px;
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+}
+.r-btn div {
+    height: 44px;
+    background: url('../images/home/sign-up-right-away.png');
+}
+.r-btn div:hover {
+    height: 44px;
+    background: url('../images/home/sign-up-right-away-white.png');
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 484px;
+    background: #373737;
+}
+.footer-container {
+    height: 484px;
+}
+.f-content {
+    width: 1200px;
+    height: 320px;
+    margin: 0px auto;
+    padding-top: 80px;
+}
+.f-item {
+    width: 200px;
+    height: 320px;
+    margin: 0 50px;
+    padding: 0;
+    color: #ffffff;
+    float: left;
+}
+.f-item span {
+    color: #d8d8d8;
+}
+.f-item p {
+    color: #b2b2b2;
+    font-size: 12px;
+    padding: 3px 0;
+}
+.f-item hr {
+    display: block;
+    margin: 20px 0;
+    height:01px;
+    border:none;
+}
+.f-item a {
+    text-decoration:none;
+    color: #1dc3ed;
+}
+.contact-icon {
+    width: 110px;
+    height: 23px;
+    margin: 0 auto;
+}
+.f-c-icon {
+    width: 24px;
+    height: 23px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+.contact-icon span {
+    display: block;
+    height: 23px;
+    line-height: 23px;
+    font-size: 12px;
+    float: left;
+}
+.qrcode {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #939393;
+    margin: 24px auto 0;
+    padding: 6px;
+}
+.qrcode img {
+    width:100%;
+    height: 100%;
+    display: block;
+}
+.f-q-notice {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.f-down {
+    height: 84px;
+    box-sizing: border-box;
+    border-top: 1px solid #aeaeae;
+}
+.f-d-content {
+    width: 900px;
+    height: 84px;
+    margin: 0 auto;
+    text-align: center;
+}
+.f-d-item {
+    height: 84px;
+    line-height: 84px;
+    color: #aeaeae;
+    font-size: 14px;
+}
+
 @media (max-width: 1200px){
-    .computing, .solvePlan, .partner {
+    .banner, .computing, .solvePlan, .partner {
         width: 1200px;
     }
     .upIcon {
-        visibility: collapse;
+        left: 150px;
     }
-    // .header {
-    //     width: 1200px !important;
-    // }
-    .logo {
-        width: 12%;
-        height: 66px;
-        float: left;
-        margin-left: 2%;
+    .gm-container {
+      width: 1000px;
     }
-    .nav {
-        width: 70%;
-        height: 66px;
-        float: left;
-    }
-    .nav-left {
-        width: 60%;
-        height: 66px;
-        float: left;
-    }
-    .nav-right {
-        width: 38%;
-        height: 66px;
-        float: left;
+    .gm-menu {
+      width: 960px;
     }
 }

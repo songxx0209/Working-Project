@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta charset="utf-8" />
 	<title>国美云 - 解决一切不可能 </title>
   <link rel="icon" href="./images/home/favicon.png">
 
   {% block headerJsAndCss %}
-  <link rel="stylesheet" href="./css/common.css">
+  <!--<link rel="stylesheet" href="./css/common.css">-->
   {% endblock %}
 </head>
 <body>
     
-    <!-- 联系我们，回到顶部 -->
-    {% block flow %}
-    {% include "flow.html" %}
-    {% endblock %}
+  <!-- 联系我们，回到顶部 -->
+  {% block flow %}
+  {% include "flow.html" %}
+  {% endblock %}
 
 	<!-- header -->
   {% block header %}
@@ -25,17 +25,16 @@
   {% block body %}
   {% endblock %}
   
-    <!-- footer -->
-    {% block footer %}
-    {% include "footer.html" %}
-    {% endblock %}
-    
-    {% block footerJsAndCss %}
-    <script type="text/javascript" src="./js/jquery.js"></script>
-    <script type="text/javascript" src="./js/banner.js"></script>
-    <script type="text/javascript" src="./js/common.js"></script>
-    {% endblock %}
-    
-    
+  <!-- footer -->
+  {% block footer %}
+  {% include "footer.html" %}
+  {% endblock %}
+  
+  {% block footerJsAndCss %}
+  <script type="text/javascript" src="./js/jquery.js"></script>
+  <script type="text/javascript" src="./js/banner.js"></script>
+  <script type="text/javascript" src="./js/common.js"></script>
+  {% endblock %}
+
 </body>
 </html>
