@@ -16,7 +16,9 @@
 '虚拟专用网络（Virtual Private Cloud，简称VPC），提供一个国美云专属的网络环境，可以自定义IP地址范围、网段和网关等。基于国美云网络，您可以创建国美云资源，包括云服务器、负载均衡等等。')}}
 
 <!-- 云服务~导航 -->
-{% include "subnav.html" %}
+{% from "subnav.html" import subnav %}
+{{subnav()}}
+
 <!-- 云服务·介绍 -->
 <div class="cloud-body">
 

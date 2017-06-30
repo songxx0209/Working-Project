@@ -16,7 +16,8 @@
 
 
 <!-- 云服务~导航 -->
-{% include "subnav.html" %}
+{% from "subnav.html" import subnav %}
+{{subnav()}}
 
 <!-- 云服务·介绍 -->
 <div class="cloud-body">

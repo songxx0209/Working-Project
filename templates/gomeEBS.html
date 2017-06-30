@@ -14,7 +14,8 @@
 '国美云硬盘（Elastic Block Storage）,为国美云服务器提供持久便捷的块存储，用户可以像使用物理块设备一样来使用国美云硬盘，国美云硬盘会在其可用区内自动复制多份数据副本，防止硬件损坏导致的数据不可用，从而提升应用性能。')}}
 
   <!-- 云服务~导航 -->
-  {% include "subnav.html" %}
+{% from "subnav.html" import subnav %}
+{{subnav()}}
 
 <!-- 云服务·介绍 -->
   <div class="cloud-body">
