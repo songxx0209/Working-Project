@@ -1,0 +1,343 @@
+
+/* header */ 
+.gm {
+  width: 100%;
+  height: 66px;
+  margin: 0 auto;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  z-index: 1000;
+  background: #373a3f;
+}
+
+
+
+/* 段落间距，字体大小 */
+.cloud-title-noe {
+  font-size: 24px;
+  margin: 0;
+}
+
+.cloud-title-noe-pic {
+  background: url(../images/productPages/tab.png) no-repeat;
+  width: 20px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+  top: 3px; 
+}
+
+.cloud-title-tow {
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #81999f;
+  background: #ecf9fd;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.cloud-title-three {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.cloud-content {
+  font-size: 14px;
+  line-height: 28px;
+  color: #666;
+  margin: 0;
+  margin-top: 10px;
+}
+
+
+
+/* 产品页面的banner */ 
+.pro-banner {
+  width: 100%;
+  height: 328px;
+  position: relative;
+  background: url("../images/productPages/banner.png") no-repeat;
+  background-size: 100% 100%;
+}
+.pro-banner-container {
+  width: 1030px;
+  height: 118px;
+  margin: 0px auto;
+  padding: 105px 0;
+}
+.pro-banner-icon {
+  width: 110px;
+  height: 110px;
+  float: left;
+  margin-right: 40px;
+}
+.pro-banner-content {
+  width: 870px;
+  height: 110px;
+  float: left;
+}
+.pro-banner-title {
+  font-size: 38px;
+  color: #333;
+}
+.pro-banner-font {
+  font-size: 16px;
+  color: #333;
+  margin-top: 15px;
+}
+
+
+/* 云计算服务-子级导航 */
+.c-outer {
+  height: 66px;
+}
+.c-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 2;
+  box-shadow: 0 3px #eee;
+}
+.c-fixed .cloud-menu-box {
+  border: none;
+  margin-bottom: 0;
+}
+.c-fixed .cloud-menu-box {
+  margin: 0;
+}
+.c-h-content {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.cloud-btn {
+  position: absolute;
+  right: 0;
+  top: 7px;
+  display: none;
+  min-width: 78px;
+  height: 33px;
+  padding: 0 30px 1px;
+  background: #00a2ca;
+  line-height: 33px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  outline: none;
+  border-radius: 0;
+}
+.cloud-menu-box {
+  position: relative;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+  margin-top: 16px;
+}
+.c-m-b-li {
+  display: inline;
+  height: 50px;
+  margin: 0 20px;
+  padding: 10px 20px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #333;
+}
+.c-m-b-active {
+  background: #1dc3ed;
+  color: #fff;
+}
+.cloud-product-menu {
+  text-align: left;
+  width: 150px;
+  position: absolute;
+  top: 0;
+  height: 50px;
+  z-index: 999;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  display: none;
+}
+.p-menu-title {
+  font-size: 14px;
+  color: #333;
+  padding-left: 20px;
+  cursor:pointer;
+}
+.p-menu-title span {
+  height: 16px;
+  line-height: 50px;
+}
+.all-menu {
+  background: url(../images/productPages/all.png) no-repeat;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  left: -7px;
+  width: 16px;
+  height: 16px;
+}
+.cloud-product-menu:hover .all-menu {
+  background: url(../images/productPages/all-gray.png) no-repeat;
+}
+
+/* cloud导航-下拉-全部 */
+.cloud-nav-menu {
+  width: 990px;
+  height: 340px;
+  color: #333;
+  font-size: 14px;
+  position: absolute;
+  top: 45px;
+  left: -4px;
+  display: none;
+  z-index: 2;
+  border-radius: 4px;
+  -moz-box-shadow: rgba(0,0,0,0.1) 0 2px 8px;
+  -webkit-box-shadow: rgba(0,0,0,0.1) 0 2px 8px;
+  box-shadow: rgba(0,0,0,0.1) 0 2px 8px;
+}
+.cloud-menu {
+  position: relative;
+  width: 990px;
+  height: 300px;   
+}
+.cloud-menu-one {
+  width: 163px;
+  float: left;
+  padding: 20px 0 20px 20px;
+  background: #fafafa;
+}
+.cloud-menu-one ul {
+  width: 140px;
+  height: 300px;
+  padding: 0 5px 0 0;
+  border-right: 1px solid #e5e5e5;
+}
+.cloud-menu-one li {
+  position: relative;
+  list-style: none;
+  padding: 10px;
+}
+.cloud-menu-one-active {
+  background: #f0f0f0;
+  color: #1dc3ed;
+}
+.cloud-all-menu {
+  display: inline;
+  padding: 10px;
+}
+.cloud-menu-tow {
+  width: 807px;
+  float: left;
+  background: #fff;
+}
+.cloud-menu-three {
+  width: 148px;
+  height: 300px;
+  float: left;
+  padding-left: 10px;
+  padding: 20px 10px 20px 0;
+  background: #fafafa;
+  border-right: 1px solid #e5e5e5;
+}
+.cloud-menu-three li {
+  position: relative;
+  list-style: none;
+  padding: 10px;
+}
+.cloud-menu-three-active {
+  background: #f0f0f0;
+  color: #1dc3ed;
+}
+.cloud-menu-four {
+  width: 70%;
+  float: left;
+  margin: 20px;
+}
+.cloud-m-f-item {
+  width: 410px;
+  height: 60px;
+  margin: 5px;
+}
+.cloud-m-f-item:hover .cloud-m-f-item1 {
+  color: #1dc3ed;
+}
+.cloud-m-f-item1 {
+  margin: 5px 15px;
+  color: #333;
+  font-size: 14px;
+}
+.cloud-m-f-item2 {
+  margin: 0 15px;
+  color: #b2b2b2;
+  font-size: 12px;
+}
+.cloud-upIcon {
+  position: absolute;
+  width: 19px;
+  height: 8px;
+  background: url(../images/productPages/all-up.png) no-repeat;
+  top: -9px;
+  left: 60px;
+}
+
+// @media (max-width: 1370px){
+//   .hd-container, .container {
+//       width: 1370px;
+//   }
+//   .register, .footer, .header, .banner-description,  .cloud-body, .Recruitment {
+//       width: 1370px !important;
+//   }
+//   .upIcon {
+//       left: 95px;
+//   }
+//   .menu {
+//       width: 1000px;
+//   }
+//   .menu-one ul {
+//       width: 140px;
+//       padding: 0 5px 0 0;
+//       border-right: 1px solid #e5e5e5;    
+//   }
+//   .menu-four {
+//       width: 70%;
+//       float: left;
+//       margin: 0 20px;
+//   }
+//   .menu {
+//       height: 300px;
+//   }
+//   .menu-one ul {
+//       height: 300px;
+//   }
+//   .menu-three {
+//       height: 300px;
+//   }
+//   .menu-tow {
+//       width: 800px !important;
+//   }
+//   .menu-one {
+//       width: 163px !important;
+//   }
+// }
+@media (max-width: 1200px){
+  .gm, .pro-banner {
+    width: 1200px;
+  }
+}
+
