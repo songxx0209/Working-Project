@@ -3,15 +3,15 @@
 
 {% block headerJsAndCss %}
 {{ super() }}
-<link rel="stylesheet" type="text/css" href="./css/cloudcomputeserver/gcs.css">
+<link rel="stylesheet" type="text/css" href="./css/cloudcomputeserver/ec2.css">
 {% endblock %}
 
 {% block body %}
 <!-- banner -->
 {% import "productBanner.html" as productBanner %}
 {{productBanner.banner('./images/productPages/EC2.png', 
-'国美云硬盘 EBS', 
-'国美云服务器（Elastic Compute Cloud, 简称EC2），一种低开销、简单高效的弹性计算服务。<br />可快速完成云服务器创建，按时间灵活计费，有效降低基础设施成本，无需底层运维，真正致力于核心业务发展。')}}
+'国美云服务器 Gome EC2',
+'国美云服务器（Gome Elastic Compute Cloud, 简称Gome EC2），一种低开销、简单高效的弹性计算服务。<br />可快速完成云服务器创建，按时间灵活计费，有效降低基础设施成本，无需底层运维，真正致力于核心业务发展。')}}
 
 <!-- 云服务~导航 -->
 {% from "subnav.html" import subnav %}
