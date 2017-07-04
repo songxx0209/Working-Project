@@ -51,13 +51,13 @@ $(function() {
             $('.cloud-head').attr('class', 'cloud-head');
             $('.cloud-menu-box li:eq(0)').attr('class', 'c-m-b-li').siblings().attr('class', 'c-m-b-li');
         }
-        if (scrollTop >= funHigt - 150) {
+        if (scrollTop >= funHigt - 100) {
         	$('.cloud-menu-box li:eq(1)').attr('class', 'c-m-b-li c-m-b-active').siblings().attr('class', 'c-m-b-li');
         } 
-        if(scrollTop >= applyHigt - 150) {
+        if(scrollTop >= applyHigt - 100) {
         	$('.cloud-menu-box li:eq(2)').attr('class', 'c-m-b-li c-m-b-active').siblings().attr('class', 'c-m-b-li');
         } 
-        if(scrollTop >= faqHigt - 150) {
+        if(scrollTop >= faqHigt - 100) {
         	$('.cloud-menu-box li:eq(3)').attr('class', 'c-m-b-li c-m-b-active').siblings().attr('class', 'c-m-b-li');
         }
     }

@@ -3,13 +3,13 @@
 
 {% block headerJsAndCss %}
 {{ super() }}
-<link rel="stylesheet" href="./css/cloudcomputeserver/cdn.css">
+<link rel="stylesheet" href="./css/cloudcomputeserver/dns.css">
 {% endblock %}
 
 {% block body %}
 <!-- banner -->
 {% import "productBanner.html" as productBanner %}
-{{productBanner.banner('./images/newPage/DNS.png', 
+{{productBanner.banner('./images/productPages/DNS.png', 
 '国美云域名解析系统 DNS', 
 '云域名解析系统（Domain Name System，简称DNS）是一种可用性高、扩展性强的云域名系统 。<br />旨在为开发人员和企业提供一种安全可靠且经济高效的域名解析方式。')}}
 
@@ -35,7 +35,6 @@
         <p class="cloud-content">支持移动、联通、电信三大运营商的线路细分。</p>
         <p class="cloud-title-three">搜索引擎线路选择</p>
         <p class="cloud-content">云域名解析系统支持谷歌、百度、必应、有道、雅虎等搜索引擎线路。</p>
-        
     </div>
 
     <!-- 应用场景 -->
@@ -49,10 +48,10 @@
         </div>
         <div class="apply-item a-i-2" style="height: 140px;">
           <p class="a-i-up">基于云域名解析系统多线路智能解析服务，实现对访问流量负载均衡。</p>
-          <p class="apply-conf"><span>推荐配置：</span>EC2+ELB+DNS</p>
+          <p class="apply-conf"><span>推荐配置：</span>Gome EC2+ELB+DNS</p>
         </div>
             <div class="apply-pic">
-                <img src="./images/newPage/dnsapply.png" alt="" >
+                <img src="./images/productPages/dnsapply.png" alt="" >
 
                 <div class="apply-div">
                     <table class="apply-table">

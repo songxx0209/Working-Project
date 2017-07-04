@@ -1,51 +1,47 @@
-{% extends "base.html" %}
+{% extends "baseIndex.html" %}
 
 {% block body %}
 <style>
+  .build_pic {
+    width: 1370px;
+    height: 800px;
+    margin: 0 auto;
+    position: relative;
+    background: url('./images/productPages/build.png');
+    background-size: 100% 100%;
+  }
+  .small_pic {
+    width: 200px;
+    height: 50px;
+    margin: 0px auto;
+    padding-top: 520px; 
+    font-size: 18px;
+    color: #333;
+  }
+  .notice {
+    width: 300px;
+    height: 50px;
+    margin: 0px auto;
+    border: 1px solid #eee;
+    position: relative;
+    top: 70px;
+    text-align: center;
+  }
+  .notice span {
+    line-height: 50px;
+    color: #333;
+    font-size: 18px;
+  }
+  @media (max-width: 1200px){
     .build_pic {
-        position: relative;
-        width: 1370px;
-        height: 800px;
-        margin: 0 auto;
-        background: url('./images/newPage/build.png');
-        background-size: 100% 100%;
+      width: 1200px;
     }
-    .small_pic {
-        width: 200px;
-        height: 50px;
-        margin: 0px auto;
-        /*border: 1px solid black;*/
-        padding-top: 520px; 
-        font-size: 18px;
-        color: #333;
-    }
-    .notice {
-        width: 300px;
-        height: 50px;
-        margin: 0px auto;
-        border: 1px solid #eee;
-        position: relative;
-        top: 70px;
-        text-align: center;
-    }
-    .notice span {
-        line-height: 50px;
-        color: #333;
-        font-size: 18px;
-    }
-    @media (max-width: 1200px){
-        .build_pic {
-            width: 1200px;
-        }
-    }
-    .left-item-pd {
-        color: white;
-    }
+  }
 </style>
 
 <div class="build_pic">
   <div class="small_pic">
-    <img src="./images/newPage/car.png" alt="">
+    <img src="./images/productPages/car.png" alt="">
     <span style="padding-left: 10px;">正在建设中...</span>
   </div>
   <div class="notice">
