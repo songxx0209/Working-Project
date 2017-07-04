@@ -3,15 +3,15 @@
 
 {% block headerJsAndCss %}
 {{ super() }}
-<link rel="stylesheet" type="text/css" href="./css/cloudcomputeserver/ec2.css">
+<link rel="stylesheet" type="text/css" href="./css/cloudcomputeserver/ecm.css">
 {% endblock %}
 
 {% block body %}
 <!-- banner -->
 {% import "productBanner.html" as productBanner %}
-{{productBanner.banner('./images/productPages/EC2.png', 
-'国美云服务器 Gome EC2',
-'国美云服务器（Gome Elastic Compute Cloud, 简称Gome EC2），一种低开销、简单高效的弹性计算服务。<br />可快速完成云服务器创建，按时间灵活计费，有效降低基础设施成本，无需底层运维，真正致力于核心业务发展。')}}
+{{productBanner.banner('./images/productPages/ECM.png', 
+'国美云服务器 ECM',
+'国美云服务器（Elastic Cloud Machine, 简称ECM），一种低开销、简单高效的弹性计算服务。<br />可快速完成云服务器创建，按时间灵活计费，有效降低基础设施成本，无需底层运维，真正致力于核心业务发展。')}}
 
 <!-- 云服务~导航 -->
 {% from "subnav.html" import subnav %}
@@ -199,8 +199,8 @@
     <div class="faq">
         <p class="cloud-title-noe"><span class="cloud-title-noe-pic"></span>常见问题</p>
         
-        <p class="cloud-title-three" style="margin-top: 20px;">●&nbsp;&nbsp;什么是国美云服务器 (Gome EC2)？</p>
-        <p class="cloud-content">国美云服务器（Elastic Compute Cloud, 简称EC2）,一种低开销，简单且高效的弹性计算服务。按照云服务器运行时长计费，几秒即可完成云服务器创建，无需考虑底层运维，方便您专注于业务创新。
+        <p class="cloud-title-three" style="margin-top: 20px;">●&nbsp;&nbsp;什么是国美云服务器 (ECM)？</p>
+        <p class="cloud-content">国美云服务器（Elastic Cloud Machine, 简称ECM）,一种低开销，简单且高效的弹性计算服务。按照云服务器运行时长计费，几秒即可完成云服务器创建，无需考虑底层运维，方便您专注于业务创新。
         </p>
 
         <p class="cloud-title-three" style="margin-top: 30px;">●&nbsp;&nbsp;使用国美云服务器如何收费？</p>
@@ -208,7 +208,7 @@
         2.包年包月付费，您可预先支付全额或一定比例的费用，同时享受优惠的折扣力度。<br />3.数据传输与磁盘单独计费。
         </p>
 
-        <p class="cloud-title-three" style="margin-top: 30px;">●&nbsp;&nbsp;应计费的Gome EC2实例小时如何定义？</p>
+        <p class="cloud-title-three" style="margin-top: 30px;">●&nbsp;&nbsp;应计费的ECM实例小时如何定义？</p>
         <p class="cloud-content">您的实例处于<span style="color: #1dc3ed;">“power on”</span>态的任何时候都算作应计费的实例小时。如果您不再希望您的实例被收取费用，必须“停止”或“终止”该实例，以免产生更多应计费实例小时数。当实例进入运行状态时就会开始计费。
         </p>
     </div>
