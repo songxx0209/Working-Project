@@ -12,7 +12,7 @@ var less = require('gulp-less');  // 使用less
 var path = require('path');
 const nunjucks = require('gulp-nunjucks');
 
-// less转换为css
+// less 转换为 css 放入 temp/lessCompiledCSS
 gulp.task('less', function () {
   return gulp.src([ './less/*.less', './less/**/*.less', './less/*.css'])
     .pipe(less({
@@ -23,7 +23,7 @@ gulp.task('less', function () {
 });
 
 
-// css, js, image, 进行MD5命名并保存名字的json数据到rev文件夹
+// css, js, image, 进行MD5命名并保存名字的json数据到rev文件夹 --start
 gulp.task('css', ['less'], function () {
     return gulp.src(['temp/lessCompiledCSS/*.css', 'temp/lessCompiledCSS/**/*.css'])
         .pipe(rev())
@@ -49,10 +49,13 @@ gulp.task('images', function () {
         .pipe( gulp.dest( 'temp/rev/images' ) );
 });
 
+
+// --end
+
 gulp.task('html', function(){
-    return gulp.src(['templates/*.html'])
+    return gulp.src(['templates/*.html', 'templates/**/*.html'])
         .pipe(nunjucks.compile())
-        .pipe( gulp.dest('temp/templates') );
+        .pipe(gulp.dest('temp/templates'));
 })
 
 var revCollector = require('gulp-rev-collector');  // 转换文件中所有引用路径（md5命名的文件）
@@ -79,7 +82,7 @@ gulp.task('rev-js', ['scripts', 'images'], function () {
 });
 
 gulp.task('rev', ['rev-css', 'rev-js', 'html'], function () {
-    return gulp.src(['temp/rev/**/*.json', 'temp/templates/*.html'])
+    return gulp.src(['temp/rev/**/*.json', 'temp/templates/*.html', 'temp/templates/**/*.html'])
         .pipe( revCollector({
             replaceReved: true,
             dirReplacements: {
@@ -95,6 +98,7 @@ gulp.task('rev', ['rev-css', 'rev-js', 'html'], function () {
         .pipe( gulp.dest('dist/templates') );
 });
 
+// 删除临时目录
 gulp.task('del', function () {
     return gulp.src(['dist', 'temp'], {read: false})
         .pipe(clean());
@@ -102,7 +106,7 @@ gulp.task('del', function () {
 
 gulp.task('reload', ['rev'], function(){
     return gulp.src('./dist/templates/*.html').pipe(connect.reload());
-})
+});
 
 gulp.task('connect', function() {
   connect.server({
@@ -115,7 +119,7 @@ gulp.task('default', ['rev'], function() {
     gulp.start('connect', 'watched');
 });
 
-gulp.task('dist',['del'], function(){
+gulp.task('dist', ['del'], function(){
     gulp.start('rev');
 })
 
