@@ -19,17 +19,17 @@ gulp.task('less', function () {
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest('temp/lessCompiledCSS'));
 });
 
 
 // css, js, image, 进行MD5命名并保存名字的json数据到rev文件夹
 gulp.task('css', ['less'], function () {
-    return gulp.src(['css/*.css', 'css/**/*.css'])
+    return gulp.src(['temp/lessCompiledCSS/*.css', 'temp/lessCompiledCSS/**/*.css'])
         .pipe(rev())
-        .pipe(gulp.dest('temp/css'))
+        .pipe( gulp.dest('temp/css') )
         .pipe( rev.manifest() )
-        .pipe( gulp.dest( 'rev/css' ) );
+        .pipe( gulp.dest( 'temp/rev/css' ) );
 });
 
 gulp.task('scripts', function () {
@@ -38,7 +38,7 @@ gulp.task('scripts', function () {
         // .pipe(uglify())
         .pipe(gulp.dest('temp/js'))
         .pipe( rev.manifest() )
-        .pipe( gulp.dest( 'rev/js' ) );
+        .pipe( gulp.dest( 'temp/rev/js' ) );
 });
 
 gulp.task('images', function () {
@@ -46,7 +46,7 @@ gulp.task('images', function () {
         .pipe(rev())
         .pipe(gulp.dest('dist/images'))
         .pipe( rev.manifest() )
-        .pipe( gulp.dest( 'rev/images' ) );
+        .pipe( gulp.dest( 'temp/rev/images' ) );
 });
 
 gulp.task('html', function(){
@@ -59,7 +59,7 @@ var revCollector = require('gulp-rev-collector');  // 转换文件中所有引�
 var minifyHTML   = require('gulp-minify-html');  // 压缩html文件
 
 gulp.task('rev-css', ['css', 'images'], function () {
-    return gulp.src(['rev/**/*.json', 'temp/css/*.css', 'temp/css/**/*.css'])
+    return gulp.src(['temp/rev/**/*.json', 'temp/css/*.css', 'temp/css/**/*.css'])
         .pipe( revCollector({
             replaceReved: true,
             dirReplacements: {
@@ -69,7 +69,7 @@ gulp.task('rev-css', ['css', 'images'], function () {
 });
 
 gulp.task('rev-js', ['scripts', 'images'], function () {
-    return gulp.src(['rev/**/*.json', 'temp/js/*.js', 'temp/js/**/*.js'])
+    return gulp.src(['temp/rev/**/*.json', 'temp/js/*.js', 'temp/js/**/*.js'])
         .pipe( revCollector({
             replaceReved: true,
             dirReplacements: {
@@ -79,7 +79,7 @@ gulp.task('rev-js', ['scripts', 'images'], function () {
 });
 
 gulp.task('rev', ['rev-css', 'rev-js', 'html'], function () {
-    return gulp.src(['rev/**/*.json', 'temp/templates/*.html'])
+    return gulp.src(['temp/rev/**/*.json', 'temp/templates/*.html'])
         .pipe( revCollector({
             replaceReved: true,
             dirReplacements: {
@@ -96,7 +96,7 @@ gulp.task('rev', ['rev-css', 'rev-js', 'html'], function () {
 });
 
 gulp.task('del', function () {
-    return gulp.src(['dist', 'temp', 'rev', 'css'], {read: false})
+    return gulp.src(['dist', 'temp'], {read: false})
         .pipe(clean());
 });
 
