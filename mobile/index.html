@@ -1,0 +1,285 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>国美云 - 解决一切不可能</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="assets/images/app-icon72x72@2x.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+  <link rel="apple-touch-icon-precomposed" href="assets/images/app-icon72x72@2x.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="assets/images/app-icon72x72@2x.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
+  href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+
+  <!-- 页面内容 开发时添加的代码 -->
+  <header data-am-widget="header" class="am-header">
+    <div class="am-header-left am-header-nav ">
+      <a href="#left-link" class="gm-logo"></a>
+    </div>
+    <!-- nav 右侧滑出 -->
+    <nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
+      <a href="javascript: void(0)" class="am-menu-toggle">
+          <i class="am-menu-toggle-icon am-icon-bars"></i>
+      </a>
+      <div class="am-offcanvas">
+        <div class="am-offcanvas-bar am-offcanvas-bar-flip">
+          <h3 class="m-menu-nav-top">首页</h3>
+          <section data-am-widget="accordion" class="am-accordion" data-am-accordion='{  }'>
+            <dl class="am-accordion-item">
+              <dt class="am-accordion-title m-menu-nav-title m-menu-nav-first-title">
+                <span class="m-menu-nav-title-pic"></span>
+                <span style="margin-left: 1rem;">弹性计算</span>
+              </dt>
+              <dd class="am-accordion-bd am-collapse">
+                <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器  am-accordion-content-->
+                <div class="">
+                  <a class="m-menu-nav-item" href="">国美云服务器（ECM</a>
+                  <a class="m-menu-nav-item" href="">国美云硬盘（EBS</a>
+                </div>
+              </dd>
+            </dl>
+
+            <dl class="am-accordion-item">
+              <dt class="am-accordion-title m-menu-nav-title">
+                <span class="m-menu-nav-title-pic"></span>
+                <span style="margin-left: 1rem;">内容分发</span>
+              </dt>
+              <dd class="am-accordion-bd am-collapse">
+                <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器  am-accordion-content-->
+                <div class="">
+                  <a class="m-menu-nav-item" href="">国美云负载均衡（ELB</a>
+                  <a class="m-menu-nav-item" href="">内容分发网络（CDN）</a>
+                  <a class="m-menu-nav-item" href="">国美云域名解析系统（DNS</a>
+                </div>
+              </dd>
+            </dl>
+
+            <dl class="am-accordion-item">
+              <dt class="am-accordion-title m-menu-nav-title">
+                <span class="m-menu-nav-title-pic"></span>
+                <span style="margin-left: 1rem;">网络</span>
+              </dt>
+              <dd class="am-accordion-bd am-collapse">
+                <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器  am-accordion-content-->
+                <div class="">
+                  <a class="m-menu-nav-item" href="">虚拟专有网络（VPC</a>
+                </div>
+              </dd>
+            </dl>
+          </section>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- banner -->
+  <div class="m-banner">
+    <div data-am-widget="slider" class="am-slider  am-slider-a2" data-am-slider='{}'>
+      <ul class="am-slides">
+        <li>
+          <div class="m-banner-item-pic">
+            <img src="./assets/images/home/banner-pc-01.png" alt="">
+          </div>
+          <h2 class="m-banner-item-title">云服务器（ECM）</h2>
+          <p class="m-banner-item-desc">一种底开销，简单且高效的弹性计算服务</p>
+        </li>
+        <!--<li>
+          <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg">
+        </li>-->
+      </ul>
+    </div>
+  </div>
+
+  <!--稳定的云服务-->
+  <div class="m-server" style="margin: 1rem 0 0;">
+    <h5 class="m-title">提供高效，稳定的云服务</h5>
+    <div class="am-g">
+
+      <div class="am-u-sm-3 m-server-item">
+        <div class="m-server-item-pic">
+          <img src="./assets/images/home/ecm.png" alt="">
+        </div>
+        <p class="m-server-item-desc">ECM</p>
+      </div>
+
+      <div class="am-u-sm-3 m-server-item">
+        <div class="m-server-item-pic">
+          <img src="./assets/images/home/vpc.png" alt="">
+        </div>
+        <p class="m-server-item-desc">VPC</p>
+      </div>
+
+      <div class="am-u-sm-3 m-server-item">
+        <div class="m-server-item-pic">
+          <img src="./assets/images/home/elb.png" alt="">
+        </div>
+        <p class="m-server-item-desc">ELB</p>
+      </div>
+
+      <div class="am-u-sm-3 m-server-item">
+        <div class="m-server-item-pic">
+          <img src="./assets/images/home/gdns.png" alt="">
+        </div>
+        <p class="m-server-item-desc">GDNS</p>
+      </div>
+    </div>
+
+    <div style="background: #f4f5f8; height: 2rem"></div>
+    <div class="m-server-bottom">
+      <section data-am-widget="accordion" class="am-accordion" data-am-accordion='{  }'>
+        <dl class="am-accordion-item">
+          <dt class="am-accordion-title m-server-title">
+            <span>弹性计算</span>
+            <span class="m-server-title-icon"></span>
+          </dt>
+          <dd class="am-accordion-bd am-collapse">
+            <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器  am-accordion-content-->
+            <div class="">
+              <a class="m-server-select-item" href="">国美云服务器（ECM</a>
+              <a class="m-server-select-item" href="">国美云硬盘（EBS</a>
+            </div>
+          </dd>
+        </dl>
+
+        <dl class="am-accordion-item">
+          <dt class="am-accordion-title m-server-title">
+            <span>内容分发</span>
+            <span class="m-server-title-icon"></span>
+          </dt>
+          <dd class="am-accordion-bd am-collapse">
+            <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器  am-accordion-content-->
+            <div class="">
+              <a class="m-server-select-item" href="">国美云负载均衡（ELB</a>
+              <a class="m-server-select-item" href="">内容分发网络（CDN）</a>
+              <a class="m-server-select-item" href="">国美云域名解析系统（DNS</a>
+            </div>
+          </dd>
+        </dl>
+
+        <dl class="am-accordion-item">
+          <dt class="am-accordion-title m-server-title">
+            <span>网络</span>
+            <span class="m-server-title-icon"></span>
+          </dt>
+          <dd class="am-accordion-bd am-collapse">
+            <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器  am-accordion-content-->
+            <div class="">
+              <a class="m-server-select-item" href="">虚拟专有网络（VPC</a>
+            </div>
+          </dd>
+        </dl>
+
+      </section>
+    </div>
+    <div style="background: #f4f5f8; height: 2rem"></div>
+  </div>
+
+  <!-- 解决方案 -->
+  <div class="solveplan">
+    <h5 class="m-title">基于场景的行业解决方案</h5>
+    <div class="m-solveplan solve-bg1">
+      <h4 class="m-solveplan-title">定制化云服方案</h4>
+      <p class="m-solveplan-content">针对业务构架，定制专属云化方案，帮助您无缝切换到云环境</p>
+    </div>
+
+    <div class="m-solveplan solve-bg2">
+      <h4 class="m-solveplan-title">专业化运维支持</h4>
+      <p class="m-solveplan-content">专业运维工程师团队为您量身定制高可用架构，解决运维相关问题</p>
+    </div>
+
+    <div class="m-solveplan solve-bg3">
+      <h4 class="m-solveplan-title">多样化计费方式</h4>
+      <p class="m-solveplan-content">丰富灵活的计费模式。您可以针对业务周期，自由选择付费方式</p>
+    </div>
+  </div>
+
+  <div style="background: #f4f5f8; height: 2rem"></div>
+  <!-- 合作伙伴 -->
+  <div class="partner">
+    <h5 class="m-title">合作伙伴</h5>
+    <div class="am-g m-partner-content">
+      <div class="am-u-sm-4">
+        <div style="">
+          <img src="./assets/images/home/gome.png" alt="">
+        </div>
+      </div>
+      <div class="am-u-sm-4">
+        <div style="">
+          <img src="./assets/images/home/gome-unline.png" alt="">
+        </div>
+      </div>
+      <div class="am-u-sm-4">
+        <div style="">
+          <img src="./assets/images/home/mango-tv.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer 关于我们 -->
+  <div class="m-footer">
+    <h5 class="m-title m-aboutus-title">关于我们</h5>
+    <div class="m-aboutus-content">
+      <p class="connect-us">联系我们：yanzhenkai-kg@gome.com.cn</p>
+      <p class="follow-us"><span>关注我们：</span>
+        <a class="footer-share-item" href=""><span class="share-icon weibo-icon"></span>新浪微博</a>
+        <a class="footer-share-item" href=""><span class="share-icon weixin-icon"></span>微信</a>
+      </p>
+      <hr style="margin: 1rem 0; height:1px;border:none;border-top:1px solid #444;" />
+      <p class="m-aboutus-footer-bottom">Copyright@2016-2017 gomecloud.com 国美云版权所有</p>
+    </div>
+  </div>
+
+  <!-- 以上页面内容 开发时添加的代码 -->
+
+  <!--[if lt IE 9]>
+  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+  <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+  <![endif]-->
+
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="assets/js/jquery.min.js"></script>
+  <!--<![endif]-->
+  <script src="assets/js/amazeui.min.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>
