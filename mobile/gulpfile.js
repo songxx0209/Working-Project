@@ -94,6 +94,7 @@ gulp.task('rev', ['rev-css', 'rev-js', 'html'], function () {
             }) )
         .pipe( gulp.dest('dist/templates') );
 });
+    
 
 // 删除临时目录
 gulp.task('del', function () {
@@ -101,11 +102,15 @@ gulp.task('del', function () {
         .pipe(clean());
 });
 
-gulp.task('reload', ['rev'], function(){
+gulp.task('reload', ['rev', 'assets'], function(){
     return gulp.src('./dist/templates/*.html').pipe(connect.reload());
 });
 
-gulp.task('default', ['rev'], function() {
+gulp.task('assets', function(){
+    return gulp.src('assets/**').pipe(gulp.dest('dist/assets'));
+});
+
+gulp.task('default', ['rev', 'assets'], function() {
     gulp.start('connect', 'watched');
 });
 
@@ -122,7 +127,7 @@ gulp.task('watched', function () {
 
 gulp.task('connect', function() {
   connect.server({
-    root: 'dist',
+    root: ['dist/templates', 'dist'],
     livereload: true,
     host: '0.0.0.0' 
   });
