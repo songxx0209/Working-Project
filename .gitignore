@@ -4,5 +4,4 @@ dist/
 node_modules/
 rev
 temp/
-css
 .DS_Store

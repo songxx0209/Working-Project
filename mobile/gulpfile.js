@@ -107,7 +107,7 @@ gulp.task('reload', ['rev', 'assets'], function(){
 });
 
 gulp.task('assets', function(){
-    return gulp.src('assets/**').pipe(gulp.dest('dist/assets'));
+    return gulp.src('src/**').pipe(gulp.dest('dist/src'));
 });
 
 gulp.task('default', ['rev', 'assets'], function() {
@@ -129,6 +129,7 @@ gulp.task('connect', function() {
   connect.server({
     root: ['dist/templates', 'dist'],
     livereload: true,
+    port: 8888,
     host: '0.0.0.0' 
   });
 });

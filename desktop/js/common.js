@@ -81,6 +81,9 @@ function getExplorerInfo() {
 		var ver=explorer.match(/version\/([\d.]+)/)[1];
 		return {type:"Safari",version:ver};
 	}
+  else {
+    return {type:"",version:''}
+  }
 }
  var types = getExplorerInfo().type;
  var version = getExplorerInfo().version;

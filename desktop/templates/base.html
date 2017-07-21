@@ -9,6 +9,17 @@
   {% block headerJsAndCss %}
   <link rel="stylesheet" href="./css/commonAll.css">
   <link rel="stylesheet" href="./css/commonPro.css">
+  <script>
+    (function () {
+      var url = location.href;
+      // replace www.test.com with your domain
+      if ( navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i) ) {
+        // var newUrl = url.replace('http://www', 'http://m');
+        // location.href = newUrl;
+        location.href = 'http://0.0.0.0:8888';
+      }
+    })();
+  </script>
   {% endblock %}
 </head>
 <body>
