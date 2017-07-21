@@ -12,6 +12,7 @@ var less = require('gulp-less');  // 使用less
 var path = require('path');
 const nunjucks = require('gulp-nunjucks');
 
+var STATIC_URL = '';
 // less 转换为 css 放入 temp/lessCompiledCSS
 gulp.task('less', function () {
   return gulp.src([ './less/*.less', './less/**/*.less'])
@@ -51,7 +52,9 @@ gulp.task('images', function () {
 
 gulp.task('html', function(){
     return gulp.src(['templates/*.html'])
-        .pipe(nunjucks.compile())
+        .pipe(nunjucks.compile({
+            STATIC_URL: STATIC_URL
+        }))
         .pipe( gulp.dest('temp/templates') );
 })
 
@@ -127,10 +130,10 @@ gulp.task('watched', function () {
 
 gulp.task('connect', function() {
   connect.server({
-    root: ['dist/templates', 'dist'],
+    root: ['dist/templates', 'dist/src'],
     livereload: true,
     port: 8888,
-    host: '0.0.0.0' 
+    host: '0.0.0.0'
   });
 });
 
