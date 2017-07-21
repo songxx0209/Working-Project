@@ -49,13 +49,10 @@ gulp.task('images', function () {
         .pipe( gulp.dest( 'temp/rev/images' ) );
 });
 
-
-// --end
-
 gulp.task('html', function(){
-    return gulp.src(['templates/*.html', 'templates/**/*.html'])
+    return gulp.src(['templates/*.html'])
         .pipe(nunjucks.compile())
-        .pipe(gulp.dest('temp/templates'));
+        .pipe( gulp.dest('temp/templates') );
 })
 
 var revCollector = require('gulp-rev-collector');  // 转换文件中所有引用路径（md5命名的文件）
