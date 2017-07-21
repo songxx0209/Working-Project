@@ -49,14 +49,11 @@ gulp.task('images', function () {
         .pipe( gulp.dest( 'temp/rev/images' ) );
 });
 
-
-// --end
-
-gulp.task('html', function(){
-    return gulp.src(['templates/*.html', 'templates/**/*.html'])
-        .pipe(nunjucks.compile())
-        .pipe(gulp.dest('temp/templates'));
-})
+// gulp.task('html', function(){
+//     return gulp.src(['templates/*.html'])
+//         .pipe(nunjucks.compile())
+//         .pipe( gulp.dest('temp/templates') );
+// })
 
 var revCollector = require('gulp-rev-collector');  // 转换文件中所有引用路径（md5命名的文件）
 var minifyHTML   = require('gulp-minify-html');  // 压缩html文件
@@ -108,26 +105,47 @@ gulp.task('reload', ['rev'], function(){
     return gulp.src('./dist/templates/*.html').pipe(connect.reload());
 });
 
-gulp.task('connect', function() {
-  connect.server({
-    root: 'dist',
-    livereload: true
-  });
-});
+// gulp.task('connect', function() {
+//   connect.server({
+//     root: 'dist',
+//     livereload: true
+//   });
+// });
 
-gulp.task('default', ['rev'], function() {
-    gulp.start('connect', 'watched');
-});
+// gulp.task('default', ['rev'], function() {
+//     gulp.start('connect', 'watched');
+// });
 
 gulp.task('dist', ['del'], function(){
     gulp.start('rev');
 })
 
-gulp.task('watched', function () {
-    gulp.watch('templates/*.html', ['reload']);
-    gulp.watch(['less/*.less', 'less/**/*.less'], ['reload']);
-    gulp.watch(['js/*.js', 'js/**/*.js'], ['reload']);
+// gulp.task('watched', function () {
+//     gulp.watch('templates/*.html', ['reload']);
+//     gulp.watch(['less/*.less', 'less/**/*.less'], ['reload']);
+//     gulp.watch(['js/*.js', 'js/**/*.js'], ['reload']);
+// });
+
+
+gulp.task('html', function(){
+    return gulp.src(['mobile/templates/*.html'])
+        .pipe(nunjucks.compile())
+        .pipe( gulp.dest('mobile/temp') );
+})
+
+gulp.task('watch', function () {
+  gulp.watch(['./mobile/temp/*.html'], ['html']);
 });
+
+gulp.task('connect', function() {
+  connect.server({
+    root: 'mobile/temp',
+    livereload: true,
+    host: '10.122.251.209' 
+  });
+});
+
+gulp.task('default', ['html', 'connect', 'watch']);
 
 
 
