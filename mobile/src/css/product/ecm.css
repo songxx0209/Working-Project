@@ -1,0 +1,128 @@
+
+.m-banner {
+  background: url('/images/productPage/banner.png') no-repeat;
+  background-size: cover;
+  padding: 3rem 0;
+}
+.m-banner-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.m-banner-container img {
+  width: 7rem;
+}
+
+/* 产品介绍 */
+.m-pro-detail {
+  /*width: 90%;
+  margin: 0 auto;*/
+}
+.pro-content {
+  margin: 0 3%;
+}
+.m-pro-title {
+  margin: 1.6rem 3%;
+  color: #808a9c;
+  position: relative;
+}
+.m-pro-title-icon {
+  width: 1rem;
+  height: 1.4rem;
+  background: url(/images/productPage/tab.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 5px;
+}
+.m-pro-title-content {
+  margin-left: 2rem;
+}
+.title-one {
+  color: #999;
+  font-size: 1.6rem;
+}
+.title-tow {
+  margin: 1rem 0;
+  color: #333;
+  position: relative;
+}
+.article-content {
+  margin: 0.5rem 2rem;
+  color: #666;
+}
+
+.pro-feture-one {
+  width: 1.4rem;
+  height: 1.6rem;
+  background: url(/images/productPage/safety.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 2px;
+}
+
+.pro-feture-content {
+  margin-left: 2rem;
+}
+.pro-feture-tow {
+  width: 1.4rem;
+  height: 1.6rem;
+  background: url(/images/productPage/elasticity.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 2px;
+}
+.pro-feture-three {
+  width: 1.4rem;
+  height: 1.6rem;
+  background: url(/images/productPage/cost.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 2px;
+}
+.pro-feture-four {
+  width: 1.4rem;
+  height: 1.6rem;
+  background: url(/images/productPage/convenience.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 2px;
+}
+
+/* 功能介绍 */
+.m-fun-intro {
+
+}
+
+.m-fun-title {
+  margin: 1.6rem 3%;
+  color: #808a9c;
+  position: relative;
+}
+.m-fun-title-icon {
+  width: 1rem;
+  height: 1.4rem;
+  background: url(/images/productPage/tab.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 5px;
+}
+.m-fun-title-content {
+  margin-left: 2rem;
+}
+
+.fun-content {
+  margin: 0 3%;
+}
+
+.pro-fun-one {
+  width: 1.4rem;
+  height: 1.6rem;
+  background: url(/images/productPage/count.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 2px;
+}
+
+.pro-fun-content {
+  margin-left: 2rem;
+}

@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block headerJsAndCss %}
+{{ super() }}
+<link rel="stylesheet" href="{{STATIC_URL}}/css/product/ecm.css">
+{% endblock %}
+
+
+{% block body %}
+
+<!-- banner -->
+<div class="m-banner">
+  <div class="m-banner-container">
+    <img src="{{STATIC_URL}}/images/productPage/ECM.png" alt="">
+    <h4 style="margin: 1rem 0;">国美云服务器 ECM</h4>
+    <div>国美云服务器（Elastic Cloud Machine, 简称ECM），一种低开销、简单高效的弹性计算服务。可快速完成云服务器创建，按时间灵活计费，有效降低基础设施成本，无需底层运维，真正致力于核心业务发展。</div>
+  </div>
+</div>
+<!--产品概述-->
+<div class="m-pro-detail">
+  <h4  class="m-pro-title">
+    <span class="m-pro-title-icon"></span>
+    <span class="m-pro-title-content">产品概述</span>
+  </h4>
+  <hr style="height: 1px; color: #eee;">
+
+  <p class="pro-content title-one">国美云服务器相较于传统服务器有诸多优势</p>
+
+  <div class="pro-content">
+    <p class="title-tow">
+      <span class="pro-feture-one"></span>
+      <span class="pro-feture-content">稳定</span>
+    </p>
+    <p class="article-content">云服务器可用性达99.5%，云硬盘数据可用性达99.99%，自动快照备份，为您的业务保驾护航。</p>
+  </div>
+  <hr style="height: 1px; color: #eee;">
+
+  <div class="pro-content">
+    <p class="title-tow">
+      <span class="pro-feture-tow"></span>
+      <span class="pro-feture-content">弹性</span>
+    </p>
+    <p class="article-content">多种机型灵活适配，多种磁盘类型，满足各种业务场景需要。</p>
+  </div>
+  <hr style="height: 1px; color: #eee;">
+
+  <div class="pro-content">
+    <p class="title-tow">
+      <span class="pro-feture-three"></span>
+      <span class="pro-feture-content">成本</span>
+    </p>
+    <p class="article-content">包年包月或按流量计费，随用随计，计费方式灵活，满足不同需求，无需维护服务器网络和硬件成本。</p>
+  </div>
+  <hr style="height: 1px; color: #eee;">
+
+  <div class="pro-content">
+    <p class="title-tow">
+      <span class="pro-feture-four"></span>
+      <span class="pro-feture-content">快捷</span>
+    </p>
+    <p class="article-content">提供多种镜像，覆盖Linux与Windows，满足各种环境需求，通过官网短短几秒即可部署云服务器。</p>
+  </div>
+</div>
+<div style="background: #f4f5f8; height: 2rem"></div>
+
+<!-- 功能介绍 -->
+<div class="m-fun-intro">
+  <h4  class="m-fun-title">
+    <span class="m-fun-title-icon"></span>
+    <span class="m-fun-title-content">功能介绍</span>
+  </h4>
+  <hr style="height: 1px; color: #eee;">
+
+  <div class="fun-content">
+    <p class="title-tow">
+      <span class="pro-fun-one"></span>
+      <span class="pro-fun-content">计算</span>
+    </p>
+  </div>
+  
+</div>
+
+<!-- 合作伙伴 -->
+<!--<div class="partner">
+  <h5 class="m-title">合作伙伴</h5>
+  <div class="am-g m-partner-content">
+    <div class="am-u-sm-4">
+      <div style="">
+        <img src="{{STATIC_URL}}/images/home/gome.png" alt="">
+      </div>
+    </div>
+    <div class="am-u-sm-4">
+      <div style="">
+        <img src="{{STATIC_URL}}/images/home/gome-unline.png" alt="">
+      </div>
+    </div>
+    <div class="am-u-sm-4">
+      <div style="">
+        <img src="{{STATIC_URL}}/images/home/mango-tv.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>-->
+{% endblock %}
+
+{% block footerJsAndCss %}
+{{ super() }}
+{% endblock %}

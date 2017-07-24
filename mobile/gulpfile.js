@@ -123,7 +123,7 @@ gulp.task('dist', ['del'], function(){
 
 gulp.task('watched', function () {
     gulp.watch('templates/*.html', ['reload']);
-    gulp.watch(['less/*.less', 'less/**/*.less'], ['reload']);
+    gulp.watch(['src/css/*.css', 'src/css/**/*.css'], ['reload']);
     gulp.watch(['js/*.js', 'js/**/*.js'], ['reload']);
 });
 
@@ -133,7 +133,7 @@ gulp.task('connect', function() {
     root: ['dist/templates', 'dist/src'],
     livereload: true,
     port: 8888,
-    host: '0.0.0.0'
+    // host: '0.0.0.0'
   });
 });
 

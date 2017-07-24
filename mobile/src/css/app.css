@@ -4,98 +4,6 @@ body {
   margin-right: auto!important;
   margin-left: auto!important;
 }
-/* menu的css样式 */
-.am-offcanvas {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1090;
-  background: rgba(0,0,0,.25);
-}
-.am-offcanvas-bar {
-  background: #fff;
-}
-.am-offcanvas-bar:after {
-  background: #fff;
-}
-.m-menu-nav-top {
-  margin: 1rem 0 0 1rem;
-  color: #999;
-}
-.m-menu-nav-title-pic {
-  position: absolute;
-  top: 16px;
-  width: 4px;
-  height: 16px;
-  background: url(/images/home/rectangle.png) no-repeat;
-}
-.m-menu-nav-first-title {
-  border-top: 1px solid #eee;
-}
-.m-menu-nav-title {
-  padding-left: 1rem;
-  color: #333;
-  font-weight: 600;
-  border-bottom: 1px solid #eee;
-  position: relative;
-}
-.m-menu-nav-item {
-  display: block;
-  margin-top: 0;
-  padding: .4rem 2rem;
-  font-size: 1.4rem;
-  background: #fafafa;
-  border-bottom: 1px solid #eee;
-  color: #1dc3ed;
-}
-/* 以上为nav menu的css样式 */
-
-
-
-.am-menu-offcanvas1 .am-menu-toggle {
-  position: absolute;
-  right: 0;
-  top: 3px;
-  display: block;
-  width: 44px;
-  height: 46px;
-  line-height: 46px;
-  text-align: center;
-  color: #fff;
-}
-.m-title {
-  text-align: center;
-  border-bottom: 1px solid #f0f0f0;
-  padding: 1rem 0;
-  color: #999;
-  font-size: 1.5rem;
-}
-.am-header .am-header-nav {
-  position: absolute;
-  top: 14.5px;
-}
-.gm-logo {
-  display: block;
-  width: 108px;
-  height: 20px;
-  line-height: 44px;
-  text-align: center;
-  color: #fff;
-  background: url(/images/home/gome-cloud-.png) no-repeat;
-  background-size: cover;
-}
-.am-header {
-  position: relative;
-  width: 100%;
-  height: 49px;
-  top: 0;
-  line-height: 49px;
-  padding: 0 10px;
-  background: #333;
-}
 
 /* banner */
 .m-banner {
@@ -196,65 +104,10 @@ body {
   padding: 0 1rem 1rem;
   color: #eaeaea;
 }
-
- /* 合作伙伴 */
+/* 合作伙伴 */
 .m-partner-content {
   padding-bottom: 2rem;
 }
 .m-partner-content img {
   width: 100%;
-}
-/* 关于我们 */
-.m-footer {
-  background: #373737;
-}
-.m-aboutus-title {
-  color: #626262;
-  border: 1px solid #444;
-}
-.m-aboutus-content {
-  width: 90%;
-  margin: 1rem auto 0;
-  color: #9b9b9b;
-}
-.m-aboutus-footer-bottom {
-  margin: 0;
-  padding-bottom: 1rem;
-  font-size: 1.3rem;
-}
-.follow-us {
-  font-size: 14px;
-  line-height: 32px;
-  margin: 0;
-}
-.connect-us {
-  font-size: 14px;
-  line-height: 32px;
-  margin: 0;
-}
-.footer-share-item {
-  /* color: #EBECEC; */
-  line-height: 32px;
-  display: inline-block;
-  padding-right: 24px;
-  position: relative;
-}
-.share-icon {
-  width: 24px;
-  height: 21px;
-  /* line-height: 32px; */
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: inline-block;
-  position: relative;
-  top: 4px;
-  margin-right: 5px;
-}
-.weibo-icon {
-  background: url('/images/home/sina.png') no-repeat;
-  background-size: 100% 100%;
-}
-.weixin-icon {
-  background: url('/images/home/wechat.png') no-repeat;
-  background-size: 100% 100%;
 }
